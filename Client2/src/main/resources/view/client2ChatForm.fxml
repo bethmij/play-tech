@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="722.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client2ChatFormController">
+   <children>
+      <ImageView fitHeight="722.0" fitWidth="406.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/a63a312f9ce4636865d57450b8077e3b.jpg" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <Rectangle arcHeight="500.0" arcWidth="5.0" fill="#030303" height="39.0" layoutY="2.0" opacity="0.43" stroke="#008f99" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="406.0">
+         <effect>
+            <InnerShadow height="86.5" radius="38.6575" width="70.13">
+               <color>
+                  <Color red="0.23659999668598175" green="0.7078091502189636" blue="0.9100000262260437" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Rectangle>
+      <Text fill="WHITE" layoutX="51.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play Tech Gang" wrappingWidth="182.81414794921875">
+         <font>
+            <Font name="Californian FB" size="23.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="5.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/icons8-collaborating-in-circle-96.png" />
+         </image>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="18.0" layoutX="383.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../Assets/icons8-ellipsis-60.png" />
+         </image>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </ImageView>
+      <ScrollPane blendMode="DARKEN" layoutX="13.0" layoutY="68.0" prefHeight="556.0" prefWidth="383.0">
+         <content>
+            <VBox fx:id="VBox" prefHeight="554.0" prefWidth="380.0">
+               <effect>
+                  <Shadow>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Shadow>
+               </effect>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Rectangle arcHeight="2.0" arcWidth="5.0" fill="#030303" height="74.0" layoutY="646.0" opacity="0.49" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="406.0">
+         <effect>
+            <InnerShadow height="86.5" radius="38.6575" width="70.13">
+               <color>
+                  <Color red="0.23659999668598175" green="0.7078091502189636" blue="0.9100000262260437" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Rectangle>
+      <TextField fx:id="txt" blendMode="OVERLAY" layoutX="96.0" layoutY="659.0" prefHeight="48.0" prefWidth="260.0">
+         <effect>
+            <InnerShadow choke="1.0" height="249.44" radius="122.83" width="243.88">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+               <input>
+                  <Lighting bumpInput="$null" diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <JFXButton fx:id="btnSend" contentDisplay="GRAPHIC_ONLY" layoutX="349.0" layoutY="659.0" onAction="#btnSendOnAction" prefHeight="48.0" prefWidth="30.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/send_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+               <effect>
+                  <InnerShadow choke="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnCamera" contentDisplay="GRAPHIC_ONLY" layoutX="44.0" layoutY="661.0" onAction="#btnCameraOnAction" prefHeight="38.0" prefWidth="38.0">
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/icons8-camera-100.png" />
+               </image>
+               <effect>
+                  <InnerShadow choke="1.0" height="81.825" radius="55.618750000000006" width="142.65">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                     <input>
+                        <Glow />
+                     </input>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnEmoji" contentDisplay="GRAPHIC_ONLY" layoutX="-3.0" layoutY="660.0" onAction="#btnEmojiOnAction" prefHeight="38.0" prefWidth="38.0">
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/icons8-grinning-face-96.png" />
+               </image>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

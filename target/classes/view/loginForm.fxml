@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="714.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="712.0" fitWidth="957.0" layoutX="61.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Yahoo Image Search.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="OVERLAY" fill="#69655e" height="267.0" layoutX="410.0" layoutY="165.0" stroke="#230505" strokeType="INSIDE" width="444.0" />
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="293.0" layoutY="14.0" prefHeight="26.0" prefWidth="0.0" ripplerFill="#fff2d188" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="712.0" layoutY="2.0" stroke="WHITE" strokeType="INSIDE" width="285.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.9318181745933763" endY="0.8409090981338964">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6947368383407593" green="0.5602495074272156" blue="0.1904093623161316" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.8736842274665833" green="0.5197881460189819" blue="0.24916179478168488" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.49873617174933527">
+                     <color>
+                        <Color red="0.9684210419654846" green="0.9460039138793945" blue="0.5200779438018799" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.6694737076759338" blue="0.2526315748691559" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="233.0" fitWidth="402.0" layoutX="-3.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Antiquity-Web-Articles-Image-Apr.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="13.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grama Vista">
+         <font>
+            <Font name="Segoe Script" size="40.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.9318181745933763" endY="0.8409090981338964">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6947368383407593" green="0.5602495074272156" blue="0.1904093623161316" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.4736842215061188" green="0.23523391783237457" blue="0.06491228193044662" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.49873617174933527">
+                     <color>
+                        <Color red="0.7473683953285217" green="0.5028589963912964" blue="0.16054581105709076" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.42105263471603394" green="0.27695906162261963" blue="0.060818713158369064" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <ImageView fitHeight="57.0" fitWidth="41.0" layoutX="776.0" layoutY="637.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pngegg.png" />
+         </image>
+      </ImageView>
+      <Text fill="#612803" layoutX="827.0" layoutY="681.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ministry of Home Affairs">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fill="#91670d" layoutX="514.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in to continue" wrappingWidth="274.25146484375">
+         <font>
+            <Font name="Yu Gothic Regular" size="28.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUser" blendMode="MULTIPLY" layoutX="455.0" layoutY="223.0" prefHeight="38.0" prefWidth="354.0" promptText="User Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.46" radius="11.33" width="26.32">
+               <color>
+                  <Color red="0.9254902005195618" green="0.7411764860153198" blue="0.47843137383461" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="460.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/account_circle_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="1.0" height="127.5" radius="95.125" width="255.0">
+               <color>
+                  <Color red="1.0" green="0.7803921699523926" blue="0.2666666805744171" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="460.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/password_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="1.0" radius="68.5" width="255.0">
+               <color>
+                  <Color red="1.0" green="0.7803921699523926" blue="0.2666666805744171" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </ImageView>
+      <Button fx:id="btn" focusTraversable="false" layoutX="585.0" layoutY="463.0" mnemonicParsing="false" onAction="#btnOnAction" prefHeight="40.0" prefWidth="94.0" style="-fx-background-color: #f7c142;" text="Log in">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4421052634716034" green="0.2674463987350464" blue="0.022923976182937622" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5097560975609755">
+                     <color>
+                        <Color red="0.6421052813529968" green="0.39953216910362244" blue="0.035672515630722046" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596231">
+                     <color>
+                        <Color red="0.49473685026168823" green="0.3049044907093048" blue="0.020155945792794228" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.49473685026168823" green="0.3049044907093048" blue="0.020155945792794228" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.5684210658073425" green="0.36617544293403625" blue="0.016842104494571686" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <PasswordField fx:id="txtPass" blendMode="MULTIPLY" layoutX="453.0" layoutY="348.0" prefHeight="38.0" prefWidth="354.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.48">
+               <color>
+                  <Color red="0.9254902005195618" green="0.7411764860153198" blue="0.47843137383461" />
+               </color>
+            </InnerShadow>
+         </effect></PasswordField>
+      <Text fill="#91670d" layoutX="502.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New User?   " wrappingWidth="125.0">
+         <font>
+            <Font name="Yu Gothic Regular" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#d95d3a" layoutX="627.0" layoutY="549.0" onMouseClicked="#btnSignOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.8947368264198303" green="0.36783626675605774" blue="0.36783626675605774" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Text>
+      <Text fill="#91670d" layoutX="708.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here." wrappingWidth="55.4000244140625">
+         <font>
+            <Font name="Yu Gothic Regular" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#91670d" layoutX="682.0" layoutY="411.0" onMouseClicked="#btnForgotOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot password ?" wrappingWidth="124.99999999999989">
+         <font>
+            <Font name="Yu Gothic Regular" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Text>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>

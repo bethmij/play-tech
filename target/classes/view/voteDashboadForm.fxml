@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Pane" prefHeight="714.0" prefWidth="1005.0" stylesheets="@css/Icon.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.VoteDashboadFormController">
+   <children>
+      <ImageView fitHeight="712.0" fitWidth="957.0" layoutX="61.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Yahoo%20Image%20Search.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="714.0" stroke="WHITE" strokeType="INSIDE" width="287.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.9318181745933763" endY="0.8409090981338964">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6947368383407593" green="0.5602495074272156" blue="0.1904093623161316" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.8736842274665833" green="0.5197881460189819" blue="0.24916179478168488" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.49873617174933527">
+                     <color>
+                        <Color red="0.9684210419654846" green="0.9460039138793945" blue="0.5200779438018799" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.6694737076759338" blue="0.2526315748691559" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text layoutX="6.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grama Vista" wrappingWidth="300.5999908447265">
+         <font>
+            <Font name="Segoe Script" size="40.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.9318181745933763" endY="0.8409090981338964">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6947368383407593" green="0.5602495074272156" blue="0.1904093623161316" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.4736842215061188" green="0.23523391783237457" blue="0.06491228193044662" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.49873617174933527">
+                     <color>
+                        <Color red="0.7473683953285217" green="0.5028589963912964" blue="0.16054581105709076" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.42105263471603394" green="0.27695906162261963" blue="0.060818713158369064" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <ImageView fitHeight="57.0" fitWidth="41.0" layoutX="769.0" layoutY="647.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pngegg.png" />
+         </image>
+      </ImageView>
+      <Text fill="#612803" layoutX="824.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ministry of Home Affairs">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="295.0" layoutY="14.0" onAction="#btnAddOnAction" prefHeight="19.0" prefWidth="12.0" ripplerFill="#fffbe5" styleClass="image-icon">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblDivision" layoutX="596.0" layoutY="133.0" prefHeight="30.0" prefWidth="231.0" textFill="#753d12">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="501.0" layoutY="107.0" onAction="#btnAddOnAction" prefHeight="101.0" prefWidth="109.0" ripplerFill="#f5f4f000" styleClass="image-icon">
+         <graphic>
+            <ImageView fitHeight="104.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-election-64%20(1).png" />
+               </image>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" choke="1.0" height="255.0" radius="127.0" width="255.0">
+                     <color>
+                        <Color red="0.7372549176216125" green="0.545098066329956" blue="0.1568627506494522" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="743.0" layoutY="111.0" onAction="#btnVListOnAction" prefHeight="96.0" prefWidth="99.0" ripplerFill="#f5f4f000" styleClass="image-icon">
+         <graphic>
+            <ImageView fitHeight="103.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/diversity_3_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" choke="1.0" height="255.0" radius="127.0" width="255.0">
+                     <color>
+                        <Color red="0.7372549176216125" green="0.545098066329956" blue="0.1568627506494522" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="505.0" layoutY="358.0" onAction="#btnVoteOnAction" prefHeight="93.0" prefWidth="83.0" ripplerFill="#f5f4f000" styleClass="image-icon">
+         <graphic>
+            <ImageView fitHeight="103.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-ballot-100.png" />
+               </image>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" choke="1.0" height="255.0" radius="127.0" width="255.0">
+                     <color>
+                        <Color red="0.7372549176216125" green="0.545098066329956" blue="0.1568627506494522" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="751.0" layoutY="356.0" onAction="#btnResultOnAction" prefHeight="92.0" prefWidth="99.0" ripplerFill="#f5f4f000" styleClass="image-icon">
+         <graphic>
+            <ImageView fitHeight="102.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-election-64%20(2).png" />
+               </image>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" choke="1.0" height="255.0" radius="127.0" width="255.0">
+                     <color>
+                        <Color red="0.7372549176216125" green="0.545098066329956" blue="0.1568627506494522" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text fill="#7e5a06" layoutX="492.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Election">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#7e5a06" layoutX="760.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voters List">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#7e5a06" layoutX="536.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voting">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#7e5a06" layoutX="761.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Results">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="235.0" fitWidth="417.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Antiquity-Web-Articles-Image-Apr.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

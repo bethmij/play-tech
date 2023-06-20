@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="CivilRPane" prefHeight="714.0" prefWidth="1005.0" stylesheets="@css/Icon.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.RegistrationFormController">
+   <children>
+      <ImageView fitHeight="712.0" fitWidth="957.0" layoutX="61.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Yahoo%20Image%20Search.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="41.0" layoutX="766.0" layoutY="637.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pngegg.png" />
+         </image>
+      </ImageView>
+      <Text fill="#612803" layoutX="828.0" layoutY="681.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ministry of Home Affairs">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" defaultButton="true" layoutX="252.0" layoutY="15.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.12" prefHeight="26.0" prefWidth="2.0" />
+      <JFXButton fx:id="btnHome" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="326.0" layoutY="48.0" onAction="#btnHomeOnAction" prefHeight="115.0" prefWidth="113.0" ripplerFill="#fffff709" styleClass="image-icon">
+         <graphic>
+            <ImageView fitHeight="105.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/home_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" choke="1.0" height="254.16" radius="126.78999999999999" width="255.0">
+                     <color>
+                        <Color red="0.7372549176216125" green="0.545098066329956" blue="0.1568627506494522" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="indiv" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="573.0" layoutY="68.0" onAction="#btnIndivOnAction" prefHeight="98.0" prefWidth="127.0" ripplerFill="#f2f1e900" styleClass="image-icon" text="Button">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/productivity_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+               <effect>
+                  <InnerShadow blurType="ONE_PASS_BOX" choke="1.0" height="255.0" radius="127.0" width="255.0">
+                     <color>
+                        <Color red="0.7372549176216125" green="0.545098066329956" blue="0.1568627506494522" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text layoutX="337.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Residence Registration " wrappingWidth="123.462890625">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.2549707591533661" blue="0.08771929889917374" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4951219512195121">
+                     <color>
+                        <Color red="0.5684210658073425" green="0.4453684091567993" blue="0.21684210002422333" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596233">
+                     <color>
+                        <Color red="0.5789473652839661" green="0.388323575258255" blue="0.034307993948459625" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.34736841917037964" green="0.2047758251428604" blue="0.005146198906004429" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="589.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Individual  Registration" wrappingWidth="113.373046875">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.04390243902439025">
+                     <color>
+                        <Color red="0.5684210658073425" green="0.31494736671447754" blue="0.025263158604502678" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5">
+                     <color>
+                        <Color red="0.6000000238418579" green="0.3630000054836273" blue="0.07333333045244217" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5684210658073425" green="0.31736841797828674" blue="0.010526316240429878" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <JFXButton fx:id="land" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="793.0" layoutY="47.0" onAction="#btnlandOnAction" prefHeight="102.0" prefWidth="113.0" ripplerFill="#fff1e3b8" styleClass="image-icon">
+         <graphic>
+            <ImageView fitHeight="110.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/landscape_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" choke="0.99" height="154.68" radius="53.5225" width="61.41">
+                     <color>
+                        <Color red="0.7372549176216125" green="0.545098066329956" blue="0.1568627506494522" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text layoutX="343.0" layoutY="586.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Candidate Registration " wrappingWidth="123.462890625">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.2549707591533661" blue="0.08771929889917374" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4951219512195121">
+                     <color>
+                        <Color red="0.5684210658073425" green="0.4453684091567993" blue="0.21684210002422333" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596233">
+                     <color>
+                        <Color red="0.5789473652839661" green="0.388323575258255" blue="0.034307993948459625" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.34736841917037964" green="0.2047758251428604" blue="0.005146198906004429" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="806.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      Land Registration " wrappingWidth="123.462890625">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.2549707591533661" blue="0.08771929889917374" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4951219512195121">
+                     <color>
+                        <Color red="0.5684210658073425" green="0.4453684091567993" blue="0.21684210002422333" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596233">
+                     <color>
+                        <Color red="0.5789473652839661" green="0.388323575258255" blue="0.034307993948459625" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.34736841917037964" green="0.2047758251428604" blue="0.005146198906004429" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <JFXButton fx:id="dead" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="341.0" layoutY="259.0" onAction="#btndeadOnAction" prefHeight="108.0" prefWidth="99.0" ripplerFill="#fff2e589" styleClass="image-icon">
+         <graphic>
+            <ImageView fitHeight="101.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/person_remove_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" choke="1.0" height="255.0" radius="127.0" width="255.0">
+                     <color>
+                        <Color red="0.7372549176216125" green="0.545098066329956" blue="0.1568627506494522" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="maternity" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="581.0" layoutY="261.0" onAction="#btnMaternityOnAction" prefHeight="94.0" prefWidth="102.0" ripplerFill="#fff2e5ad" styleClass="image-icon">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="96.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/pregnant_woman_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+               <effect>
+                  <InnerShadow choke="1.0" height="255.0" radius="127.0" width="255.0">
+                     <color>
+                        <Color red="0.7372549176216125" green="0.545098066329956" blue="0.1568627506494522" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Text layoutX="343.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Dead Civil Registration " wrappingWidth="123.462890625">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.2549707591533661" blue="0.08771929889917374" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4951219512195121">
+                     <color>
+                        <Color red="0.5684210658073425" green="0.4453684091567993" blue="0.21684210002422333" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596233">
+                     <color>
+                        <Color red="0.5789473652839661" green="0.388323575258255" blue="0.034307993948459625" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.34736841917037964" green="0.2047758251428604" blue="0.005146198906004429" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <JFXButton fx:id="candidate" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="331.0" layoutY="464.0" onAction="#btnCandidateOnAction" prefHeight="108.0" prefWidth="102.0" ripplerFill="#faebdcad" styleClass="image-icon" text="Button">
+         <graphic>
+            <ImageView fitHeight="95.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/badge_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" choke="1.0">
+                     <color>
+                        <Color red="0.7372549176216125" green="0.545098066329956" blue="0.1568627506494522" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="Disable" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="799.0" layoutY="260.0" onAction="#btnDisableOnAction" prefHeight="104.0" prefWidth="104.0" ripplerFill="#fff1e38a" styleClass="image-icon">
+         <graphic>
+            <ImageView fx:id="disable" fitHeight="98.0" fitWidth="99.0" onDragDetected="#btnDisableOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/accessible_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+               <effect>
+                  <InnerShadow choke="0.99" height="255.0" radius="127.0" width="255.0">
+                     <color>
+                        <Color red="0.7372549176216125" green="0.545098066329956" blue="0.1568627506494522" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text layoutX="807.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disable Civil       Registration " wrappingWidth="150.39999999999986">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.2549707591533661" blue="0.08771929889917374" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4951219512195121">
+                     <color>
+                        <Color red="0.5684210658073425" green="0.4453684091567993" blue="0.21684210002422333" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596233">
+                     <color>
+                        <Color red="0.5789473652839661" green="0.388323575258255" blue="0.034307993948459625" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.34736841917037964" green="0.2047758251428604" blue="0.005146198906004429" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="584.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maternity Civil      Registration " wrappingWidth="170.40000000000003">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.2549707591533661" blue="0.08771929889917374" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4951219512195121">
+                     <color>
+                        <Color red="0.5684210658073425" green="0.4453684091567993" blue="0.21684210002422333" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596233">
+                     <color>
+                        <Color red="0.5789473652839661" green="0.388323575258255" blue="0.034307993948459625" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.34736841917037964" green="0.2047758251428604" blue="0.005146198906004429" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <JFXButton fx:id="land221" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="583.0" layoutY="468.0" onAction="#btnDivisionOnAction" prefHeight="79.0" prefWidth="82.0" ripplerFill="#fff2e598" styleClass="image-icon" text="Button">
+         <graphic>
+            <ImageView fx:id="Division" fitHeight="96.0" fitWidth="92.0" onDragDetected="#btnDivisionOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/distance_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" choke="1.0" height="255.0" radius="127.0" width="255.0">
+                     <color>
+                        <Color red="0.7372549176216125" green="0.545098066329956" blue="0.1568627506494522" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorAdjust brightness="-1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+         </effect>
+      </JFXButton>
+      <Text layoutX="589.0" layoutY="585.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" GN Division Registration " wrappingWidth="123.462890625">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.2549707591533661" blue="0.08771929889917374" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4951219512195121">
+                     <color>
+                        <Color red="0.5684210658073425" green="0.4453684091567993" blue="0.21684210002422333" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596233">
+                     <color>
+                        <Color red="0.5789473652839661" green="0.388323575258255" blue="0.034307993948459625" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.34736841917037964" green="0.2047758251428604" blue="0.005146198906004429" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="714.0" layoutY="1.0" stroke="WHITE" strokeType="INSIDE" width="239.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.9318181745933763" endY="0.8409090981338964">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6947368383407593" green="0.5602495074272156" blue="0.1904093623161316" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.8736842274665833" green="0.5197881460189819" blue="0.24916179478168488" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.49873617174933527">
+                     <color>
+                        <Color red="0.9684210419654846" green="0.9460039138793945" blue="0.5200779438018799" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.6694737076759338" blue="0.2526315748691559" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text layoutX="6.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grama Vista">
+         <font>
+            <Font name="Segoe Script" size="34.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.9318181745933763" endY="0.8409090981338964">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6947368383407593" green="0.5602495074272156" blue="0.1904093623161316" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.4736842215061188" green="0.23523391783237457" blue="0.06491228193044662" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.49873617174933527">
+                     <color>
+                        <Color red="0.7473683953285217" green="0.5028589963912964" blue="0.16054581105709076" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.42105263471603394" green="0.27695906162261963" blue="0.060818713158369064" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Label layoutX="43.0" layoutY="557.0" onMouseClicked="#lblLogOnAction" styleClass="text-field-" text="Logout">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.2549707591533661" blue="0.08771929889917374" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4951219512195121">
+                     <color>
+                        <Color red="0.5684210658073425" green="0.4453684091567993" blue="0.21684210002422333" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596233">
+                     <color>
+                        <Color red="0.5789473652839661" green="0.388323575258255" blue="0.034307993948459625" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.34736841917037964" green="0.2047758251428604" blue="0.005146198906004429" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="42.0" layoutY="290.0" onMouseClicked="#lblManageOnAction" prefHeight="30.0" prefWidth="170.0" styleClass="text-field-" text="Management">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.2549707591533661" blue="0.08771929889917374" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4951219512195121">
+                     <color>
+                        <Color red="0.5684210658073425" green="0.4453684091567993" blue="0.21684210002422333" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596233">
+                     <color>
+                        <Color red="0.5789473652839661" green="0.388323575258255" blue="0.034307993948459625" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.34736841917037964" green="0.2047758251428604" blue="0.005146198906004429" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="45.0" layoutY="380.0" onMouseClicked="#lblReportOnAction" styleClass="text-field-" text="Report Management">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.2549707591533661" blue="0.08771929889917374" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4951219512195121">
+                     <color>
+                        <Color red="0.5684210658073425" green="0.4453684091567993" blue="0.21684210002422333" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596233">
+                     <color>
+                        <Color red="0.5789473652839661" green="0.388323575258255" blue="0.034307993948459625" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.34736841917037964" green="0.2047758251428604" blue="0.005146198906004429" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="45.0" layoutY="473.0" onMouseClicked="#lblVoteOnAction" styleClass="text-field-" text="About Us">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.2549707591533661" blue="0.08771929889917374" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4951219512195121">
+                     <color>
+                        <Color red="0.5684210658073425" green="0.4453684091567993" blue="0.21684210002422333" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596233">
+                     <color>
+                        <Color red="0.5789473652839661" green="0.388323575258255" blue="0.034307993948459625" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.34736841917037964" green="0.2047758251428604" blue="0.005146198906004429" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView blendMode="OVERLAY" fitHeight="38.0" fitWidth="45.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logout_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="OVERLAY" fitHeight="38.0" fitWidth="44.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/diversity_3_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="OVERLAY" fitHeight="38.0" fitWidth="45.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/edit_document_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="46.0" layoutY="182.0" stroke="#fffefe" strokeType="INSIDE" width="239.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9157894849777222" green="0.6712397933006287" blue="0.21707601845264435" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5195121951219511">
+                     <color>
+                        <Color red="0.9452410936355591" green="0.9578947424888611" blue="0.5782846212387085" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9892328398384926">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.7029239535331726" blue="0.28070175647735596" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.7029239535331726" blue="0.28070175647735596" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="45.0" layoutY="190.0" onMouseClicked="#lblRegOnAction" prefHeight="30.0" prefWidth="170.0" styleClass="text-field-" text="Registration">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.2549707591533661" blue="0.08771929889917374" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4951219512195121">
+                     <color>
+                        <Color red="0.5684210658073425" green="0.4453684091567993" blue="0.21684210002422333" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596233">
+                     <color>
+                        <Color red="0.5789473652839661" green="0.388323575258255" blue="0.034307993948459625" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.34736841917037964" green="0.2047758251428604" blue="0.005146198906004429" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView blendMode="OVERLAY" fitHeight="38.0" fitWidth="38.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/group_add_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="1.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true" styleClass="image-icon">
+         <image>
+            <Image url="@../img/information-about-us-icon-16.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" choke="1.0" height="255.0" radius="127.0" width="255.0">
+               <color>
+                  <Color red="0.8947368264198303" green="0.6826510429382324" blue="0.2584795355796814" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

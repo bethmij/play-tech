@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="grama vista Layered Final edit 1.0" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaFXApplication" />
+        <option value="CSS File" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2N39xHqKFNYUC1NngXZSbK7hL0w" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "D:/IJSE/Working Projects/Chat Application/Client3/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/IJSE/Working Projects/Chat Application/Client3/src/main/java/lk/ijse/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="lk.ijse.dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\Chat Application\Client3\src\main\resources" />
+      <recent name="D:\IJSE\Working Projects\Chat Application\Client2\src\main\resources" />
+      <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources" />
+      <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\view" />
+      <recent name="D:\grama-vista\src\main\resources\view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets" />
+      <recent name="D:\grama-vista\src\main\java\lk\ijse" />
+      <recent name="D:\grama-vista\src\main\resources" />
+      <recent name="D:\grama-vista\src\main\resources\img" />
+      <recent name="D:\New folder (2)\grama-vista\src\main\resources\img" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="lk.ijse.bo.custom" />
+      <recent name="lk.ijse.bo" />
+      <recent name="lk.ijse.dao.custom.impl" />
+      <recent name="lk.ijse.dao.custom" />
+      <recent name="lk.ijse.dao" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="lk.ijse" />
+      <recent name="lk.ijse.dao" />
+      <recent name="lk.ijse.bo" />
+      <recent name="lk.ijse.dto" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Client3Initializer">
+    <configuration name="Client1Initializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client1Initializer" />
+      <module name="Client1" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-19.0.2.1\lib&quot; --add-modules javafx.controls,javafx.fxml --add-exports javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client2Initializer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Client2Initializer" />
+      <module name="Client2" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-19.0.2.1\lib&quot; --add-modules javafx.controls,javafx.fxml --add-exports javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client3Initializer" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Client3Initializer" />
+      <module name="Client3" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-19.0.2.1\lib&quot; --add-modules javafx.controls,javafx.fxml --add-exports javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.controller.Main" />
+      <module name="Chat Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.ijse.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SendMail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.controller.SendMail" />
+      <module name="Chat Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.ijse.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="delete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.controller.delete" />
+      <module name="Chat Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.ijse.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="Chat Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Chat Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Chat Application" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Client2Initializer" />
+      <item itemvalue="Application.Client3Initializer" />
+      <item itemvalue="Application.Client1Initializer" />
+      <item itemvalue="Application.delete" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.main" />
+      <item itemvalue="Application.SendMail" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client1Initializer" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.SendMail" />
+        <item itemvalue="Application.delete" />
+        <item itemvalue="Application.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="" />
+      <created>1678882145424</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678882145424</updated>
+      <workItem from="1678882146799" duration="1150000" />
+      <workItem from="1678888856682" duration="14498000" />
+      <workItem from="1678939584974" duration="8796000" />
+      <workItem from="1679069853330" duration="1194000" />
+      <workItem from="1679299855506" duration="2469000" />
+      <workItem from="1679367877679" duration="697000" />
+      <workItem from="1679379155925" duration="919000" />
+      <workItem from="1679395689018" duration="2074000" />
+      <workItem from="1679406879908" duration="109000" />
+      <workItem from="1679413050824" duration="509000" />
+      <workItem from="1679561467105" duration="1952000" />
+      <workItem from="1679587935435" duration="1417000" />
+      <workItem from="1679589417370" duration="6494000" />
+      <workItem from="1679731585488" duration="18462000" />
+      <workItem from="1679929925751" duration="2668000" />
+      <workItem from="1679933534185" duration="1525000" />
+      <workItem from="1679935107682" duration="57000" />
+      <workItem from="1679935275082" duration="11756000" />
+      <workItem from="1679971797307" duration="1336000" />
+      <workItem from="1679987788967" duration="16955000" />
+      <workItem from="1680059135638" duration="37169000" />
+      <workItem from="1680173005852" duration="9941000" />
+      <workItem from="1680234674351" duration="9432000" />
+      <workItem from="1680314646123" duration="11972000" />
+      <workItem from="1680335164900" duration="9050000" />
+      <workItem from="1680360523128" duration="19330000" />
+      <workItem from="1680408523120" duration="6922000" />
+      <workItem from="1680441410963" duration="12225000" />
+      <workItem from="1680489138959" duration="15589000" />
+      <workItem from="1680522002041" duration="19044000" />
+      <workItem from="1680587383108" duration="29733000" />
+      <workItem from="1680637136551" duration="636000" />
+      <workItem from="1680661875792" duration="32601000" />
+      <workItem from="1680747606444" duration="31222000" />
+      <workItem from="1680836639743" duration="9340000" />
+      <workItem from="1681119404179" duration="141000" />
+      <workItem from="1681119714724" duration="5416000" />
+      <workItem from="1681199027199" duration="6008000" />
+      <workItem from="1681224444594" duration="2768000" />
+      <workItem from="1681264983429" duration="7497000" />
+      <workItem from="1681397098649" duration="10192000" />
+      <workItem from="1681612558011" duration="5669000" />
+      <workItem from="1681696278730" duration="34189000" />
+      <workItem from="1681791014646" duration="21148000" />
+      <workItem from="1681832196983" duration="18340000" />
+      <workItem from="1681873467650" duration="15103000" />
+      <workItem from="1681957008699" duration="611000" />
+      <workItem from="1681957693989" duration="20923000" />
+      <workItem from="1682068686613" duration="1249000" />
+      <workItem from="1682136315299" duration="2833000" />
+      <workItem from="1682140069321" duration="3866000" />
+      <workItem from="1682251951104" duration="1014000" />
+      <workItem from="1682320417473" duration="11995000" />
+      <workItem from="1682394792016" duration="10780000" />
+      <workItem from="1682421686840" duration="13225000" />
+      <workItem from="1682439917569" duration="4731000" />
+      <workItem from="1682491723739" duration="10729000" />
+      <workItem from="1682513536379" duration="21891000" />
+      <workItem from="1682572537956" duration="7226000" />
+      <workItem from="1682580058621" duration="7065000" />
+      <workItem from="1682618017887" duration="147000" />
+      <workItem from="1682618266265" duration="7837000" />
+      <workItem from="1682668499930" duration="13142000" />
+      <workItem from="1682755124203" duration="6491000" />
+      <workItem from="1682823385269" duration="24651000" />
+      <workItem from="1682879560268" duration="640000" />
+      <workItem from="1682913506807" duration="9632000" />
+      <workItem from="1683043295048" duration="3815000" />
+      <workItem from="1684122348378" duration="2246000" />
+      <workItem from="1684125078870" duration="246000" />
+      <workItem from="1684125353821" duration="1216000" />
+      <workItem from="1684292293787" duration="546000" />
+      <workItem from="1684302104705" duration="148000" />
+      <workItem from="1684730681553" duration="1662000" />
+      <workItem from="1684898163709" duration="594000" />
+      <workItem from="1685962831196" duration="13514000" />
+      <workItem from="1685983953372" duration="3978000" />
+      <workItem from="1686025969081" duration="40117000" />
+      <workItem from="1686199657156" duration="13571000" />
+      <workItem from="1686252440819" duration="618000" />
+      <workItem from="1686461004022" duration="17652000" />
+      <workItem from="1686969467785" duration="58000" />
+      <workItem from="1686978266522" duration="4087000" />
+      <workItem from="1687025499432" duration="647000" />
+      <workItem from="1687055722774" duration="5546000" />
+      <workItem from="1687249907487" duration="754000" />
+      <workItem from="1687272673908" duration="978000" />
+      <workItem from="1687276406133" duration="74000" />
+      <workItem from="1687276497357" duration="8557000" />
+    </task>
+    <task id="LOCAL-00001" summary="grama vista 1">
+      <created>1679592345340</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679592345340</updated>
+    </task>
+    <task id="LOCAL-00002" summary="grama vista 1">
+      <created>1679597254592</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679597254592</updated>
+    </task>
+    <task id="LOCAL-00003" summary="grama vista 1">
+      <created>1679762276370</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679762276371</updated>
+    </task>
+    <task id="LOCAL-00004" summary="grama vista 1">
+      <created>1679765935156</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679765935156</updated>
+    </task>
+    <task id="LOCAL-00005" summary="grama vista 2">
+      <created>1679947711295</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679947711295</updated>
+    </task>
+    <task id="LOCAL-00006" summary="grama vista 2">
+      <created>1680071367754</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680071367754</updated>
+    </task>
+    <task id="LOCAL-00007" summary="grama vista 2">
+      <created>1680096885014</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680096885014</updated>
+    </task>
+    <task id="LOCAL-00008" summary="grama vista 2">
+      <created>1680108368751</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680108368751</updated>
+    </task>
+    <task id="LOCAL-00009" summary="grama vista 3">
+      <created>1680109178866</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680109178866</updated>
+    </task>
+    <task id="LOCAL-00010" summary="grama vista 3">
+      <created>1680202966518</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680202966518</updated>
+    </task>
+    <task id="LOCAL-00011" summary="grama vista 3">
+      <created>1680317070981</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680317070981</updated>
+    </task>
+    <task id="LOCAL-00012" summary="grama vista 3">
+      <created>1680336544863</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680336544863</updated>
+    </task>
+    <task id="LOCAL-00013" summary="grama vista 3">
+      <created>1680344863290</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680344863290</updated>
+    </task>
+    <task id="LOCAL-00014" summary="grama vista 3">
+      <created>1680380959405</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680380959405</updated>
+    </task>
+    <task id="LOCAL-00015" summary="grama vista 4">
+      <created>1680460332420</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680460332420</updated>
+    </task>
+    <task id="LOCAL-00016" summary="grama vista 4">
+      <created>1680466034493</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1680466034493</updated>
+    </task>
+    <task id="LOCAL-00017" summary="grama vista 4">
+      <created>1680548366918</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680548366918</updated>
+    </task>
+    <task id="LOCAL-00018" summary="grama vista 4">
+      <created>1680661944747</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680661944747</updated>
+    </task>
+    <task id="LOCAL-00019" summary="grama vista 5">
+      <created>1680725303536</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1680725303536</updated>
+    </task>
+    <task id="LOCAL-00020" summary="grama vista 6">
+      <created>1680810863972</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1680810863972</updated>
+    </task>
+    <task id="LOCAL-00021" summary="grama vista 7">
+      <created>1681125486930</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1681125486930</updated>
+    </task>
+    <task id="LOCAL-00022" summary="grama vista 8">
+      <created>1681325623462</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1681325623462</updated>
+    </task>
+    <task id="LOCAL-00023" summary="grama vista 9">
+      <created>1681763712187</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1681763712187</updated>
+    </task>
+    <task id="LOCAL-00024" summary="grama vista 10">
+      <created>1681851366242</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1681851366242</updated>
+    </task>
+    <task id="LOCAL-00025" summary="grama vista 11">
+      <created>1682008866999</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1682008866999</updated>
+    </task>
+    <task id="LOCAL-00026" summary="grama vista 11">
+      <created>1682353635129</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1682353635129</updated>
+    </task>
+    <task id="LOCAL-00027" summary="grama vista 11">
+      <created>1682447071355</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1682447071355</updated>
+    </task>
+    <task id="LOCAL-00028" summary="grama vista 11">
+      <created>1682531660174</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1682531660174</updated>
+    </task>
+    <task id="LOCAL-00029" summary="grama vista 11">
+      <created>1682538684615</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1682538684615</updated>
+    </task>
+    <task id="LOCAL-00030" summary="grama vista Final 1">
+      <created>1682580971172</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1682580971173</updated>
+    </task>
+    <task id="LOCAL-00031" summary="grama vista Final 1">
+      <created>1682615783774</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1682615783774</updated>
+    </task>
+    <task id="LOCAL-00032" summary="grama vista Final 1.0">
+      <created>1682708467927</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1682708467927</updated>
+    </task>
+    <task id="LOCAL-00033" summary="grama vista Final 1.0">
+      <created>1682798369394</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1682798369394</updated>
+    </task>
+    <task id="LOCAL-00034" summary="grama vista Final 1.0">
+      <created>1682878904411</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1682878904411</updated>
+    </task>
+    <task id="LOCAL-00035" summary="grama vista Layered edit">
+      <created>1686199805471</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1686199805471</updated>
+    </task>
+    <task id="LOCAL-00036" summary="grama vista Layered edit">
+      <created>1686200826832</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1686200826832</updated>
+    </task>
+    <task id="LOCAL-00037" summary="grama vista Layered edit 1.0">
+      <created>1686213282578</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1686213282578</updated>
+    </task>
+    <task id="LOCAL-00038" summary="grama vista Layered Final edit">
+      <created>1686492843867</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1686492843867</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="grama vista 1" />
+    <MESSAGE value="grama vista 2" />
+    <MESSAGE value="grama vista 3" />
+    <MESSAGE value="grama vista 4" />
+    <MESSAGE value="grama vista 5" />
+    <MESSAGE value="grama vista 6" />
+    <MESSAGE value="grama vista 7" />
+    <MESSAGE value="grama vista 8" />
+    <MESSAGE value="grama vista 9" />
+    <MESSAGE value="grama vista 10" />
+    <MESSAGE value="grama vista 11" />
+    <MESSAGE value="grama vista Final 1" />
+    <MESSAGE value="grama vista Final 1.0" />
+    <MESSAGE value="grama vista Layered edit" />
+    <MESSAGE value="grama vista Layered edit 1.0" />
+    <MESSAGE value="grama vista Layered Final edit" />
+    <MESSAGE value="grama vista Layered Final edit 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="grama vista Layered Final edit 1.0" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/Main.java</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/main/java/lk/ijse/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client2/src/main/java/lk/ijse/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client3/src/main/java/lk/ijse/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history />
+  </component>
+</project>
