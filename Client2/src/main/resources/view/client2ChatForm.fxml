@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Glow?>
@@ -16,7 +17,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-
 
 <AnchorPane prefHeight="722.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client2ChatFormController">
    <children>
@@ -68,7 +68,7 @@
       </ImageView>
       <ScrollPane blendMode="DARKEN" layoutX="13.0" layoutY="68.0" prefHeight="556.0" prefWidth="383.0">
          <content>
-            <VBox fx:id="VBox" prefHeight="554.0" prefWidth="380.0">
+            <VBox fx:id="VBox" onDragDetected="#VBoxOnAction" prefHeight="554.0" prefWidth="380.0">
                <effect>
                   <Shadow>
                      <color>
@@ -117,8 +117,14 @@
                      </color>
                   </InnerShadow>
                </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </ImageView>
          </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXButton>
       <JFXButton fx:id="btnCamera" contentDisplay="GRAPHIC_ONLY" layoutX="44.0" layoutY="661.0" onAction="#btnCameraOnAction" prefHeight="38.0" prefWidth="38.0">
          <graphic>
@@ -138,6 +144,9 @@
                </effect>
             </ImageView>
          </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXButton>
       <JFXButton fx:id="btnEmoji" contentDisplay="GRAPHIC_ONLY" layoutX="-3.0" layoutY="660.0" onAction="#btnEmojiOnAction" prefHeight="38.0" prefWidth="38.0">
          <graphic>
@@ -154,6 +163,9 @@
                </effect>
             </ImageView>
          </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXButton>
    </children>
 </AnchorPane>
