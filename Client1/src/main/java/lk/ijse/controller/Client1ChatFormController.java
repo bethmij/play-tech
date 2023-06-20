@@ -3,6 +3,7 @@ package lk.ijse.controller;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 
 public class Client1ChatFormController {
@@ -20,5 +21,8 @@ public class Client1ChatFormController {
     }
 
     public void btnEmojiOnAction(ActionEvent actionEvent) {
+    }
+
+    public void VBoxOnAction(MouseEvent mouseEvent) {
     }
 }
