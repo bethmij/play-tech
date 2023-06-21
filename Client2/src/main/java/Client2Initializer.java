@@ -14,7 +14,7 @@ public class Client2Initializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(this.getClass().getResource("/view/Client2ChatForm.fxml"));
+        Parent root = FXMLLoader.load(this.getClass().getResource("/view/client2LoginForm.fxml"));
         Scene mainScene = new Scene(root);
         primaryStage.setScene(mainScene);
         primaryStage.setTitle("Chat Room");
