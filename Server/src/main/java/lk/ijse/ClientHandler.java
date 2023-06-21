@@ -1,9 +1,6 @@
 package lk.ijse;
 
-import java.io.DataInputStream;
-import java.io.DataOutput;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.lang.reflect.Array;
 import java.net.Socket;
 import java.util.List;
@@ -14,19 +11,23 @@ public class ClientHandler extends Thread {
     List<ClientHandler> clientList;
     DataOutputStream dataOutputStream;
     DataInputStream dataInputStream;
+    BufferedReader reader;
+    PrintWriter writer;
 
 
-    public ClientHandler(Socket socket, String name , List<ClientHandler> clientList ){
+    public ClientHandler(Socket socket, String name , List<ClientHandler> clientList ) throws IOException {
         this.socket = socket;
         this.clientName = name;
         this.clientList = clientList;
+        this.reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+        this.writer = new PrintWriter(socket.getOutputStream() , true);
     }
 
     @Override
     public void run() {
         try {
-            dataOutputStream = new DataOutputStream(socket.getOutputStream());
-            dataInputStream = new DataInputStream(socket.getInputStream());
+            //dataOutputStream = new DataOutputStream(socket.getOutputStream());
+            //dataInputStream = new DataInputStream(socket.getInputStream());
 
             while (true){
                 String message = dataInputStream.readUTF();
@@ -36,12 +37,22 @@ public class ClientHandler extends Thread {
                 }
 
                 for (ClientHandler clientHandler : clientList) {
-                    clientHandler.dataOutputStream.writeUTF(message);
-                    dataOutputStream.flush();
+                    clientHandler.writer.println(message);
+                    System.out.println(message);
+                   /* clientHandler.dataOutputStream.writeUTF(message);
+                    dataOutputStream.flush();*/
                 }
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }finally {
+            try {
+                reader.close();
+                writer.close();
+                socket.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }

@@ -7,10 +7,10 @@
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.effect.InnerShadow?>
-<?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.shape.Rectangle?>
@@ -26,7 +26,7 @@
          <effect>
             <InnerShadow>
                <input>
-                  <ColorAdjust brightness="-0.41" />
+                  <ColorAdjust brightness="-0.34" />
                </input></InnerShadow>
          </effect>
       </ImageView>
@@ -68,17 +68,13 @@
             </InnerShadow>
          </effect>
       </ImageView>
-      <ScrollPane blendMode="DARKEN" layoutX="13.0" layoutY="68.0" prefHeight="556.0" prefWidth="383.0">
+      <ScrollPane layoutX="13.0" layoutY="68.0" prefHeight="556.0" prefWidth="383.0">
          <content>
-            <VBox fx:id="VBox" onDragDetected="#VBoxOnAction" prefHeight="554.0" prefWidth="380.0">
-               <effect>
-                  <Shadow>
-                     <color>
-                        <Color red="1.0" />
-                     </color>
-                  </Shadow>
-               </effect>
-            </VBox>
+            <HBox fx:id="HBox" prefHeight="100.0" prefWidth="379.0">
+               <children>
+                  <VBox fx:id="VBox" prefHeight="100.0" prefWidth="379.0" />
+               </children>
+            </HBox>
          </content>
       </ScrollPane>
       <Rectangle arcHeight="2.0" arcWidth="5.0" fill="#030303" height="74.0" layoutY="646.0" opacity="0.49" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="406.0">

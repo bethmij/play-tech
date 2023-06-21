@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1LoginFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/view/client1LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/view/client1LoginForm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/src/main/java/lk/ijse/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/lk/ijse/ClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/src/main/java/lk/ijse/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/lk/ijse/Server.java" afterDir="false" />
     </list>
@@ -151,6 +154,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.Server" />
+      <module name="Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.ijse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="delete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lk.ijse.controller.delete" />
       <module name="Chat Application" />
@@ -160,13 +176,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main" />
-      <module name="Chat Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -187,19 +196,19 @@
     <list>
       <item itemvalue="Application.Client2Initializer" />
       <item itemvalue="Application.Client3Initializer" />
+      <item itemvalue="Application.Server" />
       <item itemvalue="Application.Client1Initializer" />
       <item itemvalue="Application.delete" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.main" />
       <item itemvalue="Application.SendMail" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Client1Initializer" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.SendMail" />
         <item itemvalue="Application.delete" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +310,7 @@
       <workItem from="1687276406133" duration="74000" />
       <workItem from="1687276497357" duration="10539000" />
       <workItem from="1687318933308" duration="2244000" />
-      <workItem from="1687325588738" duration="8023000" />
+      <workItem from="1687325588738" duration="19115000" />
     </task>
     <task id="LOCAL-00001" summary="grama vista 1">
       <created>1679592345340</created>

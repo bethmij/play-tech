@@ -43,7 +43,7 @@
             <Image url="@../Assets/1-removebg-preview.png" />
          </image>
       </ImageView>
-      <TextField layoutX="60.0" layoutY="545.0" prefHeight="44.0" prefWidth="290.0" promptText="Your Name" style="-fx-background-radius: 100;">
+      <TextField fx:id="txtName" layoutX="60.0" layoutY="545.0" prefHeight="44.0" prefWidth="290.0" promptText="Your Name" style="-fx-background-radius: 100;">
          <font>
             <Font size="20.0" />
          </font>

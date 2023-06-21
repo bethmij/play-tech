@@ -17,12 +17,11 @@ public class Server {
     public static void main(String[] args) {
             try {
                 serverSocket = new ServerSocket(port);
-                System.out.printf("Server Accepted!");
+                System.out.println("Server Accepted!\nWaiting for client...");
 
 
                 while (true){
                     socket = serverSocket.accept();
-
 
                     dataInputStream = new DataInputStream(socket.getInputStream());
                     System.out.println("Employee "+dataInputStream.readUTF()+" Accepted!");
