@@ -31,5 +31,10 @@
             <Image url="@../Assets/play%20tech%20(1).gif" />
          </image>
       </ImageView>
+      <ImageView fitHeight="319.0" fitWidth="481.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/1-removebg-preview.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
