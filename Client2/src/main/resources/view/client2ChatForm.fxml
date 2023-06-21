@@ -4,6 +4,7 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.effect.Light.Distant?>
@@ -25,7 +26,10 @@
             <Image url="@../Assets/a63a312f9ce4636865d57450b8077e3b.jpg" />
          </image>
          <effect>
-            <InnerShadow />
+            <InnerShadow>
+               <input>
+                  <ColorAdjust brightness="-0.34" />
+               </input></InnerShadow>
          </effect>
       </ImageView>
       <Rectangle arcHeight="500.0" arcWidth="5.0" fill="#030303" height="39.0" layoutY="2.0" opacity="0.43" stroke="#008f99" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="406.0">
