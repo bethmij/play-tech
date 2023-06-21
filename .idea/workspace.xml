@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/1-removebg-preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/play tech (1).gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/1-removebg-preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/play tech (1).gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/main/java/lk/ijse/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/main/java/lk/ijse/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/java/Client1Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/Client1Initializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1LoginFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/view/client1LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/view/client1LoginForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/lk/ijse/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,7 +303,7 @@
       <workItem from="1687276406133" duration="74000" />
       <workItem from="1687276497357" duration="10539000" />
       <workItem from="1687318933308" duration="2244000" />
-      <workItem from="1687325588738" duration="2538000" />
+      <workItem from="1687325588738" duration="4601000" />
     </task>
     <task id="LOCAL-00001" summary="grama vista 1">
       <created>1679592345340</created>
@@ -619,11 +616,6 @@
           <url>file://$PROJECT_DIR$/Server/src/Main.java</url>
           <line>3</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Server/src/main/java/lk/ijse/Main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Client3/src/main/java/lk/ijse/Main.java</url>

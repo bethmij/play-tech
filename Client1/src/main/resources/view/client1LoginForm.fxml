@@ -33,7 +33,7 @@
             <GaussianBlur radius="63.0" />
          </effect>
       </Rectangle>
-      <ImageView fitHeight="188.0" fitWidth="188.0" layoutX="105.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="174.0" fitWidth="188.0" layoutX="118.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Assets/play%20tech%20(1).gif" />
          </image>
