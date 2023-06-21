@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.controller.Client1LoginFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="722.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client1LoginFormController">
+   <children>
+      <ImageView fitHeight="722.0" fitWidth="406.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/a63a312f9ce4636865d57450b8077e3b.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.34" saturation="0.19">
+               <input>
+                  <DropShadow radius="30.63" width="103.52" />
+               </input>
+            </ColorAdjust>
+         </effect></ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="91.0" layoutX="3.0" stroke="BLACK" strokeType="INSIDE" width="400.0">
+         <effect>
+            <GaussianBlur radius="63.0" />
+         </effect>
+      </Rectangle>
+      <ImageView fitHeight="188.0" fitWidth="188.0" layoutX="105.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/play%20tech%20(1).gif" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>
