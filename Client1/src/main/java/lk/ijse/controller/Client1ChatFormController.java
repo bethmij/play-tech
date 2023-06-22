@@ -3,6 +3,7 @@ package lk.ijse.controller;
 import com.jfoenix.controls.JFXButton;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
@@ -54,18 +55,6 @@ public class Client1ChatFormController extends Thread implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         lblName.setText(userName);
         connectSocket();
-        /*try {
-            socket = new Socket("localhost",3000);
-            System.out.println("Connected"); // name
-            reader = new BufferedReader( new InputStreamReader(socket.getInputStream()));
-            writer = new PrintWriter(socket.getOutputStream(),true);
-            this.start(); //****
-
-
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }*/
     }
 
     @Override
@@ -308,5 +297,70 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
     public void btnAddOnAction(ActionEvent actionEvent) {
         OpenView.openView("client1LoginForm");
+    }
+
+    @FXML
+    void crazyOnAction(MouseEvent event) {
+
+    }
+
+    @FXML
+    void cuteOnAction(MouseEvent event) {
+
+    }
+
+    @FXML
+    void ghostOnAction(MouseEvent event) {
+
+    }
+
+    @FXML
+    void heartOnAction(MouseEvent event) {
+
+    }
+
+    @FXML
+    void holoOnAction(MouseEvent event) {
+
+    }
+
+    @FXML
+    void kissOnAction(MouseEvent event) {
+
+    }
+
+    @FXML
+    void laughOnAction(MouseEvent event) {
+
+    }
+
+    @FXML
+    void lovelyOnAction(MouseEvent event) {
+
+    }
+
+    @FXML
+    void sadOnAction(MouseEvent event) {
+
+    }
+
+    @FXML
+    void shockOnAction(MouseEvent event) {
+
+    }
+
+    @FXML
+    void smileOnAction(MouseEvent event) {
+
+    }
+
+    @FXML
+    void sunGlassOnAction(MouseEvent event) {
+
+    }
+
+    @FXML
+    void winkOnAction(MouseEvent event) {
+
     }
 }

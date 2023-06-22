@@ -5,8 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="modified server">
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/angry.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/annoy.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/crazy.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/cute.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/ghost.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/heart.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/holo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/kiss.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/laugh.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/lovely.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/sad.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/shock.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/sunglass.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/wink.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/9.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +106,11 @@
       <recent name="D:\IJSE\Working Projects\Chat Application\Client3\src\main\resources\view" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\emoji" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets" />
       <recent name="D:\grama-vista\src\main\java\lk\ijse" />
       <recent name="D:\grama-vista\src\main\resources" />
       <recent name="D:\grama-vista\src\main\resources\img" />
-      <recent name="D:\New folder (2)\grama-vista\src\main\resources\img" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="lk.ijse.bo.custom" />
@@ -307,7 +337,7 @@
       <workItem from="1687276497357" duration="10539000" />
       <workItem from="1687318933308" duration="2244000" />
       <workItem from="1687325588738" duration="25693000" />
-      <workItem from="1687406447514" duration="13928000" />
+      <workItem from="1687406447514" duration="17802000" />
     </task>
     <task id="LOCAL-00001" summary="grama vista 1">
       <created>1679592345340</created>
