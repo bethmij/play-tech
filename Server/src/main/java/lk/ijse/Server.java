@@ -24,8 +24,8 @@ public class Server {
                     System.out.println("Waiting");
                     socket = serverSocket.accept();
 
-                    //dataInputStream = new DataInputStream(socket.getInputStream());
-                    //System.out.println(dataInputStream.readUTF()+" Accepted!");
+                    dataInputStream = new DataInputStream(socket.getInputStream());
+                    System.out.println(dataInputStream.readUTF()+" Accepted!");
 
                     ClientHandler clientHandler = new ClientHandler(socket,clientList);
                     clientList.add(clientHandler);
