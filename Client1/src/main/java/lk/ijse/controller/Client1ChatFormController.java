@@ -4,12 +4,10 @@ import com.jfoenix.controls.JFXButton;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -17,9 +15,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
-//import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
@@ -32,7 +28,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import static lk.ijse.controller.Client1LoginFormController.userName;
-import static lk.ijse.controller.Client1LoginFormController.users;
 
 public class Client1ChatFormController extends Thread implements Initializable {
 
@@ -50,7 +45,6 @@ public class Client1ChatFormController extends Thread implements Initializable {
     FileChooser fileChooser;
     File filePath;
 
-    DataInputStream dataInputStream;
     DataOutputStream dataOutputStream;
 
     @Override
@@ -67,7 +61,6 @@ public class Client1ChatFormController extends Thread implements Initializable {
            while (true){
 
                String message = reader.readLine();
-               System.out.println("message "+message);
                //char character = ':';
 
                String[] parts = message.split("\\Q" + "::" + "\\E");
@@ -104,11 +97,10 @@ public class Client1ChatFormController extends Thread implements Initializable {
                    String path = "";
                    ImageView imageView = null;
 
-                   if(afterCharacter.endsWith("emoji")) {
+                   if(!afterCharacter.endsWith("emojii")) {
                        //for image
                        String[] part = message.split("\\Q" + "img" + "\\E");
                        path = part[1];
-                       System.out.println("image path "+path);
                        Image image = new Image(path, 100, 100, true, true);
 
                        imageView = new ImageView(image);
@@ -116,9 +108,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
                        imageView.setFitWidth(120);
                    }else{
                        String[] part = message.split("\\Q" + "img" + "\\E");
-                       String[] emojiPath = part[1].split("\\Q" + "emoji" + "\\E");;
+                       String[] emojiPath = part[1].split("\\Q" + "emojii" + "\\E");;
                        path = emojiPath[0];
-                       System.out.println("emoji path "+path);
 
                        Image image = new Image(path);
                        imageView = new ImageView(image);
@@ -250,8 +241,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
     public void connectSocket(){
         try {
             socket = new Socket("localhost",3000);
-            System.out.println(userName);
-            System.out.println(users);
+            //System.out.println(userName);
+            //System.out.println(users);
             dataOutputStream = new DataOutputStream(socket.getOutputStream());
             dataOutputStream.writeUTF(userName);
             dataOutputStream.flush();
@@ -326,7 +317,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     @FXML
     void angryOnAction(MouseEvent event) {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\angry.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emoji");
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
     }
@@ -334,7 +325,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     @FXML
     void annoyOnAction(MouseEvent event) {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\annoy.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emoji");
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
     }
@@ -342,7 +333,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     @FXML
     void crazyOnAction(MouseEvent event) {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\crazy.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emoji");
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
     }
@@ -350,7 +341,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     @FXML
     void cuteOnAction(MouseEvent event) {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\cute.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emoji");
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
     }
@@ -358,7 +349,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     @FXML
     void ghostOnAction(MouseEvent event) {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\ghost.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emoji");
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
     }
@@ -366,7 +357,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     @FXML
     void heartOnAction(MouseEvent event) {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\heart.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emoji");
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
     }
@@ -374,7 +365,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     @FXML
     void holoOnAction(MouseEvent event) {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\holo.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emoji");
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
     }
@@ -382,7 +373,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     @FXML
     void kissOnAction(MouseEvent event) {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\kiss.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emoji");
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
     }
@@ -390,7 +381,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     @FXML
     void laughOnAction(MouseEvent event) {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\laugh.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emoji");
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
     }
@@ -398,7 +389,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     @FXML
     void lovelyOnAction(MouseEvent event) {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\lovely.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emoji");
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
     }
@@ -406,7 +397,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     @FXML
     void sadOnAction(MouseEvent event) {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\sad.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emoji");
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
     }
@@ -414,7 +405,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     @FXML
     void shockOnAction(MouseEvent event) {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\shock.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emoji");
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
     }
@@ -422,7 +413,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     @FXML
     void smileOnAction(MouseEvent event) {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\smile.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emoji");
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
     }
@@ -430,7 +421,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     @FXML
     void sunGlassOnAction(MouseEvent event) {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\sunglass.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emoji");
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
     }
@@ -438,8 +429,14 @@ public class Client1ChatFormController extends Thread implements Initializable {
     @FXML
     void winkOnAction(MouseEvent event) {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\wink.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emoji");
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
+    }
+
+    public void minimizeOnAction(MouseEvent mouseEvent) {
+        Stage stage = (Stage)((ImageView)mouseEvent.getSource()).getScene().getWindow();
+        stage.setMaximized(false);
+        stage.setIconified(true);
     }
 }
