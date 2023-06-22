@@ -9,6 +9,7 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -30,6 +31,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import static lk.ijse.controller.Client1LoginFormController.userName;
+import static lk.ijse.controller.Client1LoginFormController.users;
 
 public class Client1ChatFormController extends Thread implements Initializable {
 
@@ -39,13 +41,15 @@ public class Client1ChatFormController extends Thread implements Initializable {
     public TextField txt;
     //public HBox HBox;
     public VBox VBox;
+    public Label lblName;
     Socket socket;
     BufferedReader reader;
     PrintWriter writer;
     FileChooser fileChooser;
-    File file;
+    File filePath;
 
     DataInputStream dataInputStream;
+    DataOutputStream dataOutputStream;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -69,59 +73,59 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
        try {
            while (true){
-               System.out.println("1");
+
                String message = reader.readLine();
-               System.out.println("2");
+               System.out.println("message "+message);
                String[] token = message.split("");
-               System.out.println("3");
+               System.out.println("token "+token);
                String cmd = token[0];
 
-               System.out.println("cmd : "+cmd);
 
                StringBuilder fullMsg = new StringBuilder();
                for (int i = 1; i <token.length ; i++) {
                    fullMsg.append(token[i]);
                }
-               System.out.println("4");
 
                String[] msgToAr = message.split("");
                String string = "";
                for (int i = 0; i <msgToAr.length-1; i++) {
-                   string += msgToAr[i+1]+"";
+                   string += msgToAr[i+1]+" ";
                }
 
 
                Text text = new Text(string);
                String firstChar = "";
+
                if(string.length()>3){
                    firstChar = string.substring(0,3);
                }
 
                if(firstChar.equalsIgnoreCase("img")){
                    //for image
-                   System.out.println(fullMsg);
+
                    string = string.substring(3, string.length()-1);
 
                    File file = new File(string);
                    Image image = new Image(file.toURI().toString());
 
                    ImageView imageView = new ImageView(image);
-                   imageView.setFitHeight(100);
-                   imageView.setFitWidth(100);
+                   imageView.setFitHeight(200);
+                   imageView.setFitWidth(200);
 
                    HBox hBox = new HBox(10);
                    hBox.setAlignment(Pos.BOTTOM_RIGHT);
 
-                   if (!cmd.equalsIgnoreCase(userName + ":")){
-                       System.out.println(fullMsg);
+                   if (!users.contains(userName)){
+                       System.out.println("not "+userName);
                        //HBox.setAlignment(Pos.TOP_LEFT);
                        //HBox.setPadding(new Insets(5,10,5,5));
 
                        VBox.setAlignment(Pos.BOTTOM_LEFT);
+                       //VBox.setAlignment(Pos.TOP_LEFT);
                        hBox.setAlignment(Pos.CENTER_LEFT);
 
 
-                       Text text1 = new Text(" "+cmd+" :");
+                       Text text1 = new Text(" "+cmd+" : ");
                        text1.setStyle("-fx-font-size: 20px");
                       /* TextFlow textFlow = new TextFlow(text1,imageView);
                        textFlow.setStyle("-fx-color:rgb(239,242,255);"
@@ -150,16 +154,20 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
                     Platform.runLater(() -> VBox.getChildren().addAll(hBox));
                }else {
+                   /*text.setFill(Color.WHITE);
+                   text.getStyleClass().add("message");*/
                    TextFlow tempText = new TextFlow();
 
-                   if (!cmd.equalsIgnoreCase(userName + ":")) {
-                       Text name = new Text(cmd + "");
+                   if (!users.contains(userName)) {
+                       System.out.println("not "+userName);
+                       Text name = new Text(cmd + " ");
+                       System.out.println("name "+name);
                        name.getStyleClass().add("name");
                        tempText.getChildren().add(name);
                    }
 
                    tempText.getChildren().add(text);
-                   tempText.setMaxWidth(120);
+                   tempText.setMaxWidth(200);
 
                    TextFlow textFlow = new TextFlow(tempText);
                    textFlow.setStyle("-fx-background-color:#ff6b81;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;");
@@ -168,13 +176,17 @@ public class Client1ChatFormController extends Thread implements Initializable {
                    HBox hBox = new HBox(10);
                    hBox.setPadding(new Insets(5));
 
-                   if (!cmd.equalsIgnoreCase(userName + ":")) {
-                       System.out.println("cmd : "+cmd);
+                   if (!users.contains(userName)) {
+                       System.out.println("not "+userName);/*
+                       tempText.getStyleClass().add("tempFlowFlipped");
+                       textFlow.getStyleClass().add("textFlowFlipped");*/
                        VBox.setAlignment(Pos.TOP_LEFT);
                        hBox.setAlignment(Pos.CENTER_LEFT);
                        hBox.getChildren().add(textFlow);
-                   } else {
-                       System.out.println("cmd : "+cmd);
+                   } else {/*
+                       text.setFill(Color.WHITE);
+                       tempText.getStyleClass().add("tempFlow");
+                       textFlow.getStyleClass().add("textFlow");*/
                        Text text1 = new Text(fullMsg + " :Me");
                        TextFlow textFlow1 = new TextFlow(text1);
                        hBox.setAlignment(Pos.BOTTOM_RIGHT);
@@ -182,6 +194,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
                        textFlow1.setStyle("-fx-background-color:#7bed9f;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;");
                        textFlow1.setPadding(new Insets(5, 10, 5, 10));
                    }
+                   hBox.getStyleClass().add("hBox");
                    Platform.runLater(() -> VBox.getChildren().addAll(hBox));
                }
 
@@ -193,9 +206,9 @@ public class Client1ChatFormController extends Thread implements Initializable {
                        break;
                    }
                }
-                   reader.readLine();
-                   writer.close();
-                   socket.close();
+                   //reader.readLine();
+                   //writer.close();
+                   //socket.close();
 
 
        }catch (Exception e){
@@ -206,7 +219,14 @@ public class Client1ChatFormController extends Thread implements Initializable {
     public void connectSocket(){
         try {
             socket = new Socket("localhost",3000);
+            System.out.println(userName);
+            System.out.println(users);
+            /*dataOutputStream = new DataOutputStream(socket.getOutputStream());
+            dataOutputStream.writeUTF(userName);
+            dataOutputStream.flush();*/
+
             System.out.println(userName+" Connected"); // name
+
             reader = new BufferedReader( new InputStreamReader(socket.getInputStream()));
             writer = new PrintWriter(socket.getOutputStream(),true);
             this.start(); //****
@@ -219,7 +239,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
     public void btnSendOnAction(ActionEvent actionEvent) {
 
        String message = txt.getText();
-       writer.println(userName+" :"+message);
+       writer.println(userName+" : "+message);
+       txt.clear();
 
        HBox hBox = new HBox();
        hBox.setAlignment(Pos.CENTER_RIGHT);
@@ -248,8 +269,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             fileChooser = new FileChooser();
             fileChooser.setTitle("Open Image");
-            this.file = fileChooser.showOpenDialog(stage);
-            writer.println(userName + " " + "imag" + file.getPath());
+            this.filePath = fileChooser.showOpenDialog(stage);
+            writer.println(userName + " " + "img" + filePath.getPath());
             writer.flush();
         }catch (NullPointerException e){
             System.out.println(e);

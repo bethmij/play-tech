@@ -27,7 +27,6 @@ public class Server {
                     //dataInputStream = new DataInputStream(socket.getInputStream());
                     //System.out.println(dataInputStream.readUTF()+" Accepted!");
 
-                    System.out.println("Connected");
                     ClientHandler clientHandler = new ClientHandler(socket,clientList);
                     clientList.add(clientHandler);
                     clientHandler.start();

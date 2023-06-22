@@ -9,6 +9,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Client1LoginFormController {
     public AnchorPane pane;
@@ -16,15 +18,25 @@ public class Client1LoginFormController {
     public JFXButton btnStart;
     static String userName;
 
+    public static List<String> users = new ArrayList<>();
+
     public void btnStartOnAction(ActionEvent actionEvent) {
-        Stage stage = (Stage)pane.getScene().getWindow();
-        try {
-            userName = txtName.getText();
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/client1ChatForm.fxml"))));
-            stage.setTitle("Chat Room");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        userName = txtName.getText();
+
+        if(users.contains(txtName.getText())){
+            System.out.println("already added");
+        }else {
+            users.add(userName);
+            try {
+                Stage stage = (Stage) pane.getScene().getWindow();
+                stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/client1ChatForm.fxml"))));
+                stage.setTitle("Chat Room");
+            } catch (IOException e) {
+                e.printStackTrace();
+                System.out.println(e);
+            }
         }
+
 
 
     }
