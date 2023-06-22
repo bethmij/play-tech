@@ -21,12 +21,14 @@ public class Server {
 
 
                 while (true){
+                    System.out.println("Waiting");
                     socket = serverSocket.accept();
 
-                    dataInputStream = new DataInputStream(socket.getInputStream());
-                    System.out.println("Employee "+dataInputStream.readUTF()+" Accepted!");
+                    //dataInputStream = new DataInputStream(socket.getInputStream());
+                    //System.out.println(dataInputStream.readUTF()+" Accepted!");
 
-                    ClientHandler clientHandler = new ClientHandler(socket,dataInputStream.readUTF(),clientList);
+                    System.out.println("Connected");
+                    ClientHandler clientHandler = new ClientHandler(socket,clientList);
                     clientList.add(clientHandler);
                     clientHandler.start();
 

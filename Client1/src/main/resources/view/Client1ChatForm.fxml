@@ -158,5 +158,6 @@
             <Font size="21.0" />
          </font>
       </TextField>
+      <JFXButton blendMode="LIGHTEN" layoutX="323.0" layoutY="9.0" onAction="#btnAddOnAction" text="Add" textFill="WHITE" />
    </children>
 </AnchorPane>

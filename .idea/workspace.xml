@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/util/OpenView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client2/src/main/java/Client2Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client2/src/main/java/Client2Initializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client2/src/main/java/lk/ijse/controller/Client2ChatFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client2/src/main/java/lk/ijse/controller/Client2ChatFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client2/src/main/java/lk/ijse/controller/Client2LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client2/src/main/java/lk/ijse/controller/Client2LoginFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client2/src/main/resources/view/client2LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client2/src/main/resources/view/client2LoginForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/view/Client1ChatForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/view/Client1ChatForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/lk/ijse/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/lk/ijse/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/lk/ijse/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/lk/ijse/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,34 +50,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "D:/IJSE/Working Projects/Chat Application/Client3/src/main/resources/Assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/IJSE/Working Projects/Chat Application/Client3/src/main/java/lk/ijse/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IJSE/Working Projects/Chat Application/Client1/src/main/java/lk/ijse/controller&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/IJSE/Working Projects/Chat Application/Client3/src/main/java/lk/ijse/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="lk.ijse.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\java\lk\ijse\controller" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client3\src\main\resources\Assets" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client3\src\main\resources\view" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client2\src\main\resources\Assets" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client2\src\main\resources\view" />
-      <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\view" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets" />
@@ -310,7 +310,8 @@
       <workItem from="1687276406133" duration="74000" />
       <workItem from="1687276497357" duration="10539000" />
       <workItem from="1687318933308" duration="2244000" />
-      <workItem from="1687325588738" duration="23875000" />
+      <workItem from="1687325588738" duration="25693000" />
+      <workItem from="1687406447514" duration="734000" />
     </task>
     <task id="LOCAL-00001" summary="grama vista 1">
       <created>1679592345340</created>

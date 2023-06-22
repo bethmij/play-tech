@@ -7,18 +7,18 @@ import java.util.List;
 
 public class ClientHandler extends Thread {
     Socket socket;
-    String clientName;
+    //String clientName;
     List<ClientHandler> clientList;
-    DataOutputStream dataOutputStream;
-    DataInputStream dataInputStream;
+    //DataOutputStream dataOutputStream;
+    //DataInputStream dataInputStream;
     BufferedReader reader;
     PrintWriter writer;
 
 
-    public ClientHandler(Socket socket, String name , List<ClientHandler> clientList ) throws IOException {
-        this.socket = socket;
-        this.clientName = name;
+    public ClientHandler(Socket socket, List<ClientHandler> clientList ) throws IOException {
         this.clientList = clientList;
+        this.socket = socket;
+        //this.clientName = name;
         this.reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         this.writer = new PrintWriter(socket.getOutputStream() , true);
     }
@@ -28,9 +28,9 @@ public class ClientHandler extends Thread {
         try {
             //dataOutputStream = new DataOutputStream(socket.getOutputStream());
             //dataInputStream = new DataInputStream(socket.getInputStream());
-
-            while (true){
-                String message = dataInputStream.readUTF();
+            String message;
+            while ((message=reader.readLine()) != null){
+               // message = dataInputStream.readUTF();
 
                 if(message.equalsIgnoreCase("exit")){
                     break;
@@ -44,14 +44,17 @@ public class ClientHandler extends Thread {
                 }
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+            System.out.println(e);
+
         }finally {
             try {
                 reader.close();
                 writer.close();
                 socket.close();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                e.printStackTrace();
+                System.out.println(e);
             }
         }
     }

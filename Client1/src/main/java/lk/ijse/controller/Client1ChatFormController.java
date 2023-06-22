@@ -21,6 +21,7 @@ import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import lk.ijse.controller.util.OpenView;
 import org.bytedeco.flycapture.FlyCapture2.H264Option;
 
 import java.io.*;
@@ -65,17 +66,23 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
     @Override
     public void run() {
+
        try {
            while (true){
+               System.out.println("1");
                String message = reader.readLine();
+               System.out.println("2");
                String[] token = message.split("");
+               System.out.println("3");
                String cmd = token[0];
-               System.out.println(cmd);
+
+               System.out.println("cmd : "+cmd);
 
                StringBuilder fullMsg = new StringBuilder();
                for (int i = 1; i <token.length ; i++) {
                    fullMsg.append(token[i]);
                }
+               System.out.println("4");
 
                String[] msgToAr = message.split("");
                String string = "";
@@ -162,10 +169,12 @@ public class Client1ChatFormController extends Thread implements Initializable {
                    hBox.setPadding(new Insets(5));
 
                    if (!cmd.equalsIgnoreCase(userName + ":")) {
+                       System.out.println("cmd : "+cmd);
                        VBox.setAlignment(Pos.TOP_LEFT);
                        hBox.setAlignment(Pos.CENTER_LEFT);
                        hBox.getChildren().add(textFlow);
                    } else {
+                       System.out.println("cmd : "+cmd);
                        Text text1 = new Text(fullMsg + " :Me");
                        TextFlow textFlow1 = new TextFlow(text1);
                        hBox.setAlignment(Pos.BOTTOM_RIGHT);
@@ -208,6 +217,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     }
 
     public void btnSendOnAction(ActionEvent actionEvent) {
+
        String message = txt.getText();
        writer.println(userName+" :"+message);
 
@@ -255,13 +265,6 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
 
     public void btnAddOnAction(ActionEvent actionEvent) {
-
-        try {
-            Stage stage = new Stage();
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/Client1LoginFormController"))));
-            stage.setTitle("Chat Room");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        OpenView.openView("client1LoginForm");
     }
 }
