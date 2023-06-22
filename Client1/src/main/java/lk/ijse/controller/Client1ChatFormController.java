@@ -179,7 +179,6 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
                    HBox hBox = new HBox(10);
                    if (!lblName.getText().equals(beforeCharacter)) {
-                       System.out.println("not " + lblName.getText());
                        Text name = new Text(beforeCharacter + " : ");
                        //name.getStyleClass().add("name");
                        tempText.getChildren().add(name);
@@ -300,7 +299,10 @@ public class Client1ChatFormController extends Thread implements Initializable {
     }
 
     public void btnEmojiOnAction(ActionEvent actionEvent) {
-        emojiPane.setVisible(true);
+        if(!emojiPane.isVisible())
+            emojiPane.setVisible(true);
+        else
+            emojiPane.setVisible(false);
     }
 
     public void VBoxOnAction(MouseEvent mouseEvent) {
@@ -311,8 +313,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
         OpenView.openView("client1LoginForm");
     }
 
-    private void sendEmoji(String message) {
-    }
+
 
     @FXML
     void angryOnAction(MouseEvent event) {
