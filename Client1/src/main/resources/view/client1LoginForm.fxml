@@ -3,6 +3,7 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.effect.GaussianBlur?>
@@ -16,7 +17,7 @@
 
 <AnchorPane fx:id="pane" prefHeight="722.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client1LoginFormController">
    <children>
-      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="10.0" />
+      <JFXButton cache="true" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="10.0" />
       <ImageView fitHeight="722.0" fitWidth="406.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Assets/a63a312f9ce4636865d57450b8077e3b.jpg" />
@@ -43,19 +44,7 @@
             <Image url="@../Assets/1-removebg-preview.png" />
          </image>
       </ImageView>
-      <TextField fx:id="txtName" layoutX="60.0" layoutY="545.0" prefHeight="44.0" prefWidth="290.0" promptText="Your Name" style="-fx-background-radius: 100;">
-         <font>
-            <Font size="20.0" />
-         </font>
-         <effect>
-            <InnerShadow>
-               <color>
-                  <Color red="0.5368421077728271" green="0.5368421077728271" blue="0.03380116820335388" />
-               </color>
-            </InnerShadow>
-         </effect>
-      </TextField>
-      <JFXButton fx:id="btnStart" buttonType="RAISED" layoutX="129.0" layoutY="625.0" onAction="#btnStartOnAction" style="-fx-background-radius: 50;" text="GET STARTED" textFill="#d5e125">
+      <JFXButton fx:id="btnStart" buttonType="RAISED" layoutX="129.0" layoutY="602.0" onAction="#btnStartOnAction" style="-fx-background-radius: 50;" text="GET STARTED" textFill="#d5e125">
          <font>
             <Font size="20.0" />
          </font>
@@ -77,5 +66,22 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#81a3a4" height="56.0" layoutX="32.0" layoutY="506.0" stroke="WHITE" strokeType="INSIDE" width="343.0">
+         <effect>
+            <BoxBlur height="71.73" iterations="3" width="136.07" />
+         </effect>
+      </Rectangle>
+      <TextField fx:id="txtName" blendMode="SOFT_LIGHT" focusTraversable="false" layoutX="69.0" layoutY="512.0" prefHeight="44.0" prefWidth="290.0" promptText="Your Name" style="-fx-background-radius: 100;">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TextField>
    </children>
 </AnchorPane>

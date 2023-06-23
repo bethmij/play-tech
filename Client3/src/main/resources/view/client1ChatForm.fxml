@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.BoxBlur?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.effect.InnerShadow?>
@@ -50,7 +48,7 @@
             <Font name="Californian FB" size="23.0" />
          </font>
       </Text>
-      <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="5.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="5.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Assets/icons8-collaborating-in-circle-96.png" />
          </image>
@@ -73,28 +71,15 @@
                </color>
             </InnerShadow>
          </effect>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
       </ImageView>
-      <ScrollPane fx:id="scrollPane" layoutX="13.0" layoutY="68.0" opacity="0.87" prefHeight="556.0" prefWidth="383.0">
+      <ScrollPane fx:id="scrollPane" layoutX="13.0" layoutY="68.0" prefHeight="556.0" prefWidth="383.0" style="-fx-background-color: #000000;">
          <content>
-            <HBox fx:id="HBox" prefHeight="100.0" prefWidth="366.0">
+            <HBox fx:id="HBox" prefHeight="100.0" prefWidth="379.0">
                <children>
                   <VBox fx:id="VBox" prefHeight="100.0" prefWidth="379.0" />
                </children>
             </HBox>
          </content>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-         <effect>
-            <InnerShadow choke="0.17" height="74.81" radius="36.905" width="74.81">
-               <color>
-                  <Color red="0.1087719276547432" green="0.4736842215061188" blue="0.43719297647476196" />
-               </color>
-            </InnerShadow>
-         </effect>
       </ScrollPane>
       <Rectangle arcHeight="2.0" arcWidth="5.0" fill="#030303" height="74.0" layoutY="646.0" opacity="0.49" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="406.0">
          <effect>
@@ -177,10 +162,7 @@
             <Font size="21.0" />
          </font>
       </TextField>
-      <JFXButton blendMode="LIGHTEN" layoutX="323.0" layoutY="9.0" onAction="#btnAddOnAction" text="Add" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></JFXButton>
+      <JFXButton blendMode="LIGHTEN" layoutX="323.0" layoutY="9.0" onAction="#btnAddOnAction" text="Add" textFill="WHITE" />
       <Label fx:id="lblName" alignment="CENTER" contentDisplay="CENTER" layoutX="218.0" layoutY="14.0" prefHeight="15.0" prefWidth="66.0" textFill="WHITE">
          <font>
             <Font name="Footlight MT Light" size="14.0" />
@@ -196,11 +178,6 @@
             <Font name="Footlight MT Light" size="14.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151515" height="26.0" layoutX="13.0" layoutY="48.0" stroke="#484747" strokeType="INSIDE" width="383.0">
-         <effect>
-            <BoxBlur height="19.29" iterations="3" />
-         </effect>
-      </Rectangle>
       <AnchorPane fx:id="emojiPane" layoutX="14.0" layoutY="451.0" prefHeight="201.0" prefWidth="176.0">
          <children>
             <GridPane alignment="CENTER" layoutY="10.0" prefHeight="190.0" prefWidth="189.0">
