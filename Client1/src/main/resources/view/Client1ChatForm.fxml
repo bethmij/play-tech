@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.BoxBlur?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.effect.InnerShadow?>
@@ -15,17 +15,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="722.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client1ChatFormController">
+<AnchorPane prefHeight="783.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client1ChatFormController">
    <children>
-      <ImageView fitHeight="722.0" fitWidth="406.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgView" fitHeight="783.0" fitWidth="486.0" layoutX="401.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Assets/a63a312f9ce4636865d57450b8077e3b.jpg" />
          </image>
@@ -36,7 +36,7 @@
                </input></InnerShadow>
          </effect>
       </ImageView>
-      <Rectangle arcHeight="500.0" arcWidth="5.0" fill="#030303" height="39.0" layoutY="2.0" opacity="0.43" stroke="#008f99" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="406.0">
+      <Rectangle arcWidth="5.0" fill="#030303" height="46.0" layoutX="401.0" layoutY="3.0" opacity="0.43" stroke="#008f99" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="440.0">
          <effect>
             <InnerShadow height="86.5" radius="38.6575" width="70.13">
                <color>
@@ -45,24 +45,24 @@
             </InnerShadow>
          </effect>
       </Rectangle>
-      <Text fill="WHITE" layoutX="51.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play Tech Gang" wrappingWidth="182.81414794921875">
+      <Text fill="WHITE" layoutX="453.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play Tech Gang" wrappingWidth="182.81414794921875">
          <font>
             <Font name="Californian FB" size="23.0" />
          </font>
       </Text>
-      <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="5.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="401.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Assets/icons8-collaborating-in-circle-96.png" />
          </image>
          <effect>
-            <InnerShadow>
+            <InnerShadow choke="0.96" radius="58.5425" width="215.17">
                <color>
                   <Color red="1.0" green="1.0" blue="1.0" />
                </color>
             </InnerShadow>
          </effect>
       </ImageView>
-      <ImageView fitHeight="19.0" fitWidth="21.0" layoutX="375.0" layoutY="13.0" onMouseClicked="#minimizeOnAction" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+      <ImageView fitHeight="19.0" fitWidth="21.0" layoutX="801.0" layoutY="20.0" onMouseClicked="#minimizeOnAction" pickOnBounds="true" preserveRatio="true" rotate="180.0">
          <image>
             <Image url="@../Assets/icons8-minimize-60.png" />
          </image>
@@ -77,26 +77,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ScrollPane fx:id="scrollPane" layoutX="13.0" layoutY="68.0" opacity="0.87" prefHeight="556.0" prefWidth="383.0">
-         <content>
-            <HBox fx:id="HBox" prefHeight="100.0" prefWidth="366.0">
-               <children>
-                  <VBox fx:id="VBox" prefHeight="100.0" prefWidth="379.0" />
-               </children>
-            </HBox>
-         </content>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-         <effect>
-            <InnerShadow choke="0.17" height="74.81" radius="36.905" width="74.81">
-               <color>
-                  <Color red="0.1087719276547432" green="0.4736842215061188" blue="0.43719297647476196" />
-               </color>
-            </InnerShadow>
-         </effect>
-      </ScrollPane>
-      <Rectangle arcHeight="2.0" arcWidth="5.0" fill="#030303" height="74.0" layoutY="646.0" opacity="0.49" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="406.0">
+      <Rectangle arcHeight="2.0" arcWidth="5.0" fill="#030303" height="83.0" layoutX="404.0" layoutY="695.0" opacity="0.49" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="434.0">
          <effect>
             <InnerShadow height="86.5" radius="38.6575" width="70.13">
                <color>
@@ -105,7 +86,12 @@
             </InnerShadow>
          </effect>
       </Rectangle>
-      <JFXButton fx:id="btnSend" contentDisplay="GRAPHIC_ONLY" layoutX="349.0" layoutY="659.0" onAction="#btnSendOnAction" prefHeight="48.0" prefWidth="30.0">
+      <ScrollPane fx:id="scrollPane" layoutX="411.0" layoutY="68.0" prefHeight="623.0" prefWidth="419.0">
+         <content>
+            <VBox fx:id="VBox" prefHeight="100.0" prefWidth="363.0" />
+         </content>
+      </ScrollPane>
+      <JFXButton fx:id="btnSend" contentDisplay="GRAPHIC_ONLY" layoutX="775.0" layoutY="713.0" onAction="#btnSendOnAction" prefHeight="48.0" prefWidth="30.0">
          <graphic>
             <ImageView fitHeight="40.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -124,7 +110,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton fx:id="btnCamera" contentDisplay="GRAPHIC_ONLY" layoutX="44.0" layoutY="661.0" onAction="#btnCameraOnAction" prefHeight="38.0" prefWidth="38.0">
+      <JFXButton fx:id="btnCamera" contentDisplay="GRAPHIC_ONLY" layoutX="468.0" layoutY="714.0" onAction="#btnCameraOnAction" prefHeight="38.0" prefWidth="38.0">
          <graphic>
             <ImageView fitHeight="39.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -146,11 +132,11 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton fx:id="btnEmoji" contentDisplay="GRAPHIC_ONLY" layoutX="-3.0" layoutY="660.0" onAction="#btnEmojiOnAction" prefHeight="38.0" prefWidth="38.0">
+      <JFXButton fx:id="btnEmoji" contentDisplay="GRAPHIC_ONLY" layoutX="414.0" layoutY="713.0" onAction="#btnEmojiOnAction" prefHeight="38.0" prefWidth="38.0">
          <graphic>
             <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Assets/icons8-grinning-face-96.png" />
+                  <Image url="@../Assets/icons8-clip-100.png" />
                </image>
                <effect>
                   <InnerShadow>
@@ -165,7 +151,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <TextField fx:id="txt" alignment="TOP_LEFT" blendMode="SOFT_LIGHT" layoutX="102.0" layoutY="661.0" prefHeight="46.0" prefWidth="249.0">
+      <TextField fx:id="txt" alignment="TOP_LEFT" blendMode="SOFT_LIGHT" layoutX="519.0" layoutY="713.0" prefHeight="46.0" prefWidth="249.0">
          <effect>
             <InnerShadow choke="0.16" height="30.06" radius="16.9425" width="39.71">
                <color>
@@ -177,124 +163,259 @@
             <Font size="21.0" />
          </font>
       </TextField>
-      <JFXButton blendMode="LIGHTEN" layoutX="323.0" layoutY="9.0" onAction="#btnAddOnAction" text="Add" textFill="WHITE">
+      <JFXButton blendMode="LIGHTEN" layoutX="744.0" layoutY="-5.0" onAction="#btnAddOnAction" prefHeight="59.0" prefWidth="33.0" text="+" textFill="#abd4cf">
          <cursor>
             <Cursor fx:constant="HAND" />
-         </cursor></JFXButton>
+         </cursor>
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font></JFXButton>
       <Label fx:id="lblName" alignment="CENTER" contentDisplay="CENTER" layoutX="218.0" layoutY="14.0" prefHeight="15.0" prefWidth="66.0" textFill="WHITE">
          <font>
             <Font name="Footlight MT Light" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="202.0" layoutY="14.0" text="(" textFill="WHITE">
+      <Label layoutX="610.0" layoutY="21.0" text="(" textFill="WHITE">
          <font>
             <Font name="Footlight MT Light" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="291.0" layoutY="14.0" text=")" textFill="WHITE">
+      <Label layoutX="695.0" layoutY="22.0" text=")" textFill="WHITE">
          <font>
             <Font name="Footlight MT Light" size="14.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#151515" height="26.0" layoutX="13.0" layoutY="48.0" stroke="#484747" strokeType="INSIDE" width="383.0">
+      <ImageView fx:id="imgView1" fitHeight="783.0" fitWidth="452.0" layoutX="-37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/a63a312f9ce4636865d57450b8077e3b.jpg" />
+         </image>
          <effect>
-            <BoxBlur height="19.29" iterations="3" />
+            <InnerShadow>
+               <input>
+                  <ColorAdjust brightness="-1.0" hue="0.99" saturation="-0.02" />
+               </input>
+            </InnerShadow>
          </effect>
-      </Rectangle>
-      <AnchorPane fx:id="emojiPane" layoutX="14.0" layoutY="451.0" prefHeight="201.0" prefWidth="176.0">
+      </ImageView>
+      <Separator layoutX="398.0" opacity="0.52" orientation="VERTICAL" prefHeight="783.0" prefWidth="6.0" />
+      <Label layoutX="28.0" layoutY="21.0" text="Chats" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font></Label>
+      <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="284.0" layoutY="18.0" onMouseClicked="#bgChangeOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/icons8-edit-48.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.96" radius="58.5425" width="215.17">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="347.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/icons8-ellipsis-60.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.96" radius="58.5425" width="215.17">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </ImageView>
+      <TextField layoutX="23.0" layoutY="86.0" prefHeight="33.0" prefWidth="358.0" promptText="Search or start new chat" style="-fx-background-radius: 100;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="319.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/icons8-search-64.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.96" height="118.09" radius="82.815" width="215.17">
+               <color>
+                  <Color red="0.7684210538864136" green="0.7684210538864136" blue="0.7684210538864136" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8c8c8c" height="102.0" layoutX="17.0" layoutY="169.0" opacity="0.74" stroke="#8c8c8c" strokeType="INSIDE" width="371.0" />
+      <Circle layoutX="70.0" layoutY="221.0" radius="42.0" stroke="#c4c0c0" strokeType="INSIDE" strokeWidth="3.0" />
+      <ImageView fitHeight="19.0" fitWidth="26.0" layoutX="347.0" layoutY="210.0" onMouseClicked="#participateOnAction" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../Assets/icons8-ellipsis-60.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.96" radius="58.5425" width="215.17">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text fill="WHITE" layoutX="127.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play Tech Gang" wrappingWidth="182.81414794921875">
+         <font>
+            <Font name="Arial" size="23.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="57.0" fitWidth="54.0" layoutX="43.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/play%20tech%20(1).gif" />
+         </image>
+      </ImageView>
+      <Circle layoutX="70.0" layoutY="338.0" radius="42.0" stroke="#c4c0c0" strokeType="INSIDE" strokeWidth="3.0" />
+      <ImageView fitHeight="19.0" fitWidth="26.0" layoutX="347.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../Assets/icons8-ellipsis-60.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.96" radius="58.5425" width="215.17">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </ImageView>
+      <Text fill="WHITE" layoutX="127.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IJSE GDSE 66" wrappingWidth="182.81414794921875">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="57.0" fitWidth="54.0" layoutX="43.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/ijse.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="emojiPane" layoutX="32.0" layoutY="466.0" prefHeight="203.0" prefWidth="190.0" />
+      <AnchorPane layoutX="247.0" layoutY="442.0" prefHeight="248.0" prefWidth="371.0">
          <children>
-            <GridPane alignment="CENTER" layoutY="10.0" prefHeight="190.0" prefWidth="189.0">
-              <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="63.800048828125" minWidth="10.0" prefWidth="57.200048828125" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="71.0" minWidth="10.0" prefWidth="58.19998779296875" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.39996337890625" minWidth="10.0" prefWidth="74.20001220703126" />
-              </columnConstraints>
-              <rowConstraints>
-                  <RowConstraints maxHeight="35.19998779296875" minHeight="10.0" prefHeight="35.19998779296875" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="41.60001220703125" minHeight="10.0" prefHeight="41.60001220703125" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
+            <Group layoutY="6.0">
                <children>
-                  <ImageView fx:id="angry" fitHeight="36.0" fitWidth="36.0" onMouseClicked="#angryOnAction" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Assets/emoji/angry.gif" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="laugh" fitHeight="35.0" fitWidth="34.0" onMouseClicked="#laughOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
-                     <image>
-                        <Image url="@../Assets/emoji/laugh.gif" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="crazy" fitHeight="36.0" fitWidth="35.0" onMouseClicked="#crazyOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
-                     <image>
-                        <Image url="@../Assets/emoji/crazy.gif" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="holo" fitHeight="35.0" fitWidth="33.0" onMouseClicked="#holoOnAction" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
-                     <image>
-                        <Image url="@../Assets/emoji/holo.gif" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="kiss" fitHeight="37.0" fitWidth="35.0" onMouseClicked="#kissOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <image>
-                        <Image url="@../Assets/emoji/kiss.gif" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="lovely" fitHeight="36.0" fitWidth="35.0" onMouseClicked="#lovelyOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
-                     <image>
-                        <Image url="@../Assets/emoji/lovely.gif" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="sunGlass" fitHeight="37.0" fitWidth="33.0" onMouseClicked="#sunGlassOnAction" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
-                     <image>
-                        <Image url="@../Assets/emoji/sunglass.gif" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="shock" fitHeight="39.0" fitWidth="36.0" onMouseClicked="#shockOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                     <image>
-                        <Image url="@../Assets/emoji/shock.gif" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="wink" fitHeight="39.0" fitWidth="34.0" onMouseClicked="#winkOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
-                     <image>
-                        <Image url="@../Assets/emoji/wink.gif" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="annoy" fitHeight="38.0" fitWidth="35.0" onMouseClicked="#annoyOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                     <image>
-                        <Image url="@../Assets/emoji/annoy.gif" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="cute" fitHeight="39.0" fitWidth="35.0" onMouseClicked="#cuteOnAction" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
-                     <image>
-                        <Image url="@../Assets/emoji/cute.gif" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="sad" fitHeight="37.0" fitWidth="35.0" onMouseClicked="#sadOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
-                     <image>
-                        <Image url="@../Assets/emoji/sad.gif" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="smile" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#smileOnAction" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
-                     <image>
-                        <Image url="@../Assets/emoji/smile.gif" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="heart" fitHeight="36.0" fitWidth="37.0" onMouseClicked="#heartOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
-                     <image>
-                        <Image url="@../Assets/emoji/heart.gif" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="ghost" fitHeight="34.0" fitWidth="33.0" onMouseClicked="#ghostOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
-                     <image>
-                        <Image url="@../Assets/emoji/ghost.gif" />
-                     </image>
-                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8c8c8c" height="210.0" layoutY="32.0" opacity="0.53" stroke="#8c8c8c" strokeType="INSIDE" width="321.0" />
+                  <GridPane alignment="CENTER" layoutX="31.0" layoutY="36.0" prefHeight="203.0" prefWidth="299.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="76.0" minWidth="10.0" prefWidth="76.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="71.0" minWidth="10.0" prefWidth="64.800048828125" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.39996337890625" minWidth="10.0" prefWidth="58.399987792968744" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.60001220703126" minWidth="10.0" prefWidth="101.60001220703126" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="47.99998779296875" minHeight="10.0" prefHeight="47.99998779296875" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="59.99997558593749" minHeight="10.0" prefHeight="59.99997558593749" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="68.8000244140625" minHeight="10.0" prefHeight="47.20002441406251" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="57.600012207031256" minHeight="10.0" prefHeight="50.39996337890625" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fx:id="angry" fitHeight="36.0" fitWidth="36.0" onMouseClicked="#angryOnAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/gif/angry.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="laugh" fitHeight="35.0" fitWidth="34.0" onMouseClicked="#laughOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../Assets/gif/laugh.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="crazy" fitHeight="36.0" fitWidth="35.0" onMouseClicked="#crazyOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@../Assets/gif/crazy.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="holo" fitHeight="35.0" fitWidth="33.0" onMouseClicked="#holoOnAction" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Assets/gif/holo.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="kiss" fitHeight="37.0" fitWidth="35.0" onMouseClicked="#kissOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Assets/gif/kiss.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="lovely" fitHeight="36.0" fitWidth="35.0" onMouseClicked="#lovelyOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Assets/gif/lovely.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="sunGlass" fitHeight="37.0" fitWidth="33.0" onMouseClicked="#sunGlassOnAction" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../Assets/gif/sunglass.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="shock" fitHeight="39.0" fitWidth="36.0" onMouseClicked="#shockOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../Assets/gif/shock.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="wink" fitHeight="39.0" fitWidth="34.0" onMouseClicked="#winkOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Assets/gif/wink.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="annoy" fitHeight="38.0" fitWidth="35.0" onMouseClicked="#annoyOnAction" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../Assets/gif/annoy.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="cute" fitHeight="39.0" fitWidth="35.0" onMouseClicked="#cuteOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../Assets/gif/cute.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="sad" fitHeight="37.0" fitWidth="35.0" onMouseClicked="#sadOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../Assets/gif/sad.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="smile" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#smileOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                           <image>
+                              <Image url="@../Assets/gif/smile.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="heart" fitHeight="36.0" fitWidth="37.0" onMouseClicked="#heartOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../Assets/gif/heart.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="ghost" fitHeight="34.0" fitWidth="33.0" onMouseClicked="#ghostOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../Assets/gif/ghost.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="cute1" fitHeight="45.0" fitWidth="40.0" onMouseClicked="#cuteOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../Assets/gif/purple.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <Text fill="WHITE" layoutX="18.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emoji          " wrappingWidth="61.59999999999991">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="119.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GIFs" wrappingWidth="61.59999999999991">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="207.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stickers" wrappingWidth="84.0">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Text>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8c8c8c" height="30.0" layoutX="-2.0" layoutY="-1.0" opacity="0.53" stroke="#8c8c8c" strokeType="INSIDE" width="103.0" />
                </children>
-            </GridPane>
-         </children>
-      </AnchorPane>
+            </Group>
+         </children></AnchorPane>
    </children>
 </AnchorPane>

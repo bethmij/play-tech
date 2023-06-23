@@ -36,11 +36,11 @@ public class Client1ChatFormController extends Thread implements Initializable {
     public JFXButton btnCamera;
     public JFXButton btnSend;
     public TextField txt;
-    //public HBox HBox;
     public VBox VBox;
     public Label lblName;
     public AnchorPane emojiPane;
     public ScrollPane scrollPane;
+    public ImageView imgView;
     Socket socket;
     BufferedReader reader;
     PrintWriter writer;
@@ -51,11 +51,23 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        lblName.setText(userName);
         connectSocket();
-        emojiPane.setVisible(false);
-        VBox.setStyle("-fx-background-color: transparent; -fx-padding: 0;");
+        lblName.setText(userName);
+        scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         scrollPane.setStyle("-fx-background-color: transparent; -fx-background-insets: 0; -fx-padding: 0;");
+        emojiPane.setVisible(false);
+
+        Platform.runLater(() -> {
+            scrollPane.lookup(".viewport").setStyle("-fx-background-color: transparent;");
+            scrollPane.lookup(".scroll-bar").setStyle("-fx-background-color: transparent;");
+            scrollPane.lookup(".scroll-bar:vertical").setStyle("-fx-background-color: transparent;");
+
+        });
+
+        /*byte_array = bytes.fromhex(hex_value)
+        string_value = byte_array.decode('utf-8')*/
+
     }
 
     @Override
