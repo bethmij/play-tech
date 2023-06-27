@@ -43,6 +43,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     public AnchorPane emojiPane;
     public AnchorPane filePane;
     public Label emojilbl;
+    public AnchorPane stickerPane;
     Socket socket;
     BufferedReader reader;
     PrintWriter writer;
@@ -60,6 +61,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
         scrollPane.setStyle("-fx-background-color: transparent; -fx-background-insets: 0; -fx-padding: 0;");
         emojiPane.setVisible(false);
         filePane.setVisible(false);
+        stickerPane.setVisible(false);
 
         Platform.runLater(() -> {
             scrollPane.lookup(".viewport").setStyle("-fx-background-color: transparent;");
@@ -233,16 +235,18 @@ public class Client1ChatFormController extends Thread implements Initializable {
     }
 
     public void btnEmojiOnAction(ActionEvent actionEvent) {
-        if(filePane.isVisible()){
+        if(filePane.isVisible())
             filePane.setVisible(false);
-        }
+
         else if(!filePane.isVisible())
-            if(!emojiPane.isVisible()) {
+            if(!emojiPane.isVisible() && !stickerPane.isVisible()) {
                 filePane.setVisible(true);
             }
-        else if(emojiPane.isVisible() && !filePane.isVisible()) {
+        else if( !filePane.isVisible() && emojiPane.isVisible() && !stickerPane.isVisible() )
                 emojiPane.setVisible(false);
-            }
+
+        else if( !filePane.isVisible() && !emojiPane.isVisible() && stickerPane.isVisible() )
+            stickerPane.setVisible(false);
     }
 
 
@@ -258,11 +262,10 @@ public class Client1ChatFormController extends Thread implements Initializable {
             String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\angry.gif";
             writer.println(lblName.getText() + "::" + "img" + message + "emojii");
             writer.flush();
-            emojiPane.setVisible(false);
 
         }else {
             String emoji = new String(Character.toChars(128544));
-            txt.setText(emoji);
+            txt.appendText(emoji);
         }
 
     }
@@ -276,7 +279,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
         }else {
             String emoji = new String(Character.toChars(128553));
-            txt.setText(emoji);
+            txt.appendText(emoji);
         }
     }
 
@@ -289,7 +292,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
         }else {
             String emoji = new String(Character.toChars(128540));
-            txt.setText(emoji);
+            txt.appendText(emoji);
         }
     }
 
@@ -301,9 +304,10 @@ public class Client1ChatFormController extends Thread implements Initializable {
             writer.flush();
 
         }else {
-            String emoji = new String(Character.toChars(128544));
-            txt.setText(emoji);
+            String emoji = new String(Character.toChars(128543));
+            txt.appendText(emoji);
         }
+
     }
 
     @FXML
@@ -314,8 +318,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
             writer.flush();
 
         }else {
-            String emoji = new String(Character.toChars(128544));
-            txt.setText(emoji);
+            String emoji = new String(Character.toChars(128123));
+            txt.appendText(emoji);
         }
     }
 
@@ -327,8 +331,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
             writer.flush();
 
         }else {
-            String emoji = new String(Character.toChars(128544));
-            txt.setText(emoji);
+            String emoji = new String(Character.toChars(128147));
+            txt.appendText(emoji);
         }
     }
 
@@ -340,8 +344,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
             writer.flush();
 
         }else {
-            String emoji = new String(Character.toChars(128544));
-            txt.setText(emoji);
+            String emoji = new String(Character.toChars(128519));
+            txt.appendText(emoji);
         }
     }
 
@@ -353,8 +357,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
             writer.flush();
 
         }else {
-            String emoji = new String(Character.toChars(128544));
-            txt.setText(emoji);
+            String emoji = new String(Character.toChars(128536));
+            txt.appendText(emoji);
         }
     }
 
@@ -366,8 +370,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
             writer.flush();
 
         }else {
-            String emoji = new String(Character.toChars(128544));
-            txt.setText(emoji);
+            String emoji = new String(Character.toChars(128514));
+            txt.appendText(emoji);
         }
     }
 
@@ -379,8 +383,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
             writer.flush();
 
         }else {
-            String emoji = new String(Character.toChars(128544));
-            txt.setText(emoji);
+            String emoji = new String(Character.toChars(128525));
+            txt.appendText(emoji);
         }
     }
 
@@ -392,8 +396,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
             writer.flush();
 
         }else {
-            String emoji = new String(Character.toChars(128544));
-            txt.setText(emoji);
+            String emoji = new String(Character.toChars(128577));
+            txt.appendText(emoji);
         }
     }
 
@@ -405,8 +409,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
             writer.flush();
 
         }else {
-            String emoji = new String(Character.toChars(128544));
-            txt.setText(emoji);
+            String emoji = new String(Character.toChars(128562));
+            txt.appendText(emoji);
         }
     }
 
@@ -418,8 +422,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
             writer.flush();
 
         }else {
-            String emoji = new String(Character.toChars(128544));
-            txt.setText(emoji);
+            String emoji = new String(Character.toChars(128513));
+            txt.appendText(emoji);
         }
     }
 
@@ -431,8 +435,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
             writer.flush();
 
         }else {
-            String emoji = new String(Character.toChars(128544));
-            txt.setText(emoji);
+            String emoji = new String(Character.toChars(128526));
+            txt.appendText(emoji);
         }
     }
 
@@ -444,8 +448,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
             writer.flush();
 
         }else {
-            String emoji = new String(Character.toChars(128544));
-            txt.setText(emoji);
+            String emoji = new String(Character.toChars(128546));
+            txt.appendText(emoji);
         }
     }
 
@@ -456,8 +460,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
             writer.flush();
 
         }else {
-            String emoji = new String(Character.toChars(128544));
-            txt.setText(emoji);
+            String emoji = new String(Character.toChars(129321));
+            txt.appendText(emoji);
         }
     }
 
@@ -487,5 +491,43 @@ public class Client1ChatFormController extends Thread implements Initializable {
     }
 
     public void StickerOnAction(MouseEvent mouseEvent) {
+        filePane.setVisible(false);
+        stickerPane.setVisible(true);
+    }
+
+    public void heartsOnAction(MouseEvent mouseEvent) {
+        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\stickers\\hearts.png";
+        writer.println(lblName.getText() + "::" + "img" + message);
+        writer.flush();
+    }
+
+    public void jesusOnAction(MouseEvent mouseEvent) {
+        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\stickers\\jesus.png";
+        writer.println(lblName.getText() + "::" + "img" + message);
+        writer.flush();
+    }
+
+    public void helloOnAction(MouseEvent mouseEvent) {
+        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\stickers\\hello.gif";
+        writer.println(lblName.getText() + "::" + "img" + message);
+        writer.flush();
+    }
+
+    public void brainOnAction(MouseEvent mouseEvent) {
+        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\stickers\\brain.png";
+        writer.println(lblName.getText() + "::" + "img" + message);
+        writer.flush();
+    }
+
+    public void teaOnAction(MouseEvent mouseEvent) {
+        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\stickers\\sip-tea.png";
+        writer.println(lblName.getText() + "::" + "img" + message);
+        writer.flush();
+    }
+
+    public void catOnAction(MouseEvent mouseEvent) {
+        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\stickers\\cat.png";
+        writer.println(lblName.getText() + "::" + "img" + message);
+        writer.flush();
     }
 }

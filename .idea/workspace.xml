@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="modified">
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/showcase 4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/stickers/brain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/stickers/cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/stickers/hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/stickers/hello.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/stickers/jesus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/stickers/sip-tea.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/view/Client1ChatForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/view/Client1ChatForm.fxml" afterDir="false" />
@@ -68,11 +73,11 @@
       <recent name="D:\IJSE\Working Projects\Chat Application\Client2\src\main\java\lk\ijse\controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\stickers" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\emoji" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\gif" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\view" />
-      <recent name="D:\grama-vista\src\main\java\lk\ijse" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="lk.ijse.bo.custom" />
@@ -295,7 +300,7 @@
       <workItem from="1687543803010" duration="7757000" />
       <workItem from="1687859715529" duration="3181000" />
       <workItem from="1687873762137" duration="19000" />
-      <workItem from="1687874456564" duration="5911000" />
+      <workItem from="1687874456564" duration="11086000" />
     </task>
     <task id="LOCAL-00001" summary="grama vista 1">
       <created>1679592345340</created>

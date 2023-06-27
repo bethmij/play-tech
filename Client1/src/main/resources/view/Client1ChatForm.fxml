@@ -45,23 +45,6 @@
             </InnerShadow>
          </effect>
       </Rectangle>
-      <Text fill="WHITE" layoutX="453.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play Tech Gang" wrappingWidth="182.81414794921875">
-         <font>
-            <Font name="Californian FB" size="23.0" />
-         </font>
-      </Text>
-      <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="401.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Assets/icons8-collaborating-in-circle-96.png" />
-         </image>
-         <effect>
-            <InnerShadow choke="0.96" radius="58.5425" width="215.17">
-               <color>
-                  <Color red="1.0" green="1.0" blue="1.0" />
-               </color>
-            </InnerShadow>
-         </effect>
-      </ImageView>
       <ImageView fitHeight="19.0" fitWidth="21.0" layoutX="747.0" layoutY="19.0" onMouseClicked="#minimizeOnAction" pickOnBounds="true" preserveRatio="true" rotate="180.0">
          <image>
             <Image url="@../Assets/icons8-minimize-60.png" />
@@ -170,19 +153,9 @@
          <font>
             <Font name="System Bold" size="30.0" />
          </font></JFXButton>
-      <Label fx:id="lblName" alignment="CENTER" contentDisplay="CENTER" layoutX="218.0" layoutY="14.0" prefHeight="15.0" prefWidth="66.0" textFill="WHITE">
+      <Label fx:id="lblName" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="367.0" layoutY="7.0" prefHeight="34.0" prefWidth="198.0" textFill="WHITE">
          <font>
-            <Font name="Footlight MT Light" size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="610.0" layoutY="21.0" text="(" textFill="WHITE">
-         <font>
-            <Font name="Footlight MT Light" size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="695.0" layoutY="22.0" text=")" textFill="WHITE">
-         <font>
-            <Font name="Footlight MT Light" size="14.0" />
+            <Font name="Footlight MT Light" size="20.0" />
          </font>
       </Label>
       <ImageView fx:id="imgView1" fitHeight="756.0" fitWidth="419.0" layoutX="-64.0" pickOnBounds="true" preserveRatio="true">
@@ -445,6 +418,46 @@
                   <Image url="@../Assets/showcase%204.gif" />
                </image>
             </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="stickerPane" layoutX="23.0" layoutY="370.0" prefHeight="322.0" prefWidth="530.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e8081" height="273.0" layoutX="89.0" layoutY="49.0" opacity="0.37" stroke="#7e8081" strokeType="INSIDE" width="419.0" />
+            <ImageView fitHeight="112.0" fitWidth="118.0" layoutX="109.0" layoutY="56.0" onMouseClicked="#heartsOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/stickers/hearts.png" />
+               </image></ImageView>
+            <ImageView fitHeight="118.0" fitWidth="175.0" layoutX="118.0" layoutY="184.0" onMouseClicked="#jesusOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/stickers/jesus.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="118.0" fitWidth="129.0" layoutX="229.0" layoutY="66.0" onMouseClicked="#helloOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/stickers/hello.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="177.0" fitWidth="171.0" layoutX="332.0" layoutY="39.0" onMouseClicked="#brainOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/stickers/brain.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="118.0" fitWidth="129.0" layoutX="227.0" layoutY="184.0" onMouseClicked="#teaOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/stickers/sip-tea.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="118.0" fitWidth="146.0" layoutX="368.0" layoutY="184.0" onMouseClicked="#catOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/stickers/cat.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e8081" height="43.0" layoutX="89.0" layoutY="3.0" opacity="0.37" stroke="#7e8081" strokeType="INSIDE" width="99.0" />
+            <Text fill="WHITE" layoutX="107.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stickers">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
          </children>
       </AnchorPane>
    </children>
