@@ -36,7 +36,7 @@
                </input></InnerShadow>
          </effect>
       </ImageView>
-      <Rectangle arcWidth="5.0" fill="#030303" height="46.0" layoutX="355.0" layoutY="3.0" opacity="0.43" stroke="#008f99" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="419.0">
+      <Rectangle arcWidth="5.0" fill="#030303" height="55.0" layoutX="355.0" layoutY="3.0" opacity="0.43" stroke="#008f99" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="419.0">
          <effect>
             <InnerShadow height="86.5" radius="38.6575" width="70.13">
                <color>
@@ -153,7 +153,7 @@
          <font>
             <Font name="System Bold" size="30.0" />
          </font></JFXButton>
-      <Label fx:id="lblName" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="367.0" layoutY="7.0" prefHeight="34.0" prefWidth="198.0" textFill="WHITE">
+      <Label fx:id="lblName" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="421.0" layoutY="14.0" prefHeight="34.0" prefWidth="198.0" textFill="WHITE">
          <font>
             <Font name="Footlight MT Light" size="20.0" />
          </font>
@@ -460,5 +460,6 @@
             </Text>
          </children>
       </AnchorPane>
+      <Circle fx:id="circle" fill="#1f93ff00" layoutX="393.0" layoutY="30.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
    </children>
 </AnchorPane>

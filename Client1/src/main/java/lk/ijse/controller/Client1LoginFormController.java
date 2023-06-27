@@ -3,12 +3,20 @@ package lk.ijse.controller;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.ImagePattern;
+import javafx.scene.shape.Circle;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +27,9 @@ public class Client1LoginFormController {
     static String userName;
 
     public static List<String> users = new ArrayList<>();
+    public JFXButton btnImage;
+    public static Image image;
+    public Circle circle;
 
     public void btnStartOnAction(ActionEvent actionEvent) {
         userName = txtName.getText();
@@ -31,6 +42,8 @@ public class Client1LoginFormController {
                 Stage stage = new Stage();
                 stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/client1ChatForm.fxml"))));
                 stage.setTitle("Chat Room");
+                stage.show();
+                txtName.setText("");
             } catch (IOException e) {
                 e.printStackTrace();
                 System.out.println(e);
@@ -39,5 +52,19 @@ public class Client1LoginFormController {
 
 
 
+    }
+
+    public void btnImageOnAction(ActionEvent actionEvent) {
+        Window window = ((Node) (actionEvent.getSource())).getScene().getWindow();
+        FileChooser fileChooser = new FileChooser();
+        File file = fileChooser.showOpenDialog(window);
+        actionEvent.consume();
+        try {
+            InputStream in = new FileInputStream(file);
+            image = new Image(in);
+            circle.setFill(new ImagePattern(image));
+        } catch (FileNotFoundException e) {
+            new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
+        }
     }
 }

@@ -2,7 +2,6 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.Group?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.BoxBlur?>
 <?import javafx.scene.effect.ColorAdjust?>
@@ -13,85 +12,97 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="pane" prefHeight="741.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client1LoginFormController">
+<AnchorPane fx:id="pane" prefHeight="722.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client1LoginFormController">
    <children>
-      <Group layoutX="-139.0" layoutY="-45.0">
-         <children>
-            <JFXButton cache="true" contentDisplay="GRAPHIC_ONLY" layoutX="262.0" layoutY="70.0" prefHeight="26.0" prefWidth="10.0" />
-            <ImageView fitHeight="744.0" fitWidth="421.0" layoutX="236.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Assets/a63a312f9ce4636865d57450b8077e3b.jpg" />
-               </image>
-               <effect>
-                  <ColorAdjust brightness="-0.34" saturation="0.19">
-                     <input>
-                        <DropShadow height="62.26" radius="50.887499999999996" spread="0.25" width="143.29">
-                           <color>
-                              <Color red="0.22982455790042877" green="0.339561402797699" blue="0.4736842215061188" />
-                           </color>
-                        </DropShadow>
-                     </input>
-                  </ColorAdjust>
-               </effect>
-            </ImageView>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" height="91.0" layoutX="245.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="400.0">
-               <effect>
-                  <GaussianBlur radius="63.0" />
-               </effect>
-            </Rectangle>
-            <ImageView fitHeight="174.0" fitWidth="188.0" layoutX="358.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Assets/play%20tech%20(1).gif" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="331.0" fitWidth="440.0" layoutX="236.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Assets/1-removebg-preview.png" />
-               </image>
-            </ImageView>
-            <JFXButton fx:id="btnStart" buttonType="RAISED" layoutX="359.0" layoutY="651.0" onAction="#btnStartOnAction" style="-fx-background-radius: 50;" text="GET STARTED" textFill="#d5e125">
-               <font>
-                  <Font size="20.0" />
-               </font>
-               <effect>
-                  <InnerShadow>
+      <JFXButton cache="true" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="10.0" />
+      <ImageView fitHeight="722.0" fitWidth="406.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/a63a312f9ce4636865d57450b8077e3b.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.34" saturation="0.19">
+               <input>
+                  <DropShadow radius="30.63" width="103.52" />
+               </input>
+            </ColorAdjust>
+         </effect></ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="91.0" layoutX="3.0" stroke="BLACK" strokeType="INSIDE" width="400.0">
+         <effect>
+            <GaussianBlur radius="63.0" />
+         </effect>
+      </Rectangle>
+      <ImageView fitHeight="174.0" fitWidth="188.0" layoutX="118.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/play%20tech%20(1).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="319.0" fitWidth="481.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/1-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnStart" buttonType="RAISED" layoutX="129.0" layoutY="645.0" onAction="#btnStartOnAction" style="-fx-background-radius: 50;" text="GET STARTED" textFill="#d5e125">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.9368420839309692" green="0.8275438547134399" blue="0.20818713307380676" />
+               </color>
+               <input>
+                  <DropShadow>
                      <color>
-                        <Color red="0.9368420839309692" green="0.8275438547134399" blue="0.20818713307380676" />
+                        <Color red="0.11050000041723251" green="0.6499999761581421" blue="0.4283120930194855" />
                      </color>
-                     <input>
-                        <DropShadow>
-                           <color>
-                              <Color red="0.11050000041723251" green="0.6499999761581421" blue="0.4283120930194855" />
-                           </color>
-                        </DropShadow>
-                     </input>
-                  </InnerShadow>
-               </effect>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </JFXButton>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#81a3a4" height="56.0" layoutX="274.0" layoutY="550.0" stroke="WHITE" strokeType="INSIDE" width="343.0">
-               <effect>
-                  <BoxBlur height="71.73" iterations="3" width="136.07" />
-               </effect>
-            </Rectangle>
-            <TextField fx:id="txtName" blendMode="SOFT_LIGHT" focusTraversable="false" layoutX="288.0" layoutY="556.0" prefHeight="44.0" prefWidth="290.0" promptText="Your Name" style="-fx-background-radius: 100;">
-               <font>
-                  <Font name="System Bold" size="20.0" />
-               </font>
-               <effect>
-                  <InnerShadow>
+                  </DropShadow>
+               </input>
+            </InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#81a3a4" height="56.0" layoutX="34.0" layoutY="578.0" stroke="WHITE" strokeType="INSIDE" width="343.0">
+         <effect>
+            <BoxBlur height="71.73" iterations="3" width="136.07" />
+         </effect>
+      </Rectangle>
+      <TextField fx:id="txtName" blendMode="SOFT_LIGHT" focusTraversable="false" layoutX="67.0" layoutY="584.0" prefHeight="44.0" prefWidth="290.0" promptText="Your Name" style="-fx-background-radius: 100;">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <JFXButton fx:id="btnImage" buttonType="RAISED" layoutX="165.0" layoutY="530.0" onAction="#btnImageOnAction" style="-fx-background-radius: 50;" text="Add image" textFill="#d5e125">
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.9368420839309692" green="0.8275438547134399" blue="0.20818713307380676" />
+               </color>
+               <input>
+                  <DropShadow>
                      <color>
-                        <Color red="1.0" green="1.0" blue="1.0" />
+                        <Color red="0.11050000041723251" green="0.6499999761581421" blue="0.4283120930194855" />
                      </color>
-                  </InnerShadow>
-               </effect>
-            </TextField>
-         </children>
-      </Group>
+                  </DropShadow>
+               </input>
+            </InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Circle fx:id="circle" fill="#1f93ff00" layoutX="201.0" layoutY="472.0" radius="58.0" stroke="WHITE" strokeType="INSIDE" />
    </children>
 </AnchorPane>

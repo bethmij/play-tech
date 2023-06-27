@@ -17,6 +17,9 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.ImagePattern;
+import javafx.scene.shape.Circle;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
@@ -28,6 +31,7 @@ import java.net.Socket;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import static lk.ijse.controller.Client1LoginFormController.image;
 import static lk.ijse.controller.Client1LoginFormController.userName;
 
 public class Client1ChatFormController extends Thread implements Initializable {
@@ -44,6 +48,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     public AnchorPane filePane;
     public Label emojilbl;
     public AnchorPane stickerPane;
+    public Circle circle;
     Socket socket;
     BufferedReader reader;
     PrintWriter writer;
@@ -63,15 +68,17 @@ public class Client1ChatFormController extends Thread implements Initializable {
         filePane.setVisible(false);
         stickerPane.setVisible(false);
 
-       /* Platform.runLater(() -> {
+        Platform.runLater(() -> {
             scrollPane.lookup(".viewport").setStyle("-fx-background-color: transparent;");
             scrollPane.lookup(".scroll-bar").setStyle("-fx-background-color: transparent;");
             scrollPane.lookup(".scroll-bar:vertical").setStyle("-fx-background-color: transparent;");
 
-        });*/
+        });
 
-        /*byte_array = bytes.fromhex(hex_value)
-        string_value = byte_array.decode('utf-8')*/
+        if(image==null) {
+            image = new Image("D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\no-profile-pic-icon-11 (1).jpg");
+        }
+        circle.setFill(new ImagePattern(image));
 
     }
 
@@ -117,24 +124,22 @@ public class Client1ChatFormController extends Thread implements Initializable {
                    hBox.setAlignment(Pos.BOTTOM_RIGHT);
 
                    if (!lblName.getText().equals(beforeCharacter)){
-                       //System.out.println("not "+lblName.getText());
-                       //HBox.setAlignment(Pos.TOP_LEFT);
-                       //HBox.setPadding(new Insets(5,10,5,5));
 
                        VBox.setAlignment(Pos.BOTTOM_LEFT);
                        hBox.setAlignment(Pos.CENTER_LEFT);
 
-
                        Text text1 = new Text(" "+beforeCharacter+" : ");
-                       text1.setStyle("-fx-font-size: 15px");
+                       text1.setStyle("-fx-font-size: 17px;");
+                       text1.setFill(Color.WHITE);
                        hBox.getChildren().add(text1);
                        hBox.getChildren().add(imageView);
 
                    }else {
-                       hBox.setAlignment(Pos.BOTTOM_RIGHT);
+                       hBox.setAlignment(Pos.CENTER_RIGHT);
                        hBox.getChildren().add(imageView);
                        Text text1 = new Text(" : Me");
-                       text1.setStyle("-fx-font-size: 15px");
+                       text1.setStyle("-fx-font-size: 17px;");
+                       text1.setFill(Color.WHITE);
                        hBox.getChildren().add(text1);
                    }
 
@@ -267,6 +272,9 @@ public class Client1ChatFormController extends Thread implements Initializable {
             String emoji = new String(Character.toChars(128544));
             txt.appendText(emoji);
         }
+
+        /*byte_array = bytes.fromhex(hex_value)
+        string_value = byte_array.decode('utf-8')*/
 
     }
 
