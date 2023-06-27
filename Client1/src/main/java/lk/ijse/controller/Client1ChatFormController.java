@@ -249,6 +249,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
         writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
         writer.flush();
         emojiPane.setVisible(false);
+
+        
     }
 
     @FXML

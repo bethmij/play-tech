@@ -298,6 +298,7 @@
       </ImageView>
       <AnchorPane fx:id="emojiPane" layoutX="247.0" layoutY="442.0" prefHeight="248.0" prefWidth="371.0">
          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e8081" height="210.0" layoutY="39.0" opacity="0.37" stroke="#7e8081" strokeType="INSIDE" width="299.0" />
             <Group layoutY="6.0">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8c8c8c" height="210.0" layoutY="32.0" opacity="0.0" stroke="#8c8c8c" strokeType="INSIDE" width="321.0" />
@@ -399,6 +400,12 @@
                   </GridPane>
                </children>
             </Group>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e8081" height="38.0" opacity="0.37" stroke="#7e8081" strokeType="INSIDE" width="135.0" />
+            <Label layoutX="22.0" layoutY="4.0" prefHeight="33.0" prefWidth="84.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
          </children></AnchorPane>
    </children>
 </AnchorPane>

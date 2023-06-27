@@ -5,41 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="modified">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8ede8dcc-ac6b-497c-8d34-7b9407cebd3d.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/angry.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/boy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/clown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/ghost.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/girl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/heart eye.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/kiss.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/laugh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/purple smirk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/sad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/skull.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/smile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/smirk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/sunglass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/angry.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/annoy.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/crazy.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/cute.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/ghost.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/heart.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/holo.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/kiss.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/laugh.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/lovely.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/purple.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/sad.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/shock.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/sunglass.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/wink.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/view/Client1ChatForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/view/Client1ChatForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -325,7 +292,9 @@
       <workItem from="1687542953536" duration="198000" />
       <workItem from="1687543212606" duration="115000" />
       <workItem from="1687543803010" duration="7757000" />
-      <workItem from="1687859715529" duration="927000" />
+      <workItem from="1687859715529" duration="3181000" />
+      <workItem from="1687873762137" duration="19000" />
+      <workItem from="1687874456564" duration="478000" />
     </task>
     <task id="LOCAL-00001" summary="grama vista 1">
       <created>1679592345340</created>
@@ -649,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687540591021</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="modified">
+      <created>1687871110718</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1687871110718</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
