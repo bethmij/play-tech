@@ -23,9 +23,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="783.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client1ChatFormController">
+<AnchorPane prefHeight="744.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client1ChatFormController">
    <children>
-      <ImageView fx:id="imgView" fitHeight="783.0" fitWidth="486.0" layoutX="401.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgView" fitHeight="745.0" fitWidth="419.0" layoutX="355.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Assets/a63a312f9ce4636865d57450b8077e3b.jpg" />
          </image>
@@ -36,7 +36,7 @@
                </input></InnerShadow>
          </effect>
       </ImageView>
-      <Rectangle arcWidth="5.0" fill="#030303" height="46.0" layoutX="401.0" layoutY="3.0" opacity="0.43" stroke="#008f99" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="440.0">
+      <Rectangle arcWidth="5.0" fill="#030303" height="46.0" layoutX="355.0" layoutY="3.0" opacity="0.43" stroke="#008f99" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="419.0">
          <effect>
             <InnerShadow height="86.5" radius="38.6575" width="70.13">
                <color>
@@ -62,7 +62,7 @@
             </InnerShadow>
          </effect>
       </ImageView>
-      <ImageView fitHeight="19.0" fitWidth="21.0" layoutX="801.0" layoutY="20.0" onMouseClicked="#minimizeOnAction" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+      <ImageView fitHeight="19.0" fitWidth="21.0" layoutX="747.0" layoutY="19.0" onMouseClicked="#minimizeOnAction" pickOnBounds="true" preserveRatio="true" rotate="180.0">
          <image>
             <Image url="@../Assets/icons8-minimize-60.png" />
          </image>
@@ -77,7 +77,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <Rectangle arcHeight="2.0" arcWidth="5.0" fill="#030303" height="83.0" layoutX="404.0" layoutY="695.0" opacity="0.49" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="434.0">
+      <Rectangle arcHeight="2.0" arcWidth="5.0" fill="#030303" height="76.0" layoutX="356.0" layoutY="668.0" opacity="0.49" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="419.0">
          <effect>
             <InnerShadow height="86.5" radius="38.6575" width="70.13">
                <color>
@@ -86,12 +86,12 @@
             </InnerShadow>
          </effect>
       </Rectangle>
-      <ScrollPane fx:id="scrollPane" layoutX="411.0" layoutY="68.0" prefHeight="623.0" prefWidth="419.0">
+      <ScrollPane fx:id="scrollPane" layoutX="367.0" layoutY="69.0" prefHeight="538.0" prefWidth="396.0">
          <content>
-            <VBox fx:id="VBox" prefHeight="100.0" prefWidth="413.0" />
+            <VBox fx:id="VBox" prefHeight="100.0" prefWidth="384.0" />
          </content>
       </ScrollPane>
-      <JFXButton fx:id="btnSend" contentDisplay="GRAPHIC_ONLY" layoutX="775.0" layoutY="713.0" onAction="#btnSendOnAction" prefHeight="48.0" prefWidth="30.0">
+      <JFXButton fx:id="btnSend" contentDisplay="GRAPHIC_ONLY" layoutX="721.0" layoutY="681.0" onAction="#btnSendOnAction" prefHeight="48.0" prefWidth="30.0">
          <graphic>
             <ImageView fitHeight="40.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -110,7 +110,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton fx:id="btnCamera" contentDisplay="GRAPHIC_ONLY" layoutX="468.0" layoutY="714.0" onAction="#btnCameraOnAction" prefHeight="38.0" prefWidth="38.0">
+      <JFXButton fx:id="btnCamera" contentDisplay="GRAPHIC_ONLY" layoutX="427.0" layoutY="684.0" onAction="#btnCameraOnAction" prefHeight="38.0" prefWidth="38.0">
          <graphic>
             <ImageView fitHeight="39.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -132,7 +132,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton fx:id="btnEmoji" contentDisplay="GRAPHIC_ONLY" layoutX="414.0" layoutY="713.0" onAction="#btnEmojiOnAction" prefHeight="38.0" prefWidth="38.0">
+      <JFXButton fx:id="btnEmoji" contentDisplay="GRAPHIC_ONLY" layoutX="367.0" layoutY="682.0" onAction="#btnEmojiOnAction" prefHeight="38.0" prefWidth="38.0">
          <graphic>
             <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -151,7 +151,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <TextField fx:id="txt" alignment="TOP_LEFT" blendMode="SOFT_LIGHT" layoutX="519.0" layoutY="713.0" prefHeight="46.0" prefWidth="249.0">
+      <TextField fx:id="txt" alignment="TOP_LEFT" blendMode="SOFT_LIGHT" layoutX="478.0" layoutY="682.0" prefHeight="46.0" prefWidth="249.0">
          <effect>
             <InnerShadow choke="0.16" height="30.06" radius="16.9425" width="39.71">
                <color>
@@ -163,7 +163,7 @@
             <Font size="21.0" />
          </font>
       </TextField>
-      <JFXButton blendMode="LIGHTEN" layoutX="744.0" layoutY="-5.0" onAction="#btnAddOnAction" prefHeight="59.0" prefWidth="33.0" text="+" textFill="#abd4cf">
+      <JFXButton blendMode="LIGHTEN" layoutX="695.0" layoutY="-5.0" onAction="#btnAddOnAction" prefHeight="59.0" prefWidth="33.0" text="+" textFill="#abd4cf">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -185,7 +185,7 @@
             <Font name="Footlight MT Light" size="14.0" />
          </font>
       </Label>
-      <ImageView fx:id="imgView1" fitHeight="783.0" fitWidth="452.0" layoutX="-37.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgView1" fitHeight="756.0" fitWidth="419.0" layoutX="-64.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Assets/a63a312f9ce4636865d57450b8077e3b.jpg" />
          </image>
@@ -197,12 +197,17 @@
             </InnerShadow>
          </effect>
       </ImageView>
-      <Separator layoutX="398.0" opacity="0.52" orientation="VERTICAL" prefHeight="783.0" prefWidth="6.0" />
+      <ImageView fitHeight="765.0" fitWidth="413.0" layoutX="-59.0" layoutY="3.0" opacity="0.17" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/1712450.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="353.0" opacity="0.52" orientation="VERTICAL" prefHeight="745.0" prefWidth="6.0" />
       <Label layoutX="28.0" layoutY="21.0" text="Chats" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="25.0" />
          </font></Label>
-      <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="284.0" layoutY="18.0" onMouseClicked="#bgChangeOnAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="258.0" layoutY="17.0" onMouseClicked="#bgChangeOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Assets/icons8-edit-48.png" />
          </image>
@@ -217,7 +222,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="347.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="26.0" fitWidth="19.0" layoutX="310.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Assets/icons8-ellipsis-60.png" />
          </image>
@@ -229,12 +234,12 @@
             </InnerShadow>
          </effect>
       </ImageView>
-      <TextField layoutX="23.0" layoutY="86.0" prefHeight="33.0" prefWidth="358.0" promptText="Search or start new chat" style="-fx-background-radius: 100;">
+      <TextField layoutX="23.0" layoutY="86.0" prefHeight="38.0" prefWidth="305.0" promptText="Search or start new chat" style="-fx-background-radius: 100;">
          <font>
             <Font size="17.0" />
          </font>
       </TextField>
-      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="319.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="284.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Assets/icons8-search-64.png" />
          </image>
@@ -246,9 +251,9 @@
             </InnerShadow>
          </effect>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8c8c8c" height="102.0" layoutX="17.0" layoutY="169.0" opacity="0.74" stroke="#8c8c8c" strokeType="INSIDE" width="371.0" />
-      <Circle layoutX="70.0" layoutY="221.0" radius="42.0" stroke="#c4c0c0" strokeType="INSIDE" strokeWidth="3.0" />
-      <ImageView fitHeight="19.0" fitWidth="26.0" layoutX="347.0" layoutY="210.0" onMouseClicked="#participateOnAction" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8c8c8c" height="76.0" layoutX="4.0" layoutY="183.0" opacity="0.44" stroke="#8c8c8c" strokeType="INSIDE" width="346.0" />
+      <Circle layoutX="58.0" layoutY="220.0" radius="33.0" stroke="#c4c0c0" strokeType="INSIDE" strokeWidth="3.0" />
+      <ImageView fitHeight="20.0" fitWidth="19.0" layoutX="319.0" layoutY="211.0" onMouseClicked="#participateOnAction" opacity="0.65" pickOnBounds="true" preserveRatio="true" rotate="90.0">
          <image>
             <Image url="@../Assets/icons8-ellipsis-60.png" />
          </image>
@@ -263,18 +268,18 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <Text fill="WHITE" layoutX="127.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play Tech Gang" wrappingWidth="182.81414794921875">
+      <Text fill="WHITE" layoutX="108.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play Tech Gang" wrappingWidth="182.81414794921875">
          <font>
-            <Font name="Arial" size="23.0" />
+            <Font name="Arial" size="18.0" />
          </font>
       </Text>
-      <ImageView fitHeight="57.0" fitWidth="54.0" layoutX="43.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="41.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Assets/play%20tech%20(1).gif" />
          </image>
       </ImageView>
-      <Circle layoutX="70.0" layoutY="338.0" radius="42.0" stroke="#c4c0c0" strokeType="INSIDE" strokeWidth="3.0" />
-      <ImageView fitHeight="19.0" fitWidth="26.0" layoutX="347.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+      <Circle layoutX="59.0" layoutY="327.0" radius="31.0" stroke="#c4c0c0" strokeType="INSIDE" strokeWidth="3.0" />
+      <ImageView fitHeight="19.0" fitWidth="26.0" layoutX="319.0" layoutY="318.0" opacity="0.64" pickOnBounds="true" preserveRatio="true" rotate="90.0">
          <image>
             <Image url="@../Assets/icons8-ellipsis-60.png" />
          </image>
@@ -286,12 +291,12 @@
             </InnerShadow>
          </effect>
       </ImageView>
-      <Text fill="WHITE" layoutX="127.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IJSE GDSE 66" wrappingWidth="182.81414794921875">
+      <Text fill="WHITE" layoutX="108.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IJSE GDSE 66" wrappingWidth="182.81414794921875">
          <font>
-            <Font name="Arial" size="20.0" />
+            <Font name="Arial" size="18.0" />
          </font>
       </Text>
-      <ImageView fitHeight="57.0" fitWidth="54.0" layoutX="43.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="16.0" fitWidth="45.0" layoutX="37.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Assets/ijse.png" />
          </image>
@@ -401,11 +406,46 @@
                </children>
             </Group>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e8081" height="38.0" opacity="0.37" stroke="#7e8081" strokeType="INSIDE" width="135.0" />
-            <Label layoutX="22.0" layoutY="4.0" prefHeight="33.0" prefWidth="84.0" text="Label" textFill="WHITE">
+            <Label fx:id="emojilbl" layoutX="22.0" layoutY="4.0" prefHeight="33.0" prefWidth="84.0" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
          </children></AnchorPane>
+      <AnchorPane fx:id="filePane" layoutX="313.0" layoutY="480.0" prefHeight="186.0" prefWidth="162.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e8081" height="158.0" layoutY="43.0" opacity="0.37" stroke="#7e8081" strokeType="INSIDE" width="162.0" />
+            <Text fill="WHITE" layoutX="11.0" layoutY="82.0" onMouseClicked="#EmojiOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Emoji">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="11.0" layoutY="123.0" onMouseClicked="#GifOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="GIFs">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="11.0" layoutY="166.0" onMouseClicked="#StickerOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Stickers" wrappingWidth="84.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="34.0" fitWidth="36.0" layoutX="100.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/emoji/smile.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="36.0" layoutX="100.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/icons8-grinning-face-96.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="109.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/showcase%204.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

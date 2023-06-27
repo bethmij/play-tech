@@ -41,6 +41,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
     public ScrollPane scrollPane;
     public ImageView imgView;
     public AnchorPane emojiPane;
+    public AnchorPane filePane;
+    public Label emojilbl;
     Socket socket;
     BufferedReader reader;
     PrintWriter writer;
@@ -57,6 +59,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
         scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         scrollPane.setStyle("-fx-background-color: transparent; -fx-background-insets: 0; -fx-padding: 0;");
         emojiPane.setVisible(false);
+        filePane.setVisible(false);
 
         Platform.runLater(() -> {
             scrollPane.lookup(".viewport").setStyle("-fx-background-color: transparent;");
@@ -230,10 +233,16 @@ public class Client1ChatFormController extends Thread implements Initializable {
     }
 
     public void btnEmojiOnAction(ActionEvent actionEvent) {
-        if(!emojiPane.isVisible())
-            emojiPane.setVisible(true);
-        else
-            emojiPane.setVisible(false);
+        if(filePane.isVisible()){
+            filePane.setVisible(false);
+        }
+        else if(!filePane.isVisible())
+            if(!emojiPane.isVisible()) {
+                filePane.setVisible(true);
+            }
+        else if(emojiPane.isVisible() && !filePane.isVisible()) {
+                emojiPane.setVisible(false);
+            }
     }
 
 
@@ -245,131 +254,211 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
     @FXML
     void angryOnAction(MouseEvent event) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\angry.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\angry.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+            emojiPane.setVisible(false);
 
-        
+        }else {
+            String emoji = new String(Character.toChars(128544));
+            txt.setText(emoji);
+        }
+
     }
 
     @FXML
     void annoyOnAction(MouseEvent event) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\annoy.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\annoy.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+
+        }else {
+            String emoji = new String(Character.toChars(128553));
+            txt.setText(emoji);
+        }
     }
 
     @FXML
     void crazyOnAction(MouseEvent event) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\crazy.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\crazy.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+
+        }else {
+            String emoji = new String(Character.toChars(128540));
+            txt.setText(emoji);
+        }
     }
 
     @FXML
     void cuteOnAction(MouseEvent event) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\cute.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\cute.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+
+        }else {
+            String emoji = new String(Character.toChars(128544));
+            txt.setText(emoji);
+        }
     }
 
     @FXML
     void ghostOnAction(MouseEvent event) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\ghost.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\ghost.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+
+        }else {
+            String emoji = new String(Character.toChars(128544));
+            txt.setText(emoji);
+        }
     }
 
     @FXML
     void heartOnAction(MouseEvent event) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\heart.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\heart.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+
+        }else {
+            String emoji = new String(Character.toChars(128544));
+            txt.setText(emoji);
+        }
     }
 
     @FXML
     void holoOnAction(MouseEvent event) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\holo.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\holo.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+
+        }else {
+            String emoji = new String(Character.toChars(128544));
+            txt.setText(emoji);
+        }
     }
 
     @FXML
     void kissOnAction(MouseEvent event) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\kiss.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\kiss.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+
+        }else {
+            String emoji = new String(Character.toChars(128544));
+            txt.setText(emoji);
+        }
     }
 
     @FXML
     void laughOnAction(MouseEvent event) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\laugh.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\laugh.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+
+        }else {
+            String emoji = new String(Character.toChars(128544));
+            txt.setText(emoji);
+        }
     }
 
     @FXML
     void lovelyOnAction(MouseEvent event) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\lovely.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\lovely.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+
+        }else {
+            String emoji = new String(Character.toChars(128544));
+            txt.setText(emoji);
+        }
     }
 
     @FXML
     void sadOnAction(MouseEvent event) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\sad.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\sad.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+
+        }else {
+            String emoji = new String(Character.toChars(128544));
+            txt.setText(emoji);
+        }
     }
 
     @FXML
     void shockOnAction(MouseEvent event) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\shock.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\shock.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+
+        }else {
+            String emoji = new String(Character.toChars(128544));
+            txt.setText(emoji);
+        }
     }
 
     @FXML
     void smileOnAction(MouseEvent event) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\smile.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\smile.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+
+        }else {
+            String emoji = new String(Character.toChars(128544));
+            txt.setText(emoji);
+        }
     }
 
     @FXML
     void sunGlassOnAction(MouseEvent event) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\sunglass.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\sunglass.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+
+        }else {
+            String emoji = new String(Character.toChars(128544));
+            txt.setText(emoji);
+        }
     }
 
     @FXML
     void winkOnAction(MouseEvent event) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\wink.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\wink.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+
+        }else {
+            String emoji = new String(Character.toChars(128544));
+            txt.setText(emoji);
+        }
     }
 
     public void purpleOnAction(MouseEvent mouseEvent) {
-        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\purple.gif";
-        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
-        writer.flush();
-        emojiPane.setVisible(false);
+        if(emojilbl.getText().equals("GIFs")) {
+            String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\purple.gif";
+            writer.println(lblName.getText() + "::" + "img" + message + "emojii");
+            writer.flush();
+
+        }else {
+            String emoji = new String(Character.toChars(128544));
+            txt.setText(emoji);
+        }
     }
 
     public void minimizeOnAction(MouseEvent mouseEvent) {
@@ -385,4 +474,18 @@ public class Client1ChatFormController extends Thread implements Initializable {
     }
 
 
+    public void EmojiOnAction(MouseEvent mouseEvent) {
+        filePane.setVisible(false);
+        emojiPane.setVisible(true);
+        emojilbl.setText("Emoji");
+    }
+
+    public void GifOnAction(MouseEvent mouseEvent) {
+        filePane.setVisible(false);
+        emojiPane.setVisible(true);
+        emojilbl.setText("GIFs");
+    }
+
+    public void StickerOnAction(MouseEvent mouseEvent) {
+    }
 }
