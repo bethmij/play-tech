@@ -63,12 +63,12 @@ public class Client1ChatFormController extends Thread implements Initializable {
         filePane.setVisible(false);
         stickerPane.setVisible(false);
 
-        Platform.runLater(() -> {
+       /* Platform.runLater(() -> {
             scrollPane.lookup(".viewport").setStyle("-fx-background-color: transparent;");
             scrollPane.lookup(".scroll-bar").setStyle("-fx-background-color: transparent;");
             scrollPane.lookup(".scroll-bar:vertical").setStyle("-fx-background-color: transparent;");
 
-        });
+        });*/
 
         /*byte_array = bytes.fromhex(hex_value)
         string_value = byte_array.decode('utf-8')*/

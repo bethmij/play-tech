@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="modified">
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/stickers/brain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/stickers/cat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/stickers/hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/stickers/hello.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/stickers/jesus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/stickers/sip-tea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/1712451.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/view/Client1ChatForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/view/Client1ChatForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1LoginFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/view/client1LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/view/client1LoginForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +51,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Sample/yasas Chat com/Chat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Client1/src/main/resources/view" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -300,7 +296,7 @@
       <workItem from="1687543803010" duration="7757000" />
       <workItem from="1687859715529" duration="3181000" />
       <workItem from="1687873762137" duration="19000" />
-      <workItem from="1687874456564" duration="11086000" />
+      <workItem from="1687874456564" duration="13132000" />
     </task>
     <task id="LOCAL-00001" summary="grama vista 1">
       <created>1679592345340</created>

@@ -28,7 +28,7 @@ public class Client1LoginFormController {
         }else {
             users.add(userName);
             try {
-                Stage stage = (Stage) pane.getScene().getWindow();
+                Stage stage = new Stage();
                 stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/client1ChatForm.fxml"))));
                 stage.setTitle("Chat Room");
             } catch (IOException e) {
