@@ -31,8 +31,7 @@ import java.net.Socket;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import static lk.ijse.controller.Client1LoginFormController.image;
-import static lk.ijse.controller.Client1LoginFormController.userName;
+import static lk.ijse.controller.Client1LoginFormController.*;
 
 public class Client1ChatFormController extends Thread implements Initializable {
 
@@ -49,6 +48,9 @@ public class Client1ChatFormController extends Thread implements Initializable {
     public Label emojilbl;
     public AnchorPane stickerPane;
     public Circle circle;
+    public AnchorPane viewPane;
+    public VBox partiVbox;
+    public AnchorPane particatePane;
     Socket socket;
     BufferedReader reader;
     PrintWriter writer;
@@ -67,6 +69,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
         emojiPane.setVisible(false);
         filePane.setVisible(false);
         stickerPane.setVisible(false);
+        viewPane.setVisible(false);
+        particatePane.setVisible(false);
 
         Platform.runLater(() -> {
             scrollPane.lookup(".viewport").setStyle("-fx-background-color: transparent;");
@@ -483,6 +487,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     }
 
     public void participateOnAction(MouseEvent mouseEvent) {
+        viewPane.setVisible(true);
     }
 
 
@@ -537,5 +542,18 @@ public class Client1ChatFormController extends Thread implements Initializable {
         String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\stickers\\cat.png";
         writer.println(lblName.getText() + "::" + "img" + message);
         writer.flush();
+    }
+
+    public void viewOnAction(MouseEvent mouseEvent) {
+        particatePane.setVisible(true);
+        for (String user : users) {
+            HBox hBox = new HBox();
+            partiVbox.setAlignment(Pos.TOP_CENTER);
+            hBox.setAlignment(Pos.CENTER);
+            System.out.println(user);
+            Text text = new Text(user);
+            hBox.getChildren().add(text);
+            partiVbox.getChildren().add(hBox);
+        }
     }
 }
