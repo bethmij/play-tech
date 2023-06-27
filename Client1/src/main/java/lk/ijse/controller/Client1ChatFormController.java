@@ -38,9 +38,9 @@ public class Client1ChatFormController extends Thread implements Initializable {
     public TextField txt;
     public VBox VBox;
     public Label lblName;
-    public AnchorPane emojiPane;
     public ScrollPane scrollPane;
     public ImageView imgView;
+    public AnchorPane emojiPane;
     Socket socket;
     BufferedReader reader;
     PrintWriter writer;
@@ -236,9 +236,6 @@ public class Client1ChatFormController extends Thread implements Initializable {
             emojiPane.setVisible(false);
     }
 
-    public void VBoxOnAction(MouseEvent mouseEvent) {
-    }
-
 
     public void btnAddOnAction(ActionEvent actionEvent) {
         OpenView.openView("client1LoginForm");
@@ -366,9 +363,24 @@ public class Client1ChatFormController extends Thread implements Initializable {
         emojiPane.setVisible(false);
     }
 
+    public void purpleOnAction(MouseEvent mouseEvent) {
+        String message = "D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\emoji\\purple.gif";
+        writer.println(lblName.getText()+ "::" + "img" + message+"emojii");
+        writer.flush();
+        emojiPane.setVisible(false);
+    }
+
     public void minimizeOnAction(MouseEvent mouseEvent) {
         Stage stage = (Stage)((ImageView)mouseEvent.getSource()).getScene().getWindow();
         stage.setMaximized(false);
         stage.setIconified(true);
     }
+
+    public void bgChangeOnAction(MouseEvent mouseEvent) {
+    }
+
+    public void participateOnAction(MouseEvent mouseEvent) {
+    }
+
+
 }

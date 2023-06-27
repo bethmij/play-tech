@@ -5,43 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="modified">
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/angry.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/boy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/clown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/ghost.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/girl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/heart eye.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/heart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/kiss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/laugh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/purple smirk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/sad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/skull.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/smile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/smirk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/sunglass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/purple.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/icons8-clip-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/icons8-edit-48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/icons8-search-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/ijse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8ede8dcc-ac6b-497c-8d34-7b9407cebd3d.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/angry.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/angry.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/annoy.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/annoy.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/crazy.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/crazy.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/cute.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/cute.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/ghost.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/ghost.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/heart.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/heart.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/holo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/holo.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/kiss.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/kiss.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/laugh.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/laugh.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/lovely.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/lovely.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/sad.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/sad.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/shock.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/shock.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/sunglass.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/sunglass.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/wink.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/wink.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/angry.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/boy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/clown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/ghost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/girl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/heart eye.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/kiss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/laugh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/purple smirk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/sad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/skull.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/smirk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/emoji/sunglass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/angry.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/annoy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/crazy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/cute.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/ghost.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/heart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/holo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/kiss.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/laugh.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/lovely.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/purple.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/sad.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/shock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/sunglass.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/Assets/gif/wink.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/view/Client1ChatForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/view/Client1ChatForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,39 +80,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/IJSE/Working Projects/Chat Application/Client1/src/main/resources/view&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/IJSE/Working Projects/Chat Application/Client3/src/main/java/lk/ijse/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Sample/yasas Chat com/Chat" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="lk.ijse.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\view" />
+      <recent name="D:\IJSE\Working Projects\Chat Application\Client2\src\main\resources\view" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\java\lk\ijse\controller" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client3\src\main\resources\view" />
-      <recent name="D:\IJSE\Working Projects\Chat Application\Client2\src\main\resources\view" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client2\src\main\java\lk\ijse\controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\gif" />
-      <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\emoji" />
+      <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets" />
+      <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\gif" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\view" />
       <recent name="D:\grama-vista\src\main\java\lk\ijse" />
     </key>
@@ -208,19 +196,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Chat Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Chat Application" />
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -346,7 +321,11 @@
       <workItem from="1687406447514" duration="34625000" />
       <workItem from="1687489136102" duration="3936000" />
       <workItem from="1687528722835" duration="1325000" />
-      <workItem from="1687530110726" duration="9302000" />
+      <workItem from="1687530110726" duration="11306000" />
+      <workItem from="1687542953536" duration="198000" />
+      <workItem from="1687543212606" duration="115000" />
+      <workItem from="1687543803010" duration="7757000" />
+      <workItem from="1687859715529" duration="927000" />
     </task>
     <task id="LOCAL-00001" summary="grama vista 1">
       <created>1679592345340</created>
@@ -663,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687528965343</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="modified">
+      <created>1687540591021</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1687540591021</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

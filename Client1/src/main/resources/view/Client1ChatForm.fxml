@@ -88,7 +88,7 @@
       </Rectangle>
       <ScrollPane fx:id="scrollPane" layoutX="411.0" layoutY="68.0" prefHeight="623.0" prefWidth="419.0">
          <content>
-            <VBox fx:id="VBox" prefHeight="100.0" prefWidth="363.0" />
+            <VBox fx:id="VBox" prefHeight="100.0" prefWidth="413.0" />
          </content>
       </ScrollPane>
       <JFXButton fx:id="btnSend" contentDisplay="GRAPHIC_ONLY" layoutX="775.0" layoutY="713.0" onAction="#btnSendOnAction" prefHeight="48.0" prefWidth="30.0">
@@ -296,124 +296,107 @@
             <Image url="@../Assets/ijse.png" />
          </image>
       </ImageView>
-      <AnchorPane fx:id="emojiPane" layoutX="32.0" layoutY="466.0" prefHeight="203.0" prefWidth="190.0" />
-      <AnchorPane layoutX="247.0" layoutY="442.0" prefHeight="248.0" prefWidth="371.0">
+      <AnchorPane fx:id="emojiPane" layoutX="247.0" layoutY="442.0" prefHeight="248.0" prefWidth="371.0">
          <children>
             <Group layoutY="6.0">
                <children>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8c8c8c" height="210.0" layoutY="32.0" opacity="0.53" stroke="#8c8c8c" strokeType="INSIDE" width="321.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8c8c8c" height="210.0" layoutY="32.0" opacity="0.0" stroke="#8c8c8c" strokeType="INSIDE" width="321.0" />
                   <GridPane alignment="CENTER" layoutX="31.0" layoutY="36.0" prefHeight="203.0" prefWidth="299.0">
-                    <columnConstraints>
+                     <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="76.0" minWidth="10.0" prefWidth="76.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="71.0" minWidth="10.0" prefWidth="64.800048828125" />
-                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.39996337890625" minWidth="10.0" prefWidth="58.399987792968744" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="71.0" minWidth="10.0" prefWidth="64.800048828125" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.39996337890625" minWidth="10.0" prefWidth="58.399987792968744" />
                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.60001220703126" minWidth="10.0" prefWidth="101.60001220703126" />
-                    </columnConstraints>
-                    <rowConstraints>
+                     </columnConstraints>
+                     <rowConstraints>
                         <RowConstraints maxHeight="47.99998779296875" minHeight="10.0" prefHeight="47.99998779296875" vgrow="SOMETIMES" />
-                      <RowConstraints maxHeight="59.99997558593749" minHeight="10.0" prefHeight="59.99997558593749" vgrow="SOMETIMES" />
-                      <RowConstraints maxHeight="68.8000244140625" minHeight="10.0" prefHeight="47.20002441406251" vgrow="SOMETIMES" />
-                      <RowConstraints maxHeight="57.600012207031256" minHeight="10.0" prefHeight="50.39996337890625" vgrow="SOMETIMES" />
-                    </rowConstraints>
+                        <RowConstraints maxHeight="59.99997558593749" minHeight="10.0" prefHeight="59.99997558593749" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="68.8000244140625" minHeight="10.0" prefHeight="47.20002441406251" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="57.600012207031256" minHeight="10.0" prefHeight="50.39996337890625" vgrow="SOMETIMES" />
+                     </rowConstraints>
                      <children>
                         <ImageView fx:id="angry" fitHeight="36.0" fitWidth="36.0" onMouseClicked="#angryOnAction" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Assets/gif/angry.gif" />
+                              <Image url="@../Assets/emoji/angry.gif" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="laugh" fitHeight="35.0" fitWidth="34.0" onMouseClicked="#laughOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
                            <image>
-                              <Image url="@../Assets/gif/laugh.gif" />
+                              <Image url="@../Assets/emoji/laugh.gif" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="crazy" fitHeight="36.0" fitWidth="35.0" onMouseClicked="#crazyOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
                            <image>
-                              <Image url="@../Assets/gif/crazy.gif" />
+                              <Image url="@../Assets/emoji/crazy.gif" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="holo" fitHeight="35.0" fitWidth="33.0" onMouseClicked="#holoOnAction" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
                            <image>
-                              <Image url="@../Assets/gif/holo.gif" />
+                              <Image url="@../Assets/emoji/holo.gif" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="kiss" fitHeight="37.0" fitWidth="35.0" onMouseClicked="#kissOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <image>
-                              <Image url="@../Assets/gif/kiss.gif" />
+                              <Image url="@../Assets/emoji/kiss.gif" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="lovely" fitHeight="36.0" fitWidth="35.0" onMouseClicked="#lovelyOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
                            <image>
-                              <Image url="@../Assets/gif/lovely.gif" />
+                              <Image url="@../Assets/emoji/lovely.gif" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="sunGlass" fitHeight="37.0" fitWidth="33.0" onMouseClicked="#sunGlassOnAction" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
                            <image>
-                              <Image url="@../Assets/gif/sunglass.gif" />
+                              <Image url="@../Assets/emoji/sunglass.gif" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="shock" fitHeight="39.0" fitWidth="36.0" onMouseClicked="#shockOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <image>
-                              <Image url="@../Assets/gif/shock.gif" />
+                              <Image url="@../Assets/emoji/shock.gif" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="wink" fitHeight="39.0" fitWidth="34.0" onMouseClicked="#winkOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
                            <image>
-                              <Image url="@../Assets/gif/wink.gif" />
+                              <Image url="@../Assets/emoji/wink.gif" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="annoy" fitHeight="38.0" fitWidth="35.0" onMouseClicked="#annoyOnAction" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../Assets/gif/annoy.gif" />
+                              <Image url="@../Assets/emoji/annoy.gif" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="cute" fitHeight="39.0" fitWidth="35.0" onMouseClicked="#cuteOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
                            <image>
-                              <Image url="@../Assets/gif/cute.gif" />
+                              <Image url="@../Assets/emoji/cute.gif" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="sad" fitHeight="37.0" fitWidth="35.0" onMouseClicked="#sadOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
                            <image>
-                              <Image url="@../Assets/gif/sad.gif" />
+                              <Image url="@../Assets/emoji/sad.gif" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="smile" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#smileOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                        <ImageView fx:id="smile" fitHeight="41.0" fitWidth="37.0" onMouseClicked="#smileOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
                            <image>
-                              <Image url="@../Assets/gif/smile.gif" />
+                              <Image url="@../Assets/emoji/smile.gif" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="heart" fitHeight="36.0" fitWidth="37.0" onMouseClicked="#heartOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../Assets/gif/heart.gif" />
+                              <Image url="@../Assets/emoji/heart.gif" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="ghost" fitHeight="34.0" fitWidth="33.0" onMouseClicked="#ghostOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../Assets/gif/ghost.gif" />
+                              <Image url="@../Assets/emoji/ghost.gif" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="cute1" fitHeight="45.0" fitWidth="40.0" onMouseClicked="#cuteOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                        <ImageView fx:id="cute1" fitHeight="36.0" fitWidth="36.0" onMouseClicked="#purpleOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../Assets/gif/purple.gif" />
+                              <Image url="@../Assets/emoji/purple.gif" />
                            </image>
                         </ImageView>
                      </children>
                   </GridPane>
-                  <Text fill="WHITE" layoutX="18.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emoji          " wrappingWidth="61.59999999999991">
-                     <font>
-                        <Font name="Arial" size="20.0" />
-                     </font>
-                  </Text>
-                  <Text fill="WHITE" layoutX="119.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GIFs" wrappingWidth="61.59999999999991">
-                     <font>
-                        <Font name="Arial" size="20.0" />
-                     </font>
-                  </Text>
-                  <Text fill="WHITE" layoutX="207.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stickers" wrappingWidth="84.0">
-                     <font>
-                        <Font name="Arial" size="20.0" />
-                     </font>
-                  </Text>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8c8c8c" height="30.0" layoutX="-2.0" layoutY="-1.0" opacity="0.53" stroke="#8c8c8c" strokeType="INSIDE" width="103.0" />
                </children>
             </Group>
          </children></AnchorPane>
