@@ -7,6 +7,7 @@
     <list default="true" id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="modified">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1LoginFormController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +294,7 @@
       <workItem from="1687543803010" duration="7757000" />
       <workItem from="1687859715529" duration="3181000" />
       <workItem from="1687873762137" duration="19000" />
-      <workItem from="1687874456564" duration="17655000" />
+      <workItem from="1687874456564" duration="22230000" />
     </task>
     <task id="LOCAL-00001" summary="grama vista 1">
       <created>1679592345340</created>

@@ -18,6 +18,7 @@ import javafx.stage.Window;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Client1LoginFormController {
@@ -29,6 +30,8 @@ public class Client1LoginFormController {
     public static List<String> users = new ArrayList<>();
     public JFXButton btnImage;
     public static Image image;
+    public static List list= new ArrayList();
+    public static HashMap<String, Image> userLIst = new HashMap<>();
     public Circle circle;
 
     public void btnStartOnAction(ActionEvent actionEvent) {
@@ -38,12 +41,14 @@ public class Client1LoginFormController {
             System.out.println("already added");
         }else {
             users.add(userName);
+            userLIst.put(txtName.getText(),image);
             try {
                 Stage stage = new Stage();
                 stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/client1ChatForm.fxml"))));
                 stage.setTitle("Chat Room");
                 stage.show();
                 txtName.setText("");
+                circle.setFill(null);
             } catch (IOException e) {
                 e.printStackTrace();
                 System.out.println(e);
@@ -63,6 +68,7 @@ public class Client1LoginFormController {
             InputStream in = new FileInputStream(file);
             image = new Image(in);
             circle.setFill(new ImagePattern(image));
+
         } catch (FileNotFoundException e) {
             new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
         }

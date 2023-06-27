@@ -24,14 +24,17 @@ import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 import lk.ijse.controller.util.OpenView;
 
 import java.io.*;
 import java.net.Socket;
 import java.net.URL;
+import java.util.Map;
 import java.util.ResourceBundle;
 
 import static lk.ijse.controller.Client1LoginFormController.*;
+import static lk.ijse.controller.Client1LoginFormController.image;
 
 public class Client1ChatFormController extends Thread implements Initializable {
 
@@ -51,6 +54,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     public AnchorPane viewPane;
     public VBox partiVbox;
     public AnchorPane particatePane;
+    public AnchorPane backgroundPane;
     Socket socket;
     BufferedReader reader;
     PrintWriter writer;
@@ -71,6 +75,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
         stickerPane.setVisible(false);
         viewPane.setVisible(false);
         particatePane.setVisible(false);
+        backgroundPane.setVisible(false);
+
 
         Platform.runLater(() -> {
             scrollPane.lookup(".viewport").setStyle("-fx-background-color: transparent;");
@@ -484,7 +490,9 @@ public class Client1ChatFormController extends Thread implements Initializable {
     }
 
     public void bgChangeOnAction(MouseEvent mouseEvent) {
+        backgroundPane.setVisible(true);
     }
+
 
     public void participateOnAction(MouseEvent mouseEvent) {
         viewPane.setVisible(true);
@@ -546,14 +554,53 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
     public void viewOnAction(MouseEvent mouseEvent) {
         particatePane.setVisible(true);
+        viewPane.setVisible(false);
+        Image image = null;
+
+
         for (String user : users) {
+
             HBox hBox = new HBox();
             partiVbox.setAlignment(Pos.TOP_CENTER);
-            hBox.setAlignment(Pos.CENTER);
-            System.out.println(user);
+
+            for( Map.Entry<String, Image> entry : userLIst.entrySet()) {
+                if (entry.getKey().equals(user)) {
+                    image = entry.getValue();
+                }
+            }
+
+            Circle circle = new Circle(15);
+            if(image==null) {
+                image = new Image("D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\no-profile-pic-icon-11 (1).jpg");
+            }
+            circle.setFill(new ImagePattern(image));
+            hBox.getChildren().add(circle);
+
+
             Text text = new Text(user);
+            text.setStyle("-fx-font-size: 17px");
+            text.setFill(Color.WHITE);
             hBox.getChildren().add(text);
-            partiVbox.getChildren().add(hBox);
+
+            partiVbox.getChildren().addAll(hBox);
         }
+    }
+
+    public void backOnAction(MouseEvent mouseEvent) {
+        backgroundPane.setVisible(false);
+        Window window = ((Node) (mouseEvent.getSource())).getScene().getWindow();
+        FileChooser fileChooser = new FileChooser();
+        File file = fileChooser.showOpenDialog(window);
+        mouseEvent.consume();
+
+        InputStream in = null;
+        try {
+            in = new FileInputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        image = new Image(in);
+        imgView.setImage(image);
     }
 }
