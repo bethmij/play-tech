@@ -45,9 +45,9 @@
             <Image url="@../Assets/1-removebg-preview.png" />
          </image>
       </ImageView>
-      <JFXButton fx:id="btnStart" buttonType="RAISED" layoutX="129.0" layoutY="645.0" onAction="#btnStartOnAction" style="-fx-background-radius: 50;" text="GET STARTED" textFill="#d5e125">
+      <JFXButton fx:id="btnStart" buttonType="RAISED" layoutX="138.0" layoutY="652.0" onAction="#btnStartOnAction" opacity="0.59" prefHeight="16.0" prefWidth="134.0" style="-fx-background-radius: 50; -fx-background-color: #fbffb2;" text="GET STARTED">
          <font>
-            <Font size="20.0" />
+            <Font size="18.0" />
          </font>
          <effect>
             <InnerShadow>

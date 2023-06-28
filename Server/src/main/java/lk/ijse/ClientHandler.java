@@ -31,8 +31,7 @@ public class ClientHandler extends Thread {
                 }
 
                 for (ClientHandler clientHandler : clientList) {
-                    clientHandler.writer.println(message);
-                    //System.out.println(message);
+                    clientHandler.writer.println(message);;
 
                 }
             }

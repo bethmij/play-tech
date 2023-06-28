@@ -70,6 +70,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
         scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         scrollPane.setStyle("-fx-background-color: transparent; -fx-background-insets: 0; -fx-padding: 0;");
+        txt.setStyle("-fx-background-color: #053c4f;" + "-fx-text-fill: white;");
         emojiPane.setVisible(false);
         filePane.setVisible(false);
         stickerPane.setVisible(false);
@@ -496,8 +497,18 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
 
     public void participateOnAction(MouseEvent mouseEvent) {
-        viewPane.setVisible(true);
+        if(viewPane.isVisible())
+            viewPane.setVisible(false);
+
+        else if(!viewPane.isVisible())
+            if(!particatePane.isVisible()) {
+                viewPane.setVisible(true);
+            }
+            else if( !filePane.isVisible() && particatePane.isVisible() )
+                particatePane.setVisible(false);
+
     }
+
 
 
     public void EmojiOnAction(MouseEvent mouseEvent) {

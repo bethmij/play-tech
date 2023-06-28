@@ -21,7 +21,6 @@ public class Server {
 
 
                 while (true){
-                    System.out.println("Waiting");
                     socket = serverSocket.accept();
 
                     dataInputStream = new DataInputStream(socket.getInputStream());

@@ -5,85 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="modified">
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/1712450.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/1712451.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/angry.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/annoy.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/crazy.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/cute.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/ghost.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/heart.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/holo.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/kiss.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/laugh.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/lovely.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/purple.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/sad.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/shock.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/smile.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/sunglass.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/emoji/wink.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/icons8-clip-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/icons8-edit-48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/icons8-minimize-60.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/icons8-search-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/ijse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/no-profile-pic-icon-11 (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/showcase 4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/stickers/brain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/stickers/cat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/stickers/hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/stickers/hello.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/stickers/jesus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client2/src/main/resources/Assets/stickers/sip-tea.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/java/lk/ijse/controller/Client3LoginFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/java/lk/ijse/controller/util/OpenView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/1712450.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/1712451.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/angry.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/annoy.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/crazy.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/cute.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/ghost.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/heart.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/holo.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/kiss.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/laugh.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/lovely.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/purple.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/sad.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/shock.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/smile.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/sunglass.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/emoji/wink.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/icons8-clip-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/icons8-edit-48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/icons8-minimize-60.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/icons8-search-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/ijse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/no-profile-pic-icon-11 (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/showcase 4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/stickers/brain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/stickers/cat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/stickers/hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/stickers/hello.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/stickers/jesus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/Assets/stickers/sip-tea.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client3/src/main/resources/view/client3LoginForm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1LoginFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/view/Client1ChatForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/view/Client1ChatForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client2/src/main/java/lk/ijse/controller/Client2ChatFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client2/src/main/java/lk/ijse/controller/Client2ChatFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client2/src/main/java/lk/ijse/controller/Client2LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client2/src/main/java/lk/ijse/controller/Client2LoginFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client2/src/main/resources/view/client1ChatForm.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client2/src/main/resources/view/client2ChatForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client2/src/main/resources/view/client2ChatForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client2/src/main/resources/view/client2LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client2/src/main/resources/view/client2LoginForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client3/src/main/java/Client3Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client3/src/main/java/Client3Initializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client3/src/main/java/lk/ijse/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client3/src/main/java/lk/ijse/controller/Client3ChatFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client3/src/main/java/lk/ijse/controller/Client3ChatFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client3/src/main/resources/view/client1ChatForm.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client3/src/main/resources/view/client3ChatForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client3/src/main/resources/view/client3ChatForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/view/client1LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/view/client1LoginForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/lk/ijse/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/lk/ijse/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/lk/ijse/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/lk/ijse/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,7 +298,7 @@
       <workItem from="1687859715529" duration="3181000" />
       <workItem from="1687873762137" duration="19000" />
       <workItem from="1687874456564" duration="22427000" />
-      <workItem from="1687923620785" duration="1000000" />
+      <workItem from="1687923620785" duration="4269000" />
     </task>
     <task id="LOCAL-00001" summary="grama vista 1">
       <created>1679592345340</created>
