@@ -17,35 +17,35 @@ Functions :-
 - Firstly you can login to the by entering your and a image of yours if needed
 
 
-![](Screenshot\login_complete.png)
+![image](./Screenshot/login_complete.png)
 
 - Screen will display all jointed members
 
-![](Screenshot\jointed.png)
+![image](./Screenshot/jointed.png)
 
 - Users can send messages 
 
-![](Screenshot\msg.png)
+![image](./Screenshot/msg.png)
 
 - It shows the attachment file which contains emoji, gifs and stickers
 
-![](Screenshot\emojiPane.png)
+![image](./Screenshot/emojiPane.png)
 
 - User can send emojis 
 
-![](Screenshot\emoji.png)
+![image](./Screenshot/emoji.png)
 
 - gifs 
 
-![](Screenshot\gif.png)
+![image](./Screenshot/gif.png)
 
 - as well as stickers
 
-![](Screenshot\sticker.png)
+![image](./Screenshot/sticker.png)
 
 - They can chat in sinhala as well.
 
-![](Screenshot\sinhala.png)
+![image](./Screenshot/sinhala.png)
 
 
 
@@ -53,14 +53,14 @@ Functions :-
 
 - User can view all participants in the group 
 
-![](Screenshot\view.png)
+![image](./Screenshot/view.png)
 
-![](Screenshot\participant.png)
+![image](./Screenshot/participant.png)
 
 - As well as change their background image 
 
-![](Screenshot\change.png)
+![image](./Screenshot/change.png)
 
-![](Screenshot\bgFolder.png)
+![image](./Screenshot/bgFolder.png)
 
-![](Screenshot\blue_bg.png)
+![image](./Screenshot/blue_bg.png)
