@@ -111,7 +111,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
                    ImageView imageView = null;
 
                    if(!afterCharacter.endsWith("emojii")) {
-                       //for image
+
                        String[] part = message.split("\\Q" + "img" + "\\E");
                        path = part[1];
                        Image image = new Image(path, 100, 100, true, true);
@@ -154,6 +154,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
                    }
 
                     Platform.runLater(() -> VBox.getChildren().addAll(hBox));
+
                }else {
                    TextFlow tempText = new TextFlow();
 
@@ -211,7 +212,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
             dataOutputStream.writeUTF(userName);
             dataOutputStream.flush();
 
-            System.out.println(userName+" Connected"); // name
+            System.out.println(userName+" Connected");
 
             reader = new BufferedReader( new InputStreamReader(socket.getInputStream()));
             writer = new PrintWriter(socket.getOutputStream(),true);

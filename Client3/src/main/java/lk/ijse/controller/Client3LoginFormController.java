@@ -8,7 +8,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
@@ -21,7 +20,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Client1LoginFormController {
+public class Client3LoginFormController {
     public AnchorPane pane;
     public TextField txtName;
     public JFXButton btnStart;
@@ -44,7 +43,7 @@ public class Client1LoginFormController {
             userLIst.put(txtName.getText(),image);
             try {
                 Stage stage = new Stage();
-                stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/client1ChatForm.fxml"))));
+                stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/client3ChatForm.fxml"))));
                 stage.setTitle("Chat Room");
                 stage.show();
                 txtName.setText("");

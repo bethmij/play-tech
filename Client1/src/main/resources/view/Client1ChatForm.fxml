@@ -461,5 +461,30 @@
          </children>
       </AnchorPane>
       <Circle fx:id="circle" fill="#1f93ff00" layoutX="393.0" layoutY="30.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+      <AnchorPane fx:id="viewPane" layoutX="223.0" layoutY="237.0" prefHeight="43.0" prefWidth="210.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e8081" height="43.0" layoutX="17.0" opacity="0.37" stroke="#7e8081" strokeType="INSIDE" width="151.0" />
+            <Text fill="WHITE" layoutX="35.0" layoutY="27.0" onMouseClicked="#viewOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="View Participants">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="particatePane" layoutX="228.0" layoutY="234.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <VBox fx:id="partiVbox" prefHeight="200.0" prefWidth="151.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="backgroundPane" layoutX="158.0" layoutY="43.0" prefHeight="38.0" prefWidth="198.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e8081" height="43.0" layoutX="28.0" layoutY="4.0" opacity="0.37" stroke="#7e8081" strokeType="INSIDE" width="171.0" />
+            <Text fill="WHITE" layoutX="43.0" layoutY="29.0" onMouseClicked="#backOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Background">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
