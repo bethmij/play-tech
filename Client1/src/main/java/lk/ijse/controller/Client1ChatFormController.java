@@ -595,6 +595,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
             HBox hBox = new HBox();
             partiVbox.setAlignment(Pos.TOP_CENTER);
+            partiVbox.setSpacing(5);
 
             for( Map.Entry<String, Image> entry : userLIst.entrySet()) {
                 if (entry.getKey().equals(user)) {

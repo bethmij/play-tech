@@ -69,7 +69,7 @@
             </InnerShadow>
          </effect>
       </Rectangle>
-      <ScrollPane fx:id="scrollPane" layoutX="367.0" layoutY="69.0" prefHeight="538.0" prefWidth="396.0">
+      <ScrollPane fx:id="scrollPane" layoutX="367.0" layoutY="69.0" prefHeight="584.0" prefWidth="396.0">
          <content>
             <VBox fx:id="VBox" prefHeight="100.0" prefWidth="384.0" />
          </content>
@@ -134,17 +134,17 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <TextField fx:id="txt" alignment="TOP_LEFT" blendMode="SOFT_LIGHT" layoutX="478.0" layoutY="682.0" prefHeight="46.0" prefWidth="249.0">
-         <effect>
-            <InnerShadow choke="0.16" height="30.06" radius="16.9425" width="39.71">
-               <color>
-                  <Color red="0.26269999146461487" green="0.6876350045204163" blue="0.7099999785423279" />
-               </color>
-            </InnerShadow>
-         </effect>
+      <TextField fx:id="txt" alignment="TOP_LEFT" layoutX="478.0" layoutY="682.0" prefHeight="46.0" prefWidth="249.0" style="-fx-background-color: #053c4f;">
          <font>
             <Font size="21.0" />
          </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.1894736886024475" green="0.15438596904277802" blue="0.15438596904277802" />
+               </color>
+            </InnerShadow>
+         </effect>
       </TextField>
       <JFXButton blendMode="LIGHTEN" layoutX="695.0" layoutY="-5.0" onAction="#btnAddOnAction" prefHeight="59.0" prefWidth="33.0" text="+" textFill="#abd4cf">
          <cursor>
