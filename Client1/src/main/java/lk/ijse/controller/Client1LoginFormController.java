@@ -50,6 +50,8 @@ public class Client1LoginFormController {
                 txtName.setText("");
                 circle.setFill(null);
                 image = null;
+
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
