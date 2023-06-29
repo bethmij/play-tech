@@ -51,6 +51,10 @@ Functions :-
 
 ## Special Features
 
+-  You can double-click on any text to choose that message specifically to send replies
+
+![image](./Screenshot/forward.png)
+
 - User can view all participants in the group 
 
 ![image](./Screenshot/view.png)
@@ -64,3 +68,4 @@ Functions :-
 ![image](./Screenshot/bgFolder.png)
 
 ![image](./Screenshot/blue_bg.png)
+

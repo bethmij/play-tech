@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="modified">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" afterDir="false" />
-    </list>
+    <list default="true" id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="modified" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -296,7 +293,7 @@
       <workItem from="1687874456564" duration="22427000" />
       <workItem from="1687923620785" duration="7785000" />
       <workItem from="1687967158033" duration="1620000" />
-      <workItem from="1688003211033" duration="15198000" />
+      <workItem from="1688003211033" duration="15541000" />
     </task>
     <task id="LOCAL-00001" summary="grama vista 1">
       <created>1679592345340</created>
