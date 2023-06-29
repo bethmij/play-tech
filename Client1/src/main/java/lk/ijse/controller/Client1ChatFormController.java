@@ -100,9 +100,6 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
         hBox1 = new HBox();
 
-
-
-
     }
 
     @Override
@@ -205,20 +202,28 @@ public class Client1ChatFormController extends Thread implements Initializable {
                    }else {
                        textFlow = new TextFlow();
 
-                       HBox hBox = new HBox(10);
-                       HBox hBox1 = new HBox(10);
+                       HBox hBox = new HBox(0); //for messages
+                       HBox hBox1 = new HBox(0); //for selected message
+                       HBox hBox2 = new HBox(0); //for forward message
 
                        if (!lblName.getText().equals(beforeCharacter)) {
 
                            if(message.contains("forwarded")) {
 
+                               String[] parting = reply.split("\\Q" + ":" + "\\E");
+                               String name  = parting[0];
+
+                               if(name.contains(lblName.getText())){
+                                   reply = "You : "+parting[1];
+                               }
+
                                Text text2 = new Text(reply);
                                TextFlow textFlow1 = new TextFlow(text2);
-                               textFlow1.setStyle("-fx-background-color:#B2BEB5;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;");
+                               textFlow1.setStyle("-fx-background-color:#939393;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;");
                                textFlow1.setPadding(new Insets(5, 10, 5, 10));
 
-                               hBox1.setAlignment(Pos.CENTER_LEFT);
-                               hBox1.getChildren().add(textFlow1);
+                               hBox2.setAlignment(Pos.CENTER_LEFT);
+                               hBox2.getChildren().add(textFlow1);
 
                            }
 
@@ -237,7 +242,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
                            String finalAfterCharacter = afterCharacter;
                            name.setOnMouseClicked(event -> {
                                lblReply.setVisible(true);
-                               lblReply.setStyle("-fx-background-color:#B2BEB5;");
+                               lblReply.setStyle("-fx-background-color:#939393;");
                                lblReply.setTextFill(Color.BLACK);
                                String replyMsg = name.getText() + " " + finalAfterCharacter;
 
@@ -250,7 +255,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
                            if(lblReply.isVisible()){
                                Text text2 = new Text(lblReply.getText());
                                TextFlow textFlow1 = new TextFlow(text2);
-                               textFlow1.setStyle("-fx-background-color:#B2BEB5;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;");
+                               textFlow1.setStyle("-fx-background-color:#939393;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;");
                                textFlow1.setPadding(new Insets(5, 10, 5, 10));
                                hBox1.getChildren().add(textFlow1);
                            }
@@ -270,7 +275,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
                            text1.setOnMouseClicked(event -> {
                                lblReply.setVisible(true);
-                               lblReply.setStyle("-fx-background-color:#B2BEB5;");
+                               lblReply.setStyle("-fx-background-color:#939393;");
                                lblReply.setTextFill(Color.BLACK);
                                String replyMsg = text1.getText();
 
@@ -283,7 +288,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
                            if(lblReply.isVisible()){
                                Text text2 = new Text(lblReply.getText());
                                TextFlow textFlow1 = new TextFlow(text2);
-                               textFlow1.setStyle("-fx-background-color:#B2BEB5;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;");
+                               textFlow1.setStyle("-fx-background-color:#939393;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;");
                                textFlow1.setPadding(new Insets(5, 10, 5, 10));
                                hBox1.getChildren().add(textFlow1);
                            }
@@ -294,7 +299,9 @@ public class Client1ChatFormController extends Thread implements Initializable {
                            textFlow.setStyle("-fx-background-color:#7bed9f;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;");
                            textFlow.setPadding(new Insets(5, 10, 5, 10));
                        }
-                       Platform.runLater(() -> VBox.getChildren().addAll(hBox1,hBox));
+
+                       Platform.runLater(() -> VBox.getChildren().addAll(hBox1,hBox2,hBox));
+
                    }
 
 
