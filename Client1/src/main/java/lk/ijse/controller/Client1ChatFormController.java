@@ -13,6 +13,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
@@ -32,6 +33,7 @@ import java.net.Socket;
 import java.net.URL;
 import java.util.Map;
 import java.util.ResourceBundle;
+import java.util.concurrent.atomic.AtomicReference;
 
 import static lk.ijse.controller.Client1LoginFormController.*;
 import static lk.ijse.controller.Client1LoginFormController.image;
@@ -55,11 +57,15 @@ public class Client1ChatFormController extends Thread implements Initializable {
     public VBox partiVbox;
     public AnchorPane particatePane;
     public AnchorPane backgroundPane;
+    public Label lblReply;
     Socket socket;
     BufferedReader reader;
     PrintWriter writer;
     FileChooser fileChooser;
     File filePath;
+    TextFlow textFlow;
+    HBox hBox1;
+
 
     DataOutputStream dataOutputStream;
 
@@ -77,6 +83,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
         viewPane.setVisible(false);
         particatePane.setVisible(false);
         backgroundPane.setVisible(false);
+        lblReply.setVisible(false);
 
 
         Platform.runLater(() -> {
@@ -91,6 +98,11 @@ public class Client1ChatFormController extends Thread implements Initializable {
         }
         circle.setFill(new ImagePattern(image));
 
+        hBox1 = new HBox();
+
+
+
+
     }
 
     @Override
@@ -100,6 +112,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
            while (true) {
 
                String message = reader.readLine();
+               System.out.println(message);
 
                if (message.contains("jointed")) {
                    HBox hBox = new HBox(10);
@@ -117,93 +130,171 @@ public class Client1ChatFormController extends Thread implements Initializable {
                    Platform.runLater(() -> VBox.getChildren().add(hBox));
 
                } else {
+                   String beforeCharacter = "", afterCharacter ="", reply = "";
 
-                   String[] parts = message.split("\\Q" + "::" + "\\E");
-                   String beforeCharacter = parts[0];
 
-                   String afterCharacter = parts[1];
+                   if(!message.contains("forwarded")) {
+                       String[] parts = message.split("\\Q" + "::" + "\\E");
+                       beforeCharacter = parts[0];
 
-                   if (afterCharacter.startsWith("img")) {
-                       String path = "";
-                       ImageView imageView = null;
+                       afterCharacter = parts[1];
 
-                       if (!afterCharacter.endsWith("emojii")) {
+                   }else{
+                       String[] parts = message.split("\\Q" + "forwarded" + "\\E");
+                       reply =  parts[0];
+                       String message1 = parts[1];
 
-                           String[] part = message.split("\\Q" + "img" + "\\E");
-                           path = part[1];
-                           Image image = new Image(path, 100, 100, true, true);
+                       String[] parts1 = message1.split("\\Q" + "::" + "\\E");
+                       beforeCharacter = parts1[0];
+                       afterCharacter = parts1[1];
 
-                           imageView = new ImageView(image);
-                           imageView.setFitHeight(120);
-                           imageView.setFitWidth(120);
-                       } else {
-                           String[] part = message.split("\\Q" + "img" + "\\E");
-                           String[] emojiPath = part[1].split("\\Q" + "emojii" + "\\E");
-                           ;
-                           path = emojiPath[0];
 
-                           Image image = new Image(path);
-                           imageView = new ImageView(image);
-                           imageView.setFitHeight(50);
-                           imageView.setFitWidth(50);
-                       }
+                   }
+
+                       if (afterCharacter.startsWith("img")) {
+                           String path = "";
+                           ImageView imageView = null;
+
+                           if (!afterCharacter.endsWith("emojii")) {
+
+                               String[] part = message.split("\\Q" + "img" + "\\E");
+                               path = part[1];
+                               Image image = new Image(path, 100, 100, true, true);
+
+                               imageView = new ImageView(image);
+                               imageView.setFitHeight(120);
+                               imageView.setFitWidth(120);
+                           } else {
+                               String[] part = message.split("\\Q" + "img" + "\\E");
+                               String[] emojiPath = part[1].split("\\Q" + "emojii" + "\\E");
+                               ;
+                               path = emojiPath[0];
+
+                               Image image = new Image(path);
+                               imageView = new ImageView(image);
+                               imageView.setFitHeight(50);
+                               imageView.setFitWidth(50);
+                           }
+
+                           HBox hBox = new HBox(10);
+                           hBox.setAlignment(Pos.BOTTOM_RIGHT);
+
+                           if (!lblName.getText().equals(beforeCharacter)) {
+
+                               VBox.setAlignment(Pos.BOTTOM_LEFT);
+                               hBox.setAlignment(Pos.CENTER_LEFT);
+
+                               Text text1 = new Text(" " + beforeCharacter + " : ");
+                               text1.setStyle("-fx-font-size: 17px;");
+                               text1.setFill(Color.WHITE);
+                               hBox.getChildren().add(text1);
+                               hBox.getChildren().add(imageView);
+
+                           } else {
+                               hBox.setAlignment(Pos.CENTER_RIGHT);
+                               hBox.getChildren().add(imageView);
+                               Text text1 = new Text(" : Me");
+                               text1.setStyle("-fx-font-size: 17px;");
+                               text1.setFill(Color.WHITE);
+                               hBox.getChildren().add(text1);
+                           }
+
+                           Platform.runLater(() -> VBox.getChildren().addAll(hBox));
+
+
+                   }else {
+                       textFlow = new TextFlow();
 
                        HBox hBox = new HBox(10);
-                       hBox.setAlignment(Pos.BOTTOM_RIGHT);
+                       HBox hBox1 = new HBox(10);
 
                        if (!lblName.getText().equals(beforeCharacter)) {
 
-                           VBox.setAlignment(Pos.BOTTOM_LEFT);
-                           hBox.setAlignment(Pos.CENTER_LEFT);
+                           if(message.contains("forwarded")) {
 
-                           Text text1 = new Text(" " + beforeCharacter + " : ");
-                           text1.setStyle("-fx-font-size: 17px;");
-                           text1.setFill(Color.WHITE);
-                           hBox.getChildren().add(text1);
-                           hBox.getChildren().add(imageView);
+                               Text text2 = new Text(reply);
+                               TextFlow textFlow1 = new TextFlow(text2);
+                               textFlow1.setStyle("-fx-background-color:#B2BEB5;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;");
+                               textFlow1.setPadding(new Insets(5, 10, 5, 10));
 
-                       } else {
-                           hBox.setAlignment(Pos.CENTER_RIGHT);
-                           hBox.getChildren().add(imageView);
-                           Text text1 = new Text(" : Me");
-                           text1.setStyle("-fx-font-size: 17px;");
-                           text1.setFill(Color.WHITE);
-                           hBox.getChildren().add(text1);
-                       }
+                               hBox1.setAlignment(Pos.CENTER_LEFT);
+                               hBox1.getChildren().add(textFlow1);
 
-                       Platform.runLater(() -> VBox.getChildren().addAll(hBox));
+                           }
 
-                   } else {
-                       TextFlow tempText = new TextFlow();
-
-                       HBox hBox = new HBox(10);
-                       if (!lblName.getText().equals(beforeCharacter)) {
                            Text name = new Text(beforeCharacter + " : ");
-                           tempText.getChildren().add(name);
+
+                           textFlow.getChildren().add(name);
 
                            Text msg = new Text(afterCharacter);
-                           tempText.getChildren().add(msg);
-                           tempText.setMaxWidth(200);
+                           textFlow.getChildren().add(msg);
+                           textFlow.setMaxWidth(200);
 
-                           tempText.setStyle("-fx-background-color:#ff6b81;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;");
-                           tempText.setPadding(new Insets(5, 10, 5, 10));
+
+                           textFlow.setStyle("-fx-background-color:#ff6b81;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;"); // tempText.setPadding(new Insets(5, 10, 5, 10));
+                           textFlow.setPadding(new Insets(5, 10, 5, 10));
+
+                           String finalAfterCharacter = afterCharacter;
+                           name.setOnMouseClicked(event -> {
+                               lblReply.setVisible(true);
+                               lblReply.setStyle("-fx-background-color:#B2BEB5;");
+                               lblReply.setTextFill(Color.BLACK);
+                               String replyMsg = name.getText() + " " + finalAfterCharacter;
+
+                               lblReply.setText(replyMsg);
+                           });
+
+
+                           hBox1.setAlignment(Pos.BOTTOM_RIGHT);
+
+                           if(lblReply.isVisible()){
+                               Text text2 = new Text(lblReply.getText());
+                               TextFlow textFlow1 = new TextFlow(text2);
+                               textFlow1.setStyle("-fx-background-color:#B2BEB5;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;");
+                               textFlow1.setPadding(new Insets(5, 10, 5, 10));
+                               hBox1.getChildren().add(textFlow1);
+                           }
 
 
                            hBox.setPadding(new Insets(5));
 
                            VBox.setAlignment(Pos.TOP_LEFT);
                            hBox.setAlignment(Pos.CENTER_LEFT);
-                           hBox.getChildren().add(tempText);
+                           hBox.getChildren().add(textFlow);
 
                        } else {
+
+                           System.out.println("afterCharacter "+ afterCharacter);
                            Text text1 = new Text(afterCharacter + " : Me");
-                           TextFlow textFlow1 = new TextFlow(text1);
+                           textFlow = new TextFlow(text1);
+
+                           text1.setOnMouseClicked(event -> {
+                               lblReply.setVisible(true);
+                               lblReply.setStyle("-fx-background-color:#B2BEB5;");
+                               lblReply.setTextFill(Color.BLACK);
+                               String replyMsg = text1.getText();
+
+                               lblReply.setText(replyMsg);
+                           });
+
+
+                           hBox1.setAlignment(Pos.BOTTOM_RIGHT);
+
+                           if(lblReply.isVisible()){
+                               Text text2 = new Text(lblReply.getText());
+                               TextFlow textFlow1 = new TextFlow(text2);
+                               textFlow1.setStyle("-fx-background-color:#B2BEB5;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;");
+                               textFlow1.setPadding(new Insets(5, 10, 5, 10));
+                               hBox1.getChildren().add(textFlow1);
+                           }
+
                            hBox.setAlignment(Pos.BOTTOM_RIGHT);
-                           hBox.getChildren().add(textFlow1);
-                           textFlow1.setStyle("-fx-background-color:#7bed9f;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;");
-                           textFlow1.setPadding(new Insets(5, 10, 5, 10));
+
+                           hBox.getChildren().add(textFlow);
+                           textFlow.setStyle("-fx-background-color:#7bed9f;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;");
+                           textFlow.setPadding(new Insets(5, 10, 5, 10));
                        }
-                       Platform.runLater(() -> VBox.getChildren().addAll(hBox));
+                       Platform.runLater(() -> VBox.getChildren().addAll(hBox1,hBox));
                    }
 
 
@@ -247,7 +338,13 @@ public class Client1ChatFormController extends Thread implements Initializable {
     public void btnSendOnAction(ActionEvent actionEvent) {
 
        String message = txt.getText();
-       writer.println(lblName.getText()+"::"+message);
+
+
+       if(lblReply.isVisible()){
+           writer.println(lblReply.getText()+"forwarded"+lblName.getText()+"::"+message);
+       }else{
+           writer.println(lblName.getText()+"::"+message);
+       }
 
 
        writer.flush();
@@ -595,7 +692,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
             HBox hBox = new HBox();
             partiVbox.setAlignment(Pos.TOP_CENTER);
-            partiVbox.setSpacing(5);
+            partiVbox.setSpacing(10);
 
             for( Map.Entry<String, Image> entry : userLIst.entrySet()) {
                 if (entry.getKey().equals(user)) {
@@ -636,5 +733,15 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
         image = new Image(in);
         imgView.setImage(image);
+    }
+
+    public void txtOnAction(MouseEvent actionEvent) {
+        if(actionEvent.getButton().equals(MouseButton.PRIMARY)){
+            if(actionEvent.getClickCount() == 2){
+                 if(lblReply.isVisible())
+                    lblReply.setVisible(false);
+            }
+        }
+
     }
 }

@@ -134,7 +134,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <TextField fx:id="txt" alignment="TOP_LEFT" layoutX="478.0" layoutY="682.0" prefHeight="46.0" prefWidth="249.0" style="-fx-background-color: #053c4f;">
+      <TextField fx:id="txt" alignment="TOP_LEFT" layoutX="478.0" layoutY="682.0" onMouseClicked="#txtOnAction" prefHeight="46.0" prefWidth="249.0" style="-fx-background-color: #053c4f;">
          <font>
             <Font size="21.0" />
          </font>
@@ -486,5 +486,10 @@
             </Text>
          </children>
       </AnchorPane>
+      <Label fx:id="lblReply" layoutX="489.0" layoutY="654.0" prefHeight="27.0" prefWidth="226.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
