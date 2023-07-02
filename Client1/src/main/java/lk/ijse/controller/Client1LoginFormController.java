@@ -34,27 +34,30 @@ public class Client1LoginFormController {
     public Circle circle;
 
     public void btnStartOnAction() {
-        userName = txtName.getText();
 
-        if(users.contains(txtName.getText())){
-            System.out.println("already added");
-        }else {
-            users.add(userName);
-            userLIst.put(txtName.getText(),image);
-            try {
-                Stage stage = new Stage();
-                stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/client1ChatForm.fxml"))));
-                stage.setTitle("Chat Room");
-                stage.show();
-                txtName.setText("");
-                circle.setFill(null);
-                image = null;
+        if(!txtName.getText().equals("")) {
 
+            userName = txtName.getText();
 
-            } catch (IOException e) {
-                e.printStackTrace();
+            if (users.contains(txtName.getText())) {
+                System.out.println("already added");
+            } else {
+                users.add(userName);
+                userLIst.put(txtName.getText(), image);
+                try {
+                    Stage stage = new Stage();
+                    stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/client1ChatForm.fxml"))));
+                    stage.setTitle("Chat Room");
+                    stage.show();
+                    txtName.setText("");
+                    circle.setFill(null);
+                    image = null;
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
-        }
+        }else
+            new Alert(Alert.AlertType.ERROR, "Please enter your name!").show();
     }
 
 

@@ -8,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
@@ -68,6 +69,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
         scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         scrollPane.setStyle("-fx-background-color: transparent; -fx-background-insets: 0; -fx-padding: 0;");
+        scrollPane.vvalueProperty().bind(VBox.heightProperty());
         txt.setStyle("-fx-background-color: #053c4f;" + "-fx-text-fill: white;");
         emojiPane.setVisible(false);
         filePane.setVisible(false);
@@ -333,21 +335,23 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
     public void btnSendOnAction() {
 
-       String message = txt.getText();
+       if(!txt.getText().equals("")) {
 
+           String message = txt.getText();
 
-       if(lblReply.isVisible()){
-           writer.println(lblReply.getText()+"forwarded"+lblName.getText()+"::"+message);
-       }else{
-           writer.println(lblName.getText()+"::"+message);
-       }
+           if (lblReply.isVisible()) {
+               writer.println(lblReply.getText() + "forwarded" + lblName.getText() + "::" + message);
+           } else {
+               writer.println(lblName.getText() + "::" + message);
+           }
 
-
-       writer.flush();
-       txt.setText("");
-       if(message.equalsIgnoreCase("bye")){
-           System.exit(0);
-       }
+           writer.flush();
+           txt.setText("");
+           if (message.equalsIgnoreCase("bye")) {
+               System.exit(0);
+           }
+       }else
+           new Alert(Alert.AlertType.ERROR, "Please enter your message! ").show();
 
     }
 
