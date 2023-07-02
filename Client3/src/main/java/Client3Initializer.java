@@ -14,6 +14,7 @@ public class Client3Initializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
+
         Parent root = FXMLLoader.load(this.getClass().getResource("/view/client3LoginForm.fxml"));
         Scene mainScene = new Scene(root);
         primaryStage.setScene(mainScene);

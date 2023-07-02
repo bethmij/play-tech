@@ -27,7 +27,6 @@ import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.stage.Window;
-import lk.ijse.controller.util.OpenView;
 
 import java.io.*;
 import java.net.Socket;
@@ -36,7 +35,6 @@ import java.util.Map;
 import java.util.ResourceBundle;
 
 import static lk.ijse.controller.Client1LoginFormController.*;
-import static lk.ijse.controller.Client1LoginFormController.image;
 
 public class Client1ChatFormController extends Thread implements Initializable {
 
@@ -386,7 +384,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
 
     public void btnAddOnAction() {
-        OpenView.openView("client1LoginForm");
+        //OpenView.openView("client1LoginForm");
     }
 
 

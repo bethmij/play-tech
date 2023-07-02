@@ -33,25 +33,31 @@ public class Client2LoginFormController {
     public static HashMap<String, Image> userLIst = new HashMap<>();
     public Circle circle;
 
-    public void btnStartOnAction(ActionEvent actionEvent) {
-        userName = txtName.getText();
+    public void btnStartOnAction() {
 
-        if(users.contains(txtName.getText())){
-            System.out.println("already added");
-        }else {
-            users.add(userName);
-            userLIst.put(txtName.getText(),image);
-            try {
-                Stage stage = new Stage();
-                stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/client2ChatForm.fxml"))));
-                stage.setTitle("Chat Room");
-                stage.show();
-                txtName.setText("");
-                circle.setFill(null);
-            } catch (IOException e) {
-                e.printStackTrace();
+        if(!txtName.getText().equals("")) {
+
+            userName = txtName.getText();
+
+            if (users.contains(txtName.getText())) {
+                System.out.println("already added");
+            } else {
+                users.add(userName);
+                userLIst.put(txtName.getText(), image);
+                try {
+                    Stage stage = new Stage();
+                    stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/client2ChatForm.fxml"))));
+                    stage.setTitle("Chat Room");
+                    stage.show();
+                    txtName.setText("");
+                    circle.setFill(null);
+                    image = null;
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
-        }
+        }else
+            new Alert(Alert.AlertType.ERROR, "Please enter your name!").show();
     }
 
 

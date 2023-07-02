@@ -24,7 +24,7 @@ public class Client1LoginFormController {
     public AnchorPane pane;
     public TextField txtName;
     public JFXButton btnStart;
-    static String userName;
+    public static String userName;
 
     public static List<String> users = new ArrayList<>();
     public JFXButton btnImage;
