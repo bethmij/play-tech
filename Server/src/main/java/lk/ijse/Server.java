@@ -29,7 +29,6 @@ public class Server {
                     ClientHandler clientHandler = new ClientHandler(socket,clientList);
                     clientList.add(clientHandler);
                     clientHandler.start();
-
                 }
             } catch (IOException e) {
                 throw new RuntimeException(e);

@@ -1,7 +1,6 @@
 package lk.ijse;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.net.Socket;
 import java.util.List;
 
@@ -31,7 +30,7 @@ public class ClientHandler extends Thread {
                 }
 
                 for (ClientHandler clientHandler : clientList) {
-                    clientHandler.writer.println(message);;
+                    clientHandler.writer.println(message);
 
                 }
             }

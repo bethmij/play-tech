@@ -8,7 +8,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
@@ -34,7 +33,7 @@ public class Client1LoginFormController {
     public static HashMap<String, Image> userLIst = new HashMap<>();
     public Circle circle;
 
-    public void btnStartOnAction(ActionEvent actionEvent) {
+    public void btnStartOnAction() {
         userName = txtName.getText();
 
         if(users.contains(txtName.getText())){
