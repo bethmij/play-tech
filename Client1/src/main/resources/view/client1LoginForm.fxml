@@ -24,9 +24,9 @@
             <Image url="@../Assets/a63a312f9ce4636865d57450b8077e3b.jpg" />
          </image>
          <effect>
-            <ColorAdjust brightness="-0.34" saturation="0.19">
+            <ColorAdjust brightness="-0.5" saturation="0.19">
                <input>
-                  <DropShadow radius="30.63" width="103.52" />
+                  <DropShadow height="62.26" radius="40.945" width="103.52" />
                </input>
             </ColorAdjust>
          </effect></ImageView>

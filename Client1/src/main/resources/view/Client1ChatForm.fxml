@@ -32,7 +32,7 @@
          <effect>
             <InnerShadow>
                <input>
-                  <ColorAdjust brightness="-0.34" />
+                  <ColorAdjust brightness="-0.5" saturation="0.19" />
                </input></InnerShadow>
          </effect>
       </ImageView>

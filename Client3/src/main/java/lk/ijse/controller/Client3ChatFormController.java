@@ -225,7 +225,9 @@ public class Client3ChatFormController extends Thread implements Initializable {
                            textFlow.setStyle("-fx-background-color:#ff6b81;" + "-fx-background-radius: 20px;" + "-fx-font-size: 17px;"); // tempText.setPadding(new Insets(5, 10, 5, 10));
                            textFlow.setPadding(new Insets(5, 10, 5, 10));
 
-                           name.setOnMouseClicked(event -> {
+                           Text receiver = new Text( name+""+msg );
+
+                           receiver.setOnMouseClicked(event -> {
                                if(event.getButton().equals(MouseButton.PRIMARY)) {
                                    if (event.getClickCount() == 2) {
                                        lblReply.setVisible(true);

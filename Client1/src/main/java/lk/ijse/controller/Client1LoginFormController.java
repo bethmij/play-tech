@@ -40,7 +40,7 @@ public class Client1LoginFormController {
             userName = txtName.getText();
 
             if (users.contains(txtName.getText())) {
-                System.out.println("already added");
+                new Alert(Alert.AlertType.ERROR,"already added");
             } else {
                 users.add(userName);
                 userLIst.put(txtName.getText(), image);
