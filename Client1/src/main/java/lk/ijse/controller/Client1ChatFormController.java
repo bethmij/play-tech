@@ -27,6 +27,7 @@ import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.stage.Window;
+import lk.ijse.controller.util.OpenView;
 
 import java.io.*;
 import java.net.Socket;
@@ -56,6 +57,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
     public AnchorPane particatePane;
     public AnchorPane backgroundPane;
     public Label lblReply;
+    public AnchorPane imgPane;
     private Socket socket;
     private BufferedReader reader;
     private PrintWriter writer;
@@ -76,6 +78,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
         particatePane.setVisible(false);
         backgroundPane.setVisible(false);
         lblReply.setVisible(false);
+        imgPane.setVisible(false);
 
 
         Platform.runLater(() -> {
@@ -89,6 +92,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
             image = new Image("D:\\IJSE\\Working Projects\\Chat Application\\Client1\\src\\main\\resources\\Assets\\no-profile-pic-icon-11 (1).jpg");
         }
         circle.setFill(new ImagePattern(image));
+
+
 
     }
 
@@ -309,6 +314,9 @@ public class Client1ChatFormController extends Thread implements Initializable {
        }catch (Exception e){
            e.printStackTrace();
        }
+
+
+
     }
 
     public void connectSocket(){
@@ -608,7 +616,10 @@ public class Client1ChatFormController extends Thread implements Initializable {
     }
 
     public void bgChangeOnAction() {
-        backgroundPane.setVisible(true);
+        if(!backgroundPane.isVisible())
+            backgroundPane.setVisible(true);
+        else
+            backgroundPane.setVisible(false);
     }
 
 
@@ -730,8 +741,8 @@ public class Client1ChatFormController extends Thread implements Initializable {
         }
 
         assert in != null;
-        image = new Image(in);
-        imgView.setImage(image);
+        Image image1 = new Image(in);
+        imgView.setImage(image1);
     }
 
     public void txtOnAction(MouseEvent actionEvent) {
@@ -742,5 +753,38 @@ public class Client1ChatFormController extends Thread implements Initializable {
             }
         }
 
+    }
+
+    public void ComputerOnAction(MouseEvent mouseEvent) {
+        backgroundPane.setVisible(false);
+        imgPane.setVisible(true);
+    }
+
+    public void setImage(Image image){
+        imgView.setImage(image);
+    }
+
+    public void blueOnAction(MouseEvent mouseEvent) {
+        imgView.setImage(new Image("/Assets/background/pexels-eberhard-grossgasteiger-2310713.jpg"));
+    }
+
+    public void whiteOnAction(MouseEvent mouseEvent) {
+        imgView.setImage(new Image("/Assets/background/pexels-jess-bailey-designs-1172849.jpg"));
+    }
+
+    public void roseOnAction(MouseEvent mouseEvent) {
+        imgView.setImage(new Image("/Assets/background/pexels-pixabay-36445.jpg"));
+    }
+
+    public void blackOnAction(MouseEvent mouseEvent) {
+        imgView.setImage(new Image("/Assets/background/pexels-irina-iriser-1122639.jpg"));
+    }
+
+    public void skyOnAction(MouseEvent mouseEvent) {
+        imgView.setImage(new Image("/Assets/background/pexels-brakou-abdelghani-1723637_2160x3840.jpg"));
+    }
+
+    public void flowerOnAction(MouseEvent mouseEvent) {
+        imgView.setImage(new Image("/Assets/background/pexels-lil-artsy-1425353.jpg"));
     }
 }

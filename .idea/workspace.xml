@@ -45,7 +45,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Client3/src/main/resources/view" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Sample/yasas Chat com/Chat/ChatApplication" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -67,11 +67,11 @@
       <recent name="D:\IJSE\Working Projects\Chat Application\Client2\src\main\resources\Assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\background" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\stickers" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\emoji" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\gif" />
-      <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\view" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="lk.ijse.bo.custom" />
@@ -301,6 +301,11 @@
       <workItem from="1688278184890" duration="888000" />
       <workItem from="1688279241415" duration="7751000" />
       <workItem from="1688446635293" duration="708000" />
+      <workItem from="1688447471183" duration="1270000" />
+      <workItem from="1688480533776" duration="471000" />
+      <workItem from="1688481965393" duration="1277000" />
+      <workItem from="1688483949716" duration="439000" />
+      <workItem from="1688484847652" duration="10167000" />
     </task>
     <task id="LOCAL-00001" summary="grama vista 1">
       <created>1679592345340</created>
@@ -681,6 +686,10 @@
           <line>3</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -1,29 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.Group?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.ColorAdjust?>
-<?import javafx.scene.effect.Glow?>
-<?import javafx.scene.effect.InnerShadow?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.shape.Circle?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="744.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client1ChatFormController">
+<AnchorPane prefHeight="744.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client1ChatFormController">
    <children>
       <ImageView fx:id="imgView" fitHeight="745.0" fitWidth="419.0" layoutX="355.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -182,7 +169,7 @@
          </font></Label>
       <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="258.0" layoutY="17.0" onMouseClicked="#bgChangeOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Assets/icons8-edit-48.png" />
+            <Image url="@../Assets/icons8-wallpaper-100.png" />
          </image>
          <effect>
             <InnerShadow choke="0.96" radius="58.5425" width="215.17">
@@ -207,12 +194,12 @@
             </InnerShadow>
          </effect>
       </ImageView>
-      <TextField layoutX="23.0" layoutY="86.0" prefHeight="38.0" prefWidth="305.0" promptText="Search or start new chat" style="-fx-background-radius: 100;">
+      <TextField layoutX="24.0" layoutY="105.0" prefHeight="38.0" prefWidth="305.0" promptText="Search or start new chat" style="-fx-background-radius: 100;">
          <font>
             <Font size="17.0" />
          </font>
       </TextField>
-      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="284.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="276.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Assets/icons8-search-64.png" />
          </image>
@@ -476,14 +463,49 @@
             <VBox fx:id="partiVbox" prefHeight="200.0" prefWidth="151.0" />
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="backgroundPane" layoutX="158.0" layoutY="43.0" prefHeight="38.0" prefWidth="198.0">
+      <AnchorPane fx:id="backgroundPane" layoutX="158.0" layoutY="43.0" prefHeight="91.0" prefWidth="183.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e8081" height="43.0" layoutX="28.0" layoutY="4.0" opacity="0.37" stroke="#7e8081" strokeType="INSIDE" width="171.0" />
-            <Text fill="WHITE" layoutX="43.0" layoutY="29.0" onMouseClicked="#backOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Background">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e8081" height="66.0" layoutX="28.0" layoutY="-2.0" opacity="0.37" stroke="#7e8081" strokeType="INSIDE" width="162.0" />
+            <Text fill="WHITE" layoutX="77.0" layoutY="20.0" onMouseClicked="#backOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="My Wallpaers">
                <font>
                   <Font size="16.0" />
                </font>
             </Text>
+            <Text fill="WHITE" layoutX="77.0" layoutY="53.0" onMouseClicked="#ComputerOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="My Photoes">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="37.0" layoutY="1.0" onMouseClicked="#bgChangeOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/icons8-wallpaper-80.png" />
+               </image>
+               <effect>
+                  <InnerShadow choke="0.96" radius="58.5425" width="215.17">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="37.0" layoutY="33.0" onMouseClicked="#bgChangeOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/icons8-wallpaper-100%20(1).png" />
+               </image>
+               <effect>
+                  <InnerShadow choke="0.96" radius="58.5425" width="215.17">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
          </children>
       </AnchorPane>
       <Label fx:id="lblReply" layoutX="489.0" layoutY="654.0" prefHeight="27.0" prefWidth="226.0" text="Label" textFill="WHITE">
@@ -491,5 +513,40 @@
             <Font size="18.0" />
          </font>
       </Label>
+      <AnchorPane fx:id="imgPane" layoutX="128.0" layoutY="58.0" prefHeight="200.0" prefWidth="294.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e8081" height="296.0" opacity="0.70" stroke="#7e8081" strokeType="INSIDE" width="332.0" />
+            <ImageView fx:id="img" fitHeight="129.0" fitWidth="99.0" layoutX="14.0" layoutY="7.0" onMouseClicked="#blueOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/background/pexels-eberhard-grossgasteiger-2310713.jpg" />
+               </image></ImageView>
+            <ImageView fitHeight="129.0" fitWidth="99.0" layoutX="113.0" layoutY="7.0" onMouseClicked="#whiteOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/background/pexels-jess-bailey-designs-1172849.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="99.0" layoutX="205.0" layoutY="7.0" onMouseClicked="#roseOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/background/pexels-pixabay-36445.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="99.0" layoutX="14.0" layoutY="148.0" onMouseClicked="#blackOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/background/pexels-irina-iriser-1122639.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="108.0" layoutX="100.0" layoutY="148.0" onMouseClicked="#skyOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/background/pexels-brakou-abdelghani-1723637_2160x3840.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="86.0" layoutX="224.0" layoutY="148.0" onMouseClicked="#flowerOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/background/pexels-lil-artsy-1425353.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+     
    </children>
 </AnchorPane>
