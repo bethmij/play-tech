@@ -69,7 +69,7 @@ public class Client1ChatFormController extends Thread implements Initializable {
         scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         scrollPane.setStyle("-fx-background-color: transparent; -fx-background-insets: 0; -fx-padding: 0;");
-        scrollPane.vvalueProperty().bind(VBox.heightProperty());
+        //scrollPane.vvalueProperty().bind(VBox.heightProperty());
         txt.setStyle("-fx-background-color: #053c4f;" + "-fx-text-fill: white;");
         emojiPane.setVisible(false);
         filePane.setVisible(false);
@@ -616,10 +616,12 @@ public class Client1ChatFormController extends Thread implements Initializable {
     }
 
     public void bgChangeOnAction() {
-        if(!backgroundPane.isVisible())
+        if(!backgroundPane.isVisible() && !imgPane.isVisible())
             backgroundPane.setVisible(true);
-        else
+        else if (backgroundPane.isVisible() && !imgPane.isVisible())
             backgroundPane.setVisible(false);
+        else if (imgPane.isVisible())
+            imgPane.setVisible(false);
     }
 
 
@@ -728,6 +730,21 @@ public class Client1ChatFormController extends Thread implements Initializable {
 
     public void backOnAction(MouseEvent mouseEvent) {
         backgroundPane.setVisible(false);
+        imgPane.setVisible(true);
+    }
+
+    public void txtOnAction(MouseEvent actionEvent) {
+        if(actionEvent.getButton().equals(MouseButton.PRIMARY)){
+            if(actionEvent.getClickCount() == 2){
+                 if(lblReply.isVisible())
+                    lblReply.setVisible(false);
+            }
+        }
+
+    }
+
+    public void ComputerOnAction(MouseEvent mouseEvent) {
+        backgroundPane.setVisible(false);
         Window window = ((Node) (mouseEvent.getSource())).getScene().getWindow();
         FileChooser fileChooser = new FileChooser();
         File file = fileChooser.showOpenDialog(window);
@@ -743,21 +760,6 @@ public class Client1ChatFormController extends Thread implements Initializable {
         assert in != null;
         Image image1 = new Image(in);
         imgView.setImage(image1);
-    }
-
-    public void txtOnAction(MouseEvent actionEvent) {
-        if(actionEvent.getButton().equals(MouseButton.PRIMARY)){
-            if(actionEvent.getClickCount() == 2){
-                 if(lblReply.isVisible())
-                    lblReply.setVisible(false);
-            }
-        }
-
-    }
-
-    public void ComputerOnAction(MouseEvent mouseEvent) {
-        backgroundPane.setVisible(false);
-        imgPane.setVisible(true);
     }
 
     public void setImage(Image image){

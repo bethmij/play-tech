@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="modified" />
+    <list default="true" id="d341e9b4-b3d1-4480-b66a-cc3b86d294fa" name="Changes" comment="modified">
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/31Kjc0dbSRL._AC_UF894_1000_QL80_-removebg-preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/icons8-arrows-64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/icons8-phone-100 (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client1/src/main/resources/Assets/icons8-videocall-96.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/BackgroundController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1ChatFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/java/lk/ijse/controller/Client1LoginFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/view/Client1ChatForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/view/Client1ChatForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/view/background.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client1/src/main/resources/view/client1LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client1/src/main/resources/view/client1LoginForm.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,8 +79,8 @@
       <recent name="D:\IJSE\Working Projects\Chat Application\Client2\src\main\resources\Assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\background" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets" />
+      <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\background" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\stickers" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\emoji" />
       <recent name="D:\IJSE\Working Projects\Chat Application\Client1\src\main\resources\Assets\gif" />
@@ -306,6 +318,7 @@
       <workItem from="1688481965393" duration="1277000" />
       <workItem from="1688483949716" duration="439000" />
       <workItem from="1688484847652" duration="10167000" />
+      <workItem from="1688530294545" duration="6242000" />
     </task>
     <task id="LOCAL-00001" summary="grama vista 1">
       <created>1679592345340</created>

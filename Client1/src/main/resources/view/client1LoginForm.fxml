@@ -67,12 +67,12 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#81a3a4" height="56.0" layoutX="34.0" layoutY="578.0" stroke="WHITE" strokeType="INSIDE" width="343.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#81a3a4" height="56.0" layoutX="61.0" layoutY="578.0" stroke="WHITE" strokeType="INSIDE" width="300.0">
          <effect>
             <BoxBlur height="71.73" iterations="3" width="136.07" />
          </effect>
       </Rectangle>
-      <TextField fx:id="txtName" blendMode="SOFT_LIGHT" focusTraversable="false" layoutX="67.0" layoutY="584.0" prefHeight="44.0" prefWidth="290.0" promptText="Your Name" style="-fx-background-radius: 100;">
+      <TextField fx:id="txtName" blendMode="SOFT_LIGHT" focusTraversable="false" layoutX="67.0" layoutY="584.0" prefHeight="44.0" prefWidth="290.0" promptText="User Name" style="-fx-background-radius: 100;">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>

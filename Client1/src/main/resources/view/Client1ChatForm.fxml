@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="744.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client1ChatFormController">
+<AnchorPane prefHeight="744.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client1ChatFormController">
    <children>
       <ImageView fx:id="imgView" fitHeight="745.0" fitWidth="419.0" layoutX="355.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -23,6 +36,7 @@
                </input></InnerShadow>
          </effect>
       </ImageView>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="2.0" layoutY="4.0" prefHeight="26.0" prefWidth="6.0" />
       <Rectangle arcWidth="5.0" fill="#030303" height="55.0" layoutX="355.0" layoutY="3.0" opacity="0.43" stroke="#008f99" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="419.0">
          <effect>
             <InnerShadow height="86.5" radius="38.6575" width="70.13">
@@ -32,9 +46,9 @@
             </InnerShadow>
          </effect>
       </Rectangle>
-      <ImageView fitHeight="19.0" fitWidth="21.0" layoutX="747.0" layoutY="19.0" onMouseClicked="#minimizeOnAction" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+      <ImageView fitHeight="19.0" fitWidth="24.0" layoutX="747.0" layoutY="21.0" onMouseClicked="#minimizeOnAction" pickOnBounds="true" preserveRatio="true" rotate="180.0">
          <image>
-            <Image url="@../Assets/icons8-minimize-60.png" />
+            <Image url="@../Assets/icons8-arrows-64.png" />
          </image>
          <effect>
             <InnerShadow>
@@ -133,14 +147,7 @@
             </InnerShadow>
          </effect>
       </TextField>
-      <JFXButton blendMode="LIGHTEN" layoutX="695.0" layoutY="-5.0" onAction="#btnAddOnAction" prefHeight="59.0" prefWidth="33.0" text="+" textFill="#abd4cf">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <font>
-            <Font name="System Bold" size="30.0" />
-         </font></JFXButton>
-      <Label fx:id="lblName" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="421.0" layoutY="14.0" prefHeight="34.0" prefWidth="198.0" textFill="WHITE">
+      <Label fx:id="lblName" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="421.0" layoutY="14.0" prefHeight="26.0" prefWidth="198.0" textFill="WHITE">
          <font>
             <Font name="Footlight MT Light" size="20.0" />
          </font>
@@ -515,17 +522,17 @@
       </Label>
       <AnchorPane fx:id="imgPane" layoutX="128.0" layoutY="58.0" prefHeight="200.0" prefWidth="294.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e8081" height="296.0" opacity="0.70" stroke="#7e8081" strokeType="INSIDE" width="332.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e8081" height="289.0" opacity="0.70" stroke="#7e8081" strokeType="INSIDE" width="278.0" />
             <ImageView fx:id="img" fitHeight="129.0" fitWidth="99.0" layoutX="14.0" layoutY="7.0" onMouseClicked="#blueOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Assets/background/pexels-eberhard-grossgasteiger-2310713.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="129.0" fitWidth="99.0" layoutX="113.0" layoutY="7.0" onMouseClicked="#whiteOnAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="129.0" fitWidth="99.0" layoutX="100.0" layoutY="7.0" onMouseClicked="#whiteOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Assets/background/pexels-jess-bailey-designs-1172849.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="129.0" fitWidth="99.0" layoutX="205.0" layoutY="7.0" onMouseClicked="#roseOnAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="129.0" fitWidth="99.0" layoutX="188.0" layoutY="7.0" onMouseClicked="#roseOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Assets/background/pexels-pixabay-36445.jpg" />
                </image>
@@ -540,13 +547,48 @@
                   <Image url="@../Assets/background/pexels-brakou-abdelghani-1723637_2160x3840.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="129.0" fitWidth="86.0" layoutX="224.0" layoutY="148.0" onMouseClicked="#flowerOnAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="129.0" fitWidth="86.0" layoutX="188.0" layoutY="148.0" onMouseClicked="#flowerOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Assets/background/pexels-lil-artsy-1425353.jpg" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-     
+      <Text fill="WHITE" layoutX="422.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Active" />
+      <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="457.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@..\Assets\31Kjc0dbSRL._AC_UF894_1000_QL80_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="711.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/icons8-videocall-96.png" />
+         </image>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.689278781414032" green="0.8421052694320679" blue="0.8242754936218262" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="26.0" layoutX="681.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/icons8-phone-100%20(2).png" />
+         </image>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.689278781414032" green="0.8421052694320679" blue="0.8242754936218262" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
    </children>
 </AnchorPane>
