@@ -2,7 +2,7 @@
 The application enables real-time communication between multiple users, supporting exchanging text, emojis, and images.
 
 ## Technology Stack:
-✅ Core Technology: ✅ Java | Socket Programming | JavaFX | MySQL | JavaMail | OpenCV
+✅ Core Technology: Java | Socket Programming | JavaFX | MySQL | JavaMail | OpenCV
   
 ## Key Features:
 - Multi-User Chat: Two or more users can chat at the same time in real-time.
